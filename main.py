@@ -4,11 +4,16 @@ import time
 
 # --- TOKEN ---
 # Tarayıcıdan aldığın "ey..." ile başlayan uzun kodu buraya tırnak içine yapıştır.
-# Eğer hata alırsan tarayıcıdan yeni token kopyala.
-MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiIyZGE3a2Y4amYiLCJpZGVudGl0eSI6ImVuZHVzZXIiLCJhbm9ueW1vdXMiOmZhbHNlLCJ1c2VySWQiOiJlNGMzYWY2Yi05YWQyLTQ3NDYtYTVlNC0yNGQ1ODQyNjZmYzMiLCJjbGFpbXMiOnsiZW1haWwiOiJmYXRtYW51cnJrcmttenoxODZAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJwaXJ0aXN0YW4iLCJwcm9maWxlSWQiOiJVUkNNUURMRExYSkxITFBGQkFOMFpJOVYiLCJwcm9maWxlQXZhdGFyIjoiUCIsImlzS2lkUHJvZmlsZSI6ZmFsc2V9LCJzZXNzaW9uSWQiOiJkMzdhMjlkMTMwOGE0NmRmOTA1NzQzZjg4ODdjZDliNiIsImlhdCI6MTc2OTE4NjUzMywiZXhwIjoxNzcxNzc4NTMzfQ.ci3CbqGQHVgUFIPs2PH_tR7CUTzN4HoKu3LY3zpFQztXlqZVgo_kXqp9A-6Pdn0G_R_BDtNC-sWS9eRzgka0KzlP228BGmZ87N_0wpxg1riHierd5LKIMZFNOJw-LkdQ3sFTWhGvD0zJm-lYYunh2gxtoWJXGVyuQYQSlt4xrPEMneUDbw-d0D2nVeJu_WVfkOPMFEC6bEmuFVIHgD6usMkd2_e9sr7mkt7GXwVBGuFJb9dK1p1nWb-KKXN7oIvf-eaxCbtAJ27Lja_NI-YlA8QjvwVsqnmf7qNuJpjJtorPSDvUcR6gp8oiZmzCw8zwJXoB79Xkmxlr0jnxDrTtIQ"
+# Token'ın süresi dolmuş olabilir, taze bir tane alıp yapıştırman en iyisi.
+MANUAL_TOKEN = "BURAYA_TARAYICIDAN_ALDIGIN_UZUN_TOKENI_YAPISTIR"
 
-# API URL (Web sitesinin kullandığı standart adres)
-BASE_VIDEO_URL = "https://api.gain.tv/videos/"
+# --- BULDUĞUMUZ DEĞERLER ---
+PROJECT_ID = "2da7kf8jf"
+PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V" # URL'den bulduğun sana özel ID
+
+# API URL ŞABLONU
+# Senin bulduğun yapı: /CALL/ProfileTitle/getPlaybackInfo/{PROFILE_ID}/
+PLAYBACK_URL = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaybackInfo/{PROFILE_ID}/"
 
 # HEADER
 HEADERS = {
@@ -20,33 +25,44 @@ HEADERS = {
     "Referer": "https://www.gain.tv/"
 }
 
-def get_video_details(video_id):
-    # Web API'si GET isteği kullanır (POST değil)
-    url = BASE_VIDEO_URL + video_id
+def get_video_stream(video_id):
+    # Senin bulduğun URL parametreleri
+    params = {
+        "videoContentId": video_id,
+        "packageType": "Dash", # İstersen "Hls" de deneyebiliriz ama Dash bulmuşsun
+        "__culture": "tr-tr"
+    }
     
     auth_headers = HEADERS.copy()
     auth_headers["Authorization"] = f"Bearer {MANUAL_TOKEN}"
     
     try:
-        print(f"📡 {video_id} için bağlanılıyor...")
-        response = requests.get(url, headers=auth_headers)
+        print(f"📡 {video_id} için yayın linki isteniyor...")
+        response = requests.get(PLAYBACK_URL, headers=auth_headers, params=params)
         
         if response.status_code == 200:
             data = response.json()
-            # Başlık bilgisini alalım
-            title = data.get("title", "Başlık Yok")
-            print(f"✅ VİDEO BULUNDU: {title}")
             
-            # Yayın linki var mı diye bakalım (hls, mpd, streams vb.)
-            if "streams" in data:
-                print(f"   🔗 Yayın Akışları Mevcut: {len(data['streams'])} adet")
-            
-            return data
+            # Başarılı olup olmadığını kontrol et
+            if data.get("Success"):
+                result = data.get("Result", {})
+                
+                # Yayın Linkini Bulalım (Genellikle 'Url' veya 'MediaUrl' içindedir)
+                stream_url = result.get("Url")
+                license_url = result.get("LicenseUrl") # DRM Lisans linki
+                
+                print(f"✅ VİDEO BİLGİLERİ ALINDI!")
+                print(f"   🔗 Yayın Linki (.mpd): {stream_url}")
+                if license_url:
+                    print(f"   🔑 Lisans URL: {license_url}")
+                
+                return result
+            else:
+                print(f"❌ API Hatası: {data.get('Message')}")
+                return None
         else:
-            print(f"❌ HTTP Hatası ({video_id}): {response.status_code}")
-            # Hata detayını görelim (Token süresi dolmuş olabilir)
-            if response.status_code == 401:
-                print("⚠️ İPUCU: Token süresi dolmuş olabilir. Tarayıcıdan yeni token al.")
+            print(f"❌ HTTP Hatası: {response.status_code}")
+            print(f"Detay: {response.text}")
             return None
             
     except Exception as e:
@@ -54,19 +70,24 @@ def get_video_details(video_id):
         return None
 
 def main():
-    # Yeni verdiğin video linki: https://www.gain.tv/watch/B294FGF3xvkT
-    # ID: B294FGF3xvkT
+    # Token kontrolü
+    if "BURAYA" in MANUAL_TOKEN:
+        print("⛔ Token yapıştırmayı unuttun! Kodu düzenle.")
+        return
+
+    # Test videosu
     target_ids = ["B294FGF3xvkT"] 
     
     all_data = []
 
     for vid in target_ids:
-        data = get_video_details(vid)
+        data = get_video_stream(vid)
         if data:
             all_data.append(data)
         time.sleep(1)
 
-    print("\n💾 gain_data.json dosyası kaydediliyor...")
+    # Dosyayı kaydet
+    print("\n💾 gain_data.json kaydediliyor...")
     with open("gain_data.json", "w", encoding="utf-8") as f:
         json.dump(all_data, f, indent=4, ensure_ascii=False)
     print("🏁 İşlem tamam.")
