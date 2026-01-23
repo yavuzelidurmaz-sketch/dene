@@ -1,7 +1,7 @@
 name: Gain Scraper
 
 on:
-  workflow_dispatch: # Manuel tetikleme butonu
+  workflow_dispatch: # Manuel tetikleme
   schedule:
     - cron: '0 0 * * *' # Her gece 00:00'da çalışır
 
@@ -27,17 +27,21 @@ jobs:
     - name: Botu Çalıştır
       run: python main.py
 
-    - name: Veriyi Kaydet (Commit & Push)
+    - name: Verileri Kaydet (Commit & Push)
       run: |
         git config --global user.name "GainBot"
         git config --global user.email "bot@github.com"
         
-        # HATA DÜZELTİLDİ: Artık doğru dosya adını (gain_movies.json) ekliyoruz
-        if [ -f gain_movies.json ]; then
-          git add gain_movies.json
-          git commit -m "Film listesi güncellendi $(date)" || echo "Değişiklik yok"
-          git push
-        else
-          echo "⚠️ gain_movies.json dosyası bulunamadı, bir şeyler ters gitti!"
-          exit 1
+        # 1. JSON Dosyasını Ekle
+        if [ -f gain_full_archive.json ]; then
+          git add gain_full_archive.json
         fi
+
+        # 2. M3U Dosyasını Ekle (YENİ EKLENEN KISIM)
+        if [ -f fanatik_gain.m3u ]; then
+          git add fanatik_gain.m3u
+        fi
+
+        # Değişiklik varsa commit yap ve gönder
+        git commit -m "Otomatik Güncelleme: JSON ve M3U $(date)" || echo "Değişiklik yok"
+        git push
