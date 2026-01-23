@@ -1,9 +1,238 @@
 import requests
 import json
+import timeimport requests
+import json
 import time
 
-# --- TOKEN (MUTLAKA GÜNCEL OLANI YAPIŞTIR) ---
+# --- TOKEN (MUTLAKA YENİSİNİ ALIP YAPIŞTIR - ESKİSİ BLOKE OLMUŞ OLABİLİR) ---
 MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiIyZGE3a2Y4amYiLCJpZGVudGl0eSI6ImVuZHVzZXIiLCJhbm9ueW1vdXMiOmZhbHNlLCJ1c2VySWQiOiJlNGMzYWY2Yi05YWQyLTQ3NDYtYTVlNC0yNGQ1ODQyNjZmYzMiLCJjbGFpbXMiOnsiZW1haWwiOiJmYXRtYW51cnJrcmttenoxODZAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJwaXJ0aXN0YW4iLCJwcm9maWxlSWQiOiJVUkNNUURMRExYSkxITFBGQkFOMFpJOVYiLCJwcm9maWxlQXZhdGFyIjoiUCIsImlzS2lkUHJvZmlsZSI6ZmFsc2V9LCJzZXNzaW9uSWQiOiIyOTVhNWM4N2RlYTk0Y2FhOTcyOTZlYzY2OWNiYjBmZCIsImlhdCI6MTc2OTE5NjA1MywiZXhwIjoxNzcxNzg4MDUzfQ.yKLLAEotOL9BWz3oFDsVyos7zcfMxnPFgRJpmsn50B6IbBe3SMgeZo02X0ghZdz93xB5kUETdBlDRmt1QHzAJ_7z_4qOLukh-z2pnPeaImVT-fRZGjK4Ez--GjRS_sOdnXgNVIdzYkiEsqyVabi8wL46K0C-1oo5B9bJ7sjAxaadAAs4rFKQ-bKx-c1rKgOso31XArEn3zIo0bhjhuvuOECNwvVbDu5Dg2LcgqkbDRA8LQ37iDudkaAwF9jVnxTNHLzmrxMf6KwftzgdmkIoizrsThFw1vVJWXTdaXNXlS5ZbOvC-iQ3UH3gAk2Yjv6gDxk0YgvRRYsDE3vwNKrbeQ"
+
+# --- AYARLAR ---
+PROJECT_ID = "2da7kf8jf"
+ADULT_PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V"
+KIDS_PROFILE_ID = "KIBPFC0Q9Z08Q1UMMJTO61NI"
+
+# Videodaki gibi Kategoriler (Slug'lar doğru olmalı)
+TARGETS = [
+    {"name": "Dizi", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Fdizi"},
+    {"name": "Film", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Ffilm"},
+    {"name": "Program", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Fprogram"},
+    {"name": "Belgesel", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Fbelgesel"},
+    {"name": "Kids", "profile_id": KIDS_PROFILE_ID, "param": "categoryName=MAIN-PAGE"}
+]
+
+BASE_API = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Content-Type": "application/json",
+    "Authorization": f"Bearer {MANUAL_TOKEN}",
+    "x-gain-platform": "web"
+}
+
+def get_episodes(title_id, season_id, profile_id):
+    """Bir sezonun içindeki tüm bölümleri çeker"""
+    # Videodaki gibi, bir diziye girince bölümler listelenir.
+    url = f"{BASE_API}/getProfileSeason/{profile_id}?seasonId={season_id}&titleId={title_id}&__culture=tr-tr&pageSize=200"
+    try:
+        res = requests.get(url, headers=HEADERS)
+        if res.status_code == 200:
+            return res.json().get("episodes", [])
+    except:
+        pass
+    return []
+
+def get_show_details(title_id, profile_id):
+    """Bir içeriğin detayına girer (Sezon var mı bakar)"""
+    # Videoda tıkladığında açılan detay sayfası burasıdır.
+    url = f"{BASE_API}/getProfileTitle/{profile_id}?titleId={title_id}&__culture=tr-tr"
+    try:
+        res = requests.get(url, headers=HEADERS)
+        if res.status_code == 200:
+            return res.json()
+    except:
+        pass
+    return {}
+
+def get_contents_from_shelves(target):
+    """Videodaki kaydırmalı rafları (Playlist) tarar"""
+    # Sayfalama parametresi (pageIndex) YOK. Sadece kategoriyi istiyoruz.
+    url = f"{BASE_API}/getPlaylistsByCategory/{target['profile_id']}?{target['param']}&__culture=tr-tr"
+    print(f"\n🌍 '{target['name']}' kategorisindeki raflar çekiliyor...")
+
+    contents = []
+    processed_ids = set() # Aynı içerik farklı raflarda olabilir, tekrarı önle.
+
+    try:
+        res = requests.get(url, headers=HEADERS)
+        if res.status_code != 200:
+            print(f"   ❌ Erişim Hatası: {res.status_code} (Token bitmiş olabilir)")
+            return []
+
+        data = res.json()
+        playlists = data.get("playlists", []) # Bunlar videodaki "Komedi", "Aksiyon" vb. başlıklar
+        print(f"   📦 Toplam {len(playlists)} raf (başlık) bulundu. İçerikleri taranıyor...")
+
+        for playlist in playlists:
+            playlist_name = playlist.get("name", "Genel")
+            items = playlist.get("items", [])
+            
+            # print(f"      👉 Raf: {playlist_name} ({len(items)} içerik)")
+
+            for item in items:
+                title_id = item.get("titleId")
+                video_id = item.get("videoContentId")
+                name = item.get("name") or item.get("title")
+                poster = item.get("logoImageUrl") or item.get("posterImageUrl")
+
+                # Benzersizlik kontrolü
+                unique_key = title_id if title_id else video_id
+                if not unique_key or unique_key in processed_ids:
+                    continue
+                processed_ids.add(unique_key)
+
+                # --- TÜR BELİRLEME (Videodaki mantık) ---
+                # Detaya girip bakmamız lazım, çünkü dışarıdan sadece resim görünüyor.
+                
+                is_series = False
+                seasons = []
+
+                # Eğer titleId varsa bu bir "Başlık"tır (Dizi veya Film Grubu olabilir)
+                if title_id:
+                    details = get_show_details(title_id, target['profile_id'])
+                    seasons = details.get("seasons", [])
+                    if seasons:
+                        is_series = True
+                    # Bazen filmdir ama titleId ile gelir, seasons boştur.
+
+                # --- LİSTEYE EKLEME ---
+
+                if is_series:
+                    # DİZİ / PROGRAM İSE (Sezonları ve Bölümleri var)
+                    for season in seasons:
+                        # Sezon içindeki bölümleri çek
+                        episodes = get_episodes(title_id, season.get("id"), target['profile_id'])
+                        for ep in episodes:
+                            ep_num = ep.get('episode', 0)
+                            ep_name = ep.get('name', '')
+                            full_title = f"{name} - S{season.get('seasonNum', 1)}B{ep_num} - {ep_name}"
+                            
+                            contents.append({
+                                "id": ep.get("videoContentId"),
+                                "title": full_title,
+                                "group": f"Gain - {name}", # Dizi ismiyle klasör
+                                "poster": poster,
+                                "profile_id": target['profile_id']
+                            })
+                else:
+                    # FİLM / TEKİL VİDEO İSE
+                    # Eğer videoId'si varsa bu oynatılabilir bir şeydir.
+                    vid_id_to_use = video_id
+                    
+                    # Bazen detaydan videoId almak gerekir
+                    if not vid_id_to_use and title_id:
+                        # Detayları zaten çekmiştik
+                        vid_id_to_use = details.get("videoContentId")
+
+                    if vid_id_to_use:
+                        contents.append({
+                            "id": vid_id_to_use,
+                            "title": name,
+                            "group": f"Gain - {target['name']}",
+                            "poster": poster,
+                            "profile_id": target['profile_id']
+                        })
+
+        print(f"   ✅ '{target['name']}' kategorisinden {len(contents)} video eklendi.")
+        return contents
+
+    except Exception as e:
+        print(f"🔥 Hata oluştu: {e}")
+        return []
+
+def get_stream_url(content):
+    """Video ID'den oynatma linkini (MPD/HLS) alır"""
+    url = f"{BASE_API}/getPlaybackInfo/{content['profile_id']}/"
+    params = {"videoContentId": content["id"], "packageType": "Dash", "__culture": "tr-tr"}
+    try:
+        res = requests.get(url, headers=HEADERS, params=params)
+        if res.status_code == 200:
+            pb_url = res.json().get("currentVideoContent", {}).get("playbackUrl")
+            if pb_url:
+                content["stream_url"] = pb_url
+                return content
+            else:
+                # Bazen hata döner, DRM vs.
+                # print(f"Link yok: {res.text}")
+                pass
+    except:
+        pass
+    return None
+
+def save_m3u(data, filename="gain_archive.m3u"):
+    print(f"\n📺 Dosyalar kaydediliyor: {filename}...")
+    try:
+        # JSON YEDEK
+        with open("gain_full.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+
+        # M3U
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for item in data:
+                if "stream_url" in item:
+                    f.write(f'#EXTINF:-1 group-title="{item["group"]}" tvg-logo="{item["poster"]}", {item["title"]}\n')
+                    f.write('#EXTVLCOPT:http-user-agent=Mozilla/5.0\n')
+                    f.write(f"{item['stream_url']}\n")
+        print("✅ İŞLEM BAŞARIYLA TAMAMLANDI!")
+    except Exception as e:
+        print(f"Dosya yazma hatası: {e}")
+
+def main():
+    if "BURAYA" in MANUAL_TOKEN:
+        print("⛔ Lütfen scriptin başındaki MANUAL_TOKEN kısmına yeni token yapıştırın!")
+        return
+
+    all_videos = []
+    
+    # 1. TÜM RAFLARI TARA
+    for target in TARGETS:
+        items = get_contents_from_shelves(target)
+        all_videos.extend(items)
+        time.sleep(1) # API'yi yormamak için bekleme
+
+    total = len(all_videos)
+    if total == 0:
+        print("\n⛔ HİÇ İÇERİK BULUNAMADI.")
+        print("Sebep 1: Token hatalı veya süresi dolmuş.")
+        print("Sebep 2: Hesabın başka cihazda açık (Videodaki hata).")
+        return
+
+    print(f"\n🚀 TOPLAM {total} VİDEO İÇİN LİNKLER ALINIYOR...")
+    print("   (Bu işlem biraz sürebilir, lütfen bekleyin...)")
+
+    final_list = []
+    # 2. LİNKLERİ AL
+    for i, video in enumerate(all_videos):
+        full_data = get_stream_url(video)
+        if full_data:
+            del full_data["profile_id"] # Dosyada yer kaplamasın
+            final_list.append(full_data)
+        
+        # İlerleme durumu
+        if (i+1) % 10 == 0: 
+            print(f"   👍 {i+1}/{total} tamamlandı...")
+        
+        time.sleep(0.1) # Çok hızlı istek atıp 400 yememek için
+
+    save_m3u(final_list)
+
+if __name__ == "__main__":
+    main()
+
+
+# --- TOKEN (MUTLAKA GÜNCEL OLANI YAPIŞTIR) ---
+MANUAL_TOKEN = ""
 
 # --- AYARLAR ---
 PROJECT_ID = "2da7kf8jf"
