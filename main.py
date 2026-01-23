@@ -4,13 +4,13 @@ import time
 
 # --- BİLGİLERİNİ BURAYA YAZ ---
 EMAIL = "fatmanurrkrkmzz186@gmail.com"
-# Şifreni tırnakların içine yaz:
+# Şifreni tırnakların içine yaz (Boşluk bırakma!)
 PASSWORD = "Lordmaster5557."
 
-# PROJE ID (Önceki hatadan çalışan ID'yi aldık)
+# PROJE ID
 PROJECT_ID = "2da7kf8jf"
 
-# API URL'LERİ (App/Device API yapısı - Bu yapı 400 vererek çalıştığını kanıtladı)
+# API URL'LERİ
 LOGIN_URL = f"https://api.gain.tv/{PROJECT_ID}/CALL/User/signin?__culture=tr-tr"
 CONTENT_URL = f"https://api.gain.tv/{PROJECT_ID}/CALL/Media/GetClientContent?__culture=tr-tr"
 
@@ -25,31 +25,30 @@ def login():
     print(f"🔑 Giriş deneniyor: {EMAIL}")
     print(f"📡 URL: {LOGIN_URL}")
     
-    # DÜZELTME: "Request" kutusunu kaldırdık. Direkt veriyoruz.
-    # Önceki 400 hatası "missingProperty: password" demişti, yani bunu istiyor:
+    # DÜZELTME: Büyük harfleri küçük yaptık!
     payload = {
-        "Email": EMAIL,
-        "Password": PASSWORD
+        "email": EMAIL,     # <-- Sunucu küçük harf istiyor
+        "password": PASSWORD # <-- Sunucu küçük harf istiyor
     }
     
     try:
-        # App API'si genellikle POST ister
         response = requests.post(LOGIN_URL, json=payload, headers=HEADERS)
         
         if response.status_code == 200:
             data = response.json()
+            # Başarılı mı?
             if data.get("Success"):
                 result = data.get("Result", {})
-                # Token bazen büyük harfle Token, bazen AccessToken döner
                 token = result.get("Token") or result.get("AccessToken")
                 print("✅ GİRİŞ BAŞARILI! Token alındı.")
                 return token
             else:
-                print(f"❌ Giriş Başarısız (API Mesajı): {data.get('Message')}")
+                # Bazen hata mesajı farklı yerde olabilir
+                msg = data.get("Message") or data.get("error", {}).get("message")
+                print(f"❌ Giriş Başarısız (API Mesajı): {msg}")
                 return None
         else:
             print(f"❌ HTTP Hatası: {response.status_code}")
-            # Hatanın detayını görelim ki yine format hatası varsa anlayalım
             print(f"Detay: {response.text}")
             return None
 
@@ -58,11 +57,9 @@ def login():
         return None
 
 def get_video_details(video_id, token):
-    # App API'si video detayını da POST ile ister
-    
-    # Payload'ı da düzeltip düz gönderiyoruz
+    # Payload'ı da küçük harflerle deneyelim, ne olur ne olmaz
     payload = {
-        "MediaId": video_id,
+        "MediaId": video_id, # Burası API'ye göre değişebilir ama genelde MediaId PascalCase olur
         "IncludeOpencast": True
     }
     
@@ -93,12 +90,12 @@ def main():
     token = login()
     if not token:
         print("⛔ Token alınamadı, işlem durduruluyor.")
-        # Yine de boş dosya oluştur ki GitHub hata vermesin
+        # GitHub hata vermesin diye boş dosya oluştur
         with open("gain_data.json", "w", encoding="utf-8") as f:
             f.write("[]")
         return
 
-    # Şimdilik test videosu
+    # Test videosu
     target_ids = ["EFQ3X5f4"] 
     
     all_data = []
