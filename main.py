@@ -9,13 +9,10 @@ MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiIyZGE3a2Y
 PROJECT_ID = "2da7kf8jf"
 PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V" 
 
-# Kategori Listesi URL
+# 1. Kategori Listesi URL
 CATEGORY_URL = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaylistsByCategory/{PROFILE_ID}?slug=%2Ffilm&__culture=tr-tr"
 
-# ID Çevirici URL
-METADATA_API_URL = "https://api.gain.tv/videos/"
-
-# Yayın Linki URL
+# 2. Yayın Linki URL (Playback API)
 PLAYBACK_URL_TEMPLATE = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaybackInfo/{PROFILE_ID}/"
 
 HEADERS = {
@@ -27,67 +24,120 @@ HEADERS = {
     "Referer": "https://www.gain.tv/"
 }
 
-def debug_extraction():
-    """Verinin neden okunamadığını anlamak için detaylı analiz yapar"""
+def get_all_movies():
+    """Film listesini indirir ve GİZLİ ID'leri bulur"""
     auth_headers = HEADERS.copy()
     auth_headers["Authorization"] = f"Bearer {MANUAL_TOKEN}"
     
-    print(f"🌍 Film listesi çekiliyor...")
+    print(f"🌍 Film listesi indiriliyor...")
     
     try:
         response = requests.get(CATEGORY_URL, headers=auth_headers)
         data = response.json()
         playlists = data.get("playlists", [])
         
-        if not playlists:
-            print("❌ Hiç çalma listesi bulunamadı!")
-            return
+        movie_list = []
+        processed_ids = set()
 
-        # İLK LİSTENİN İLK FİLMİNİ İNCELEYELİM
-        first_playlist = playlists[0]
-        items = first_playlist.get("items", [])
-        
-        if not items:
-            print("❌ İlk listede hiç film yok.")
-            return
+        print(f"📦 {len(playlists)} kategori bulundu. Ayıklanıyor...")
 
-        first_item = items[0]
-        print("\n🔎 --- İLK FİLMİN HAM VERİSİ ---")
-        print(json.dumps(first_item, indent=2, ensure_ascii=False))
-        print("---------------------------------")
-        
-        # Test: ID'yi alıp çevirmeyi deneyelim
-        short_id = first_item.get("titleId")
-        print(f"\n🧪 Test Edilen ID: {short_id}")
-        
-        if short_id:
-            # Metadata API'ye soralım
-            url = METADATA_API_URL + short_id
-            print(f"📡 API'ye Soruluyor: {url}")
+        for playlist in playlists:
+            cat_title = playlist.get("title", "Genel")
+            items = playlist.get("items", [])
             
-            meta_response = requests.get(url, headers=auth_headers)
-            print(f"   Durum Kodu: {meta_response.status_code}")
-            
-            if meta_response.status_code == 200:
-                meta_data = meta_response.json()
-                real_id = meta_data.get("id")
-                real_title = meta_data.get("title")
-                print(f"   ✅ BAŞARILI! Gerçek ID: {real_id}")
-                print(f"   🎬 Film Adı: {real_title}")
-            else:
-                print(f"   ❌ BAŞARISIZ! Cevap: {meta_response.text}")
-        else:
-            print("❌ Bu item içinde 'titleId' bulunamadı!")
+            for item in items:
+                # --- İŞTE OLTAYI ATTIĞIMIZ YER ---
+                # Eskiden 'titleId' alıyorduk, şimdi direkt 'videoContentId' alıyoruz.
+                direct_id = item.get("videoContentId") 
+                
+                # İsim bazen 'name', bazen 'title' olabiliyor
+                title = item.get("name") or item.get("title") or item.get("originalTitle")
+                
+                # Poster
+                poster = item.get("logoImageUrl") or item.get("posterImageUrl")
+
+                if direct_id and direct_id not in processed_ids:
+                    movie_list.append({
+                        "id": direct_id, # Bu ID ile direkt oynatabiliriz!
+                        "title": title,
+                        "category": cat_title,
+                        "poster": poster
+                    })
+                    processed_ids.add(direct_id)
+        
+        print(f"✅ Toplam {len(movie_list)} film bulundu!")
+        return movie_list
 
     except Exception as e:
-        print(f"🔥 Kritik Hata: {e}")
+        print(f"🔥 Liste Hatası: {e}")
+        return []
+
+def get_stream_url(movie):
+    """Direkt ID ile yayın linkini çeker"""
+    params = {
+        "videoContentId": movie["id"], 
+        "packageType": "Dash",
+        "__culture": "tr-tr"
+    }
+    
+    auth_headers = HEADERS.copy()
+    auth_headers["Authorization"] = f"Bearer {MANUAL_TOKEN}"
+    
+    try:
+        # print(f"   📡 {movie['title']} için link isteniyor...")
+        response = requests.get(PLAYBACK_URL_TEMPLATE, headers=auth_headers, params=params)
+        
+        if response.status_code == 200:
+            data = response.json()
+            if data.get("Success"):
+                result = data.get("Result", {})
+                
+                movie["stream_url"] = result.get("Url")
+                movie["license_url"] = result.get("LicenseUrl")
+                return movie
+            else:
+                return None
+        else:
+            return None
+    except Exception:
+        return None
 
 def main():
     if "BURAYA" in MANUAL_TOKEN:
         print("⛔ Token girmeyi unutma!")
         return
 
-    debug_extraction()
+    # 1. Listeyi Bul
+    all_movies = get_all_movies()
+    
+    if not all_movies:
+        print("⚠️ Hiç film bulunamadı.")
+        with open("gain_movies.json", "w", encoding="utf-8") as f:
+            f.write("[]")
+        return
+
+    # 2. Detayları Çek
+    total = len(all_movies)
+    print(f"\n🚀 {total} film için yayın linkleri toplanıyor...")
+    
+    final_list = []
+    
+    for i, movie in enumerate(all_movies): 
+        full_data = get_stream_url(movie)
+        
+        if full_data:
+            final_list.append(full_data)
+            print(f"✅ [{i+1}/{total}] Alındı: {movie['title']}")
+        else:
+            print(f"❌ [{i+1}/{total}] Alınamadı: {movie['title']}")
+        
+        time.sleep(0.1)
+
+    # 3. Kaydet
+    print(f"\n💾 {len(final_list)} film 'gain_movies.json' dosyasına kaydediliyor...")
+    with open("gain_movies.json", "w", encoding="utf-8") as f:
+        json.dump(final_list, f, indent=4, ensure_ascii=False)
+    print("🏁 İŞLEM TAMAMLANDI!")
 
 if __name__ == "__main__":
     main()
