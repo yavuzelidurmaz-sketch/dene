@@ -2,17 +2,15 @@ import requests
 import json
 import time
 
-# --- TOKEN ---
-# Tarayıcıdan aldığın "ey..." ile başlayan uzun kodu buraya tırnak içine yapıştır.
-# Token'ın süresi dolmuş olabilir, taze bir tane alıp yapıştırman en iyisi.
-MANUAL_TOKEN = "BURAYA_TARAYICIDAN_ALDIGIN_UZUN_TOKENI_YAPISTIR"
+# --- TOKEN (Senin gönderdiğin token yerleştirildi) ---
+# Başındaki "Bearer " kelimesini sildim, sadece kod kısmı gerekli.
+MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiIyZGE3a2Y4amYiLCJpZGVudGl0eSI6ImVuZHVzZXIiLCJhbm9ueW1vdXMiOmZhbHNlLCJ1c2VySWQiOiJlNGMzYWY2Yi05YWQyLTQ3NDYtYTVlNC0yNGQ1ODQyNjZmYzMiLCJjbGFpbXMiOnsiZW1haWwiOiJmYXRtYW51cnJrcmttenoxODZAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJwaXJ0aXN0YW4iLCJwcm9maWxlSWQiOiJVUkNNUURMRExYSkxITFBGQkFOMFpJOVYiLCJwcm9maWxlQXZhdGFyIjoiUCIsImlzS2lkUHJvZmlsZSI6ZmFsc2V9LCJzZXNzaW9uSWQiOiJkMzdhMjlkMTMwOGE0NmRmOTA1NzQzZjg4ODdjZDliNiIsImlhdCI6MTc2OTE4NjUzMywiZXhwIjoxNzcxNzc4NTMzfQ.ci3CbqGQHVgUFIPs2PH_tR7CUTzN4HoKu3LY3zpFQztXlqZVgo_kXqp9A-6Pdn0G_R_BDtNC-sWS9eRzgka0KzlP228BGmZ87N_0wpxg1riHierd5LKIMZFNOJw-LkdQ3sFTWhGvD0zJm-lYYunh2gxtoWJXGVyuQYQSlt4xrPEMneUDbw-d0D2nVeJu_WVfkOPMFEC6bEmuFVIHgD6usMkd2_e9sr7mkt7GXwVBGuFJb9dK1p1nWb-KKXN7oIvf-eaxCbtAJ27Lja_NI-YlA8QjvwVsqnmf7qNuJpjJtorPSDvUcR6gp8oiZmzCw8zwJXoB79Xkmxlr0jnxDrTtIQ"
 
-# --- BULDUĞUMUZ DEĞERLER ---
+# --- URL'DEN BULDUĞUMUZ DEĞERLER ---
 PROJECT_ID = "2da7kf8jf"
-PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V" # URL'den bulduğun sana özel ID
+PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V" 
 
-# API URL ŞABLONU
-# Senin bulduğun yapı: /CALL/ProfileTitle/getPlaybackInfo/{PROFILE_ID}/
+# API URL (PlaybackInfo - Doğru Adres)
 PLAYBACK_URL = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaybackInfo/{PROFILE_ID}/"
 
 # HEADER
@@ -29,7 +27,7 @@ def get_video_stream(video_id):
     # Senin bulduğun URL parametreleri
     params = {
         "videoContentId": video_id,
-        "packageType": "Dash", # İstersen "Hls" de deneyebiliriz ama Dash bulmuşsun
+        "packageType": "Dash",
         "__culture": "tr-tr"
     }
     
@@ -43,22 +41,22 @@ def get_video_stream(video_id):
         if response.status_code == 200:
             data = response.json()
             
-            # Başarılı olup olmadığını kontrol et
             if data.get("Success"):
                 result = data.get("Result", {})
-                
-                # Yayın Linkini Bulalım (Genellikle 'Url' veya 'MediaUrl' içindedir)
                 stream_url = result.get("Url")
-                license_url = result.get("LicenseUrl") # DRM Lisans linki
+                license_url = result.get("LicenseUrl")
                 
                 print(f"✅ VİDEO BİLGİLERİ ALINDI!")
-                print(f"   🔗 Yayın Linki (.mpd): {stream_url}")
+                # GitHub loglarında linki görmek için yazdırıyoruz
+                print(f"   🔗 Stream URL: {stream_url}")
                 if license_url:
                     print(f"   🔑 Lisans URL: {license_url}")
                 
                 return result
             else:
                 print(f"❌ API Hatası: {data.get('Message')}")
+                # Hata detayını görelim
+                print(json.dumps(data, indent=2))
                 return None
         else:
             print(f"❌ HTTP Hatası: {response.status_code}")
@@ -70,12 +68,7 @@ def get_video_stream(video_id):
         return None
 
 def main():
-    # Token kontrolü
-    if "BURAYA" in MANUAL_TOKEN:
-        print("⛔ Token yapıştırmayı unuttun! Kodu düzenle.")
-        return
-
-    # Test videosu
+    # Test videosu (Senin verdiğin ID)
     target_ids = ["B294FGF3xvkT"] 
     
     all_data = []
@@ -86,7 +79,6 @@ def main():
             all_data.append(data)
         time.sleep(1)
 
-    # Dosyayı kaydet
     print("\n💾 gain_data.json kaydediliyor...")
     with open("gain_data.json", "w", encoding="utf-8") as f:
         json.dump(all_data, f, indent=4, ensure_ascii=False)
