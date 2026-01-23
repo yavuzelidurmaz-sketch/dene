@@ -9,10 +9,13 @@ MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiIyZGE3a2Y
 PROJECT_ID = "2da7kf8jf"
 PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V" 
 
-# 1. Kategori Listesi URL
-CATEGORY_URL = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaylistsByCategory/{PROFILE_ID}?slug=%2Ffilm&__culture=tr-tr"
+# Çekeceğimiz Sayfaların Listesi (Sluglar)
+# Buraya istediğin başka kategori varsa ekleyebilirsin (örn: /belgesel)
+TARGET_SLUGS = ["/film", "/dizi", "/program", "/kids", "/belgesel"]
 
-# 2. Yayın Linki URL
+# API Şablonları
+# DİKKAT: &pageSize=500 ekleyerek tüm listeyi zorluyoruz!
+CATEGORY_URL_TEMPLATE = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaylistsByCategory/{PROFILE_ID}?slug={{}}&__culture=tr-tr&pageSize=500"
 PLAYBACK_URL_TEMPLATE = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaybackInfo/{PROFILE_ID}/"
 
 HEADERS = {
@@ -24,54 +27,63 @@ HEADERS = {
     "Referer": "https://www.gain.tv/"
 }
 
-def get_all_movies():
-    """Film listesini indirir"""
+def get_movies_from_slug(slug):
+    """Verilen sayfa (Film, Dizi vb.) içindeki içerikleri çeker"""
     auth_headers = HEADERS.copy()
     auth_headers["Authorization"] = f"Bearer {MANUAL_TOKEN}"
     
-    print(f"🌍 Film listesi indiriliyor...")
+    # Slug'ı URL'ye yerleştir (örn: /film)
+    target_url = CATEGORY_URL_TEMPLATE.format(slug)
+    print(f"\n🌍 '{slug}' sayfası taranıyor...")
     
     try:
-        response = requests.get(CATEGORY_URL, headers=auth_headers)
+        response = requests.get(target_url, headers=auth_headers)
         data = response.json()
         playlists = data.get("playlists", [])
         
-        movie_list = []
-        processed_ids = set()
-
-        print(f"📦 {len(playlists)} kategori bulundu. Ayıklanıyor...")
+        items_found = []
+        
+        print(f"   📦 {len(playlists)} farklı raf (kategori) bulundu.")
 
         for playlist in playlists:
             cat_title = playlist.get("title", "Genel")
             items = playlist.get("items", [])
             
+            # Eğer raf boşsa geç
+            if not items:
+                continue
+
+            # print(f"      📂 {cat_title}: {len(items)} içerik var.")
+            
             for item in items:
-                # Playback API'sinin istediği gerçek ID bu
-                direct_id = item.get("videoContentId") 
-                
+                direct_id = item.get("videoContentId")
                 title = item.get("name") or item.get("title") or item.get("originalTitle")
                 poster = item.get("logoImageUrl") or item.get("posterImageUrl")
+                
+                # Türü belirle (Film mi Dizi mi?)
+                ctype = item.get("contentType", {}).get("text", "Bilinmiyor")
 
-                if direct_id and direct_id not in processed_ids:
-                    movie_list.append({
-                        "id": direct_id, 
+                if direct_id:
+                    items_found.append({
+                        "id": direct_id,
                         "title": title,
                         "category": cat_title,
-                        "poster": poster
+                        "type": ctype, # Film, Dizi, Program vs.
+                        "poster": poster,
+                        "source_slug": slug # Hangi sayfadan geldiği
                     })
-                    processed_ids.add(direct_id)
         
-        print(f"✅ Toplam {len(movie_list)} film bulundu!")
-        return movie_list
+        print(f"   ✅ '{slug}' içinden {len(items_found)} içerik toplandı.")
+        return items_found
 
     except Exception as e:
-        print(f"🔥 Liste Hatası: {e}")
+        print(f"🔥 Hata ({slug}): {e}")
         return []
 
-def get_stream_url(movie):
-    """Direkt ID ile yayın linkini çeker"""
+def get_stream_url(content):
+    """Yayın linkini çeker"""
     params = {
-        "videoContentId": movie["id"], 
+        "videoContentId": content["id"], 
         "packageType": "Dash",
         "__culture": "tr-tr"
     }
@@ -80,63 +92,72 @@ def get_stream_url(movie):
     auth_headers["Authorization"] = f"Bearer {MANUAL_TOKEN}"
     
     try:
-        # print(f"   📡 {movie['title']} için link isteniyor...")
         response = requests.get(PLAYBACK_URL_TEMPLATE, headers=auth_headers, params=params)
-        
         if response.status_code == 200:
             data = response.json()
-            
-            # --- DÜZELTME BURADA YAPILDI ---
-            # Artık 'Success' aramıyoruz. Direkt 'currentVideoContent' içine bakıyoruz.
             current_content = data.get("currentVideoContent", {})
             playback_url = current_content.get("playbackUrl")
             
             if playback_url:
-                movie["stream_url"] = playback_url
-                # Lisans URL bazen 'titleDetailInfo' içinde olabilir, bazen yoktur.
-                movie["license_url"] = current_content.get("licenseUrl") 
-                return movie
-            else:
-                return None
-        else:
-            return None
-    except Exception:
-        return None
+                content["stream_url"] = playback_url
+                content["license_url"] = current_content.get("licenseUrl")
+                return content
+    except:
+        pass
+    return None
 
 def main():
     if "BURAYA" in MANUAL_TOKEN:
         print("⛔ Token girmeyi unutma!")
         return
 
-    # 1. Listeyi Bul
-    all_movies = get_all_movies()
-    
-    if not all_movies:
-        print("⚠️ Hiç film bulunamadı.")
+    all_content = []
+    processed_ids = set()
+
+    # 1. ADIM: Tüm Sayfaları Gez (Film, Dizi, Kids...)
+    for slug in TARGET_SLUGS:
+        slug_items = get_movies_from_slug(slug)
+        
+        # Tekrar edenleri engelle (Aynı film hem 'Aksiyon' hem 'Öne Çıkanlar'da olabilir)
+        for item in slug_items:
+            if item["id"] not in processed_ids:
+                all_content.append(item)
+                processed_ids.add(item["id"])
+        
+        time.sleep(1) # Nezaketen bekleme
+
+    total = len(all_content)
+    if total == 0:
+        print("\n⚠️ Hiçbir içerik bulunamadı. Token'ı kontrol et.")
         return
 
-    # 2. Detayları Çek
-    total = len(all_movies)
-    print(f"\n🚀 {total} film için yayın linkleri toplanıyor...")
-    
+    print(f"\n🚀 TOPLAM {total} BENZERSİZ İÇERİK BULUNDU! Linkler çekiliyor...")
+
+    # 2. ADIM: Hepsine Link Al
     final_list = []
     
-    for i, movie in enumerate(all_movies): 
-        full_data = get_stream_url(movie)
+    for i, content in enumerate(all_content):
+        full_data = get_stream_url(content)
         
         if full_data:
             final_list.append(full_data)
-            print(f"✅ [{i+1}/{total}] Alındı: {movie['title']}")
+            # Logu biraz sadeleştirelim
+            # print(f"✅ [{i+1}/{total}] {content['type']}: {content['title']}")
         else:
-            print(f"❌ [{i+1}/{total}] Alınamadı: {movie['title']}")
+            print(f"❌ [{i+1}/{total}] Link Yok: {content['title']}")
         
-        time.sleep(0.1)
+        # Her 20 içerikte bir bilgi ver
+        if (i + 1) % 20 == 0:
+            print(f"   👍 {i+1} içerik tamamlandı... ({len(final_list)} başarılı)")
+            
+        time.sleep(0.05) # Hızlı mod
 
-    # 3. Kaydet
-    print(f"\n💾 {len(final_list)} film 'gain_movies.json' dosyasına kaydediliyor...")
-    with open("gain_movies.json", "w", encoding="utf-8") as f:
+    # 3. ADIM: Kaydet
+    filename = "gain_full_archive.json"
+    print(f"\n💾 {len(final_list)} içerik '{filename}' dosyasına kaydediliyor...")
+    with open(filename, "w", encoding="utf-8") as f:
         json.dump(final_list, f, indent=4, ensure_ascii=False)
-    print("🏁 İŞLEM TAMAMLANDI!")
+    print("🏁 OPERASYON TAMAMLANDI!")
 
 if __name__ == "__main__":
     main()
