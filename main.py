@@ -2,20 +2,38 @@ import requests
 import json
 import time
 
-# --- TOKEN (MUTLAKA YENİSİNİ ALIP YAPIŞTIR) ---
-MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiIyZGE3a2Y4amYiLCJpZGVudGl0eSI6ImVuZHVzZXIiLCJhbm9ueW1vdXMiOmZhbHNlLCJ1c2VySWQiOiJlNGMzYWY2Yi05YWQyLTQ3NDYtYTVlNC0yNGQ1ODQyNjZmYzMiLCJjbGFpbXMiOnsiZW1haWwiOiJmYXRtYW51cnJrcmttenoxODZAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJwaXJ0aXN0YW4iLCJwcm9maWxlSWQiOiJVUkNNUURMRExYSkxITFBGQkFOMFpJOVYiLCJwcm9maWxlQXZhdGFyIjoiUCIsImlzS2lkUHJvZmlsZSI6ZmFsc2V9LCJzZXNzaW9uSWQiOiI1NTljN2IwNTlhZmY0MWUwODc2N2Y1YjM2ZDI4MWFjYyIsImlhdCI6MTc2OTE5NDU0MCwiZXhwIjoxNzcxNzg2NTQwfQ.KIzx3nAQWJXM8gc2dDNAOD3iOxoi81xWRnf4sGRDkYmZDKIoHxSsAbE7OqMJ7Paq27GgkUldXM7L9BlIDRrangEYKXQPUIq6l6IcY7xKIPMp3T2srgxdpnKuWoZPCkPNMFpVNO5OCfI78xiGsiRDheGSdEV63ekISdpH6b0W38hZY0WIoVZZKSHw1fyLOPX76B5bg01U9ZgbRG0WuxKzHUnC0g3A2NkBjSR31drQeq0gdf-NAJO7w1qvnI923z_pLOowoyDYVr-eRcl6NRW8NYdhui1eKRtEFp9I4qwtodxFQnz_65e-o5S6C6Nvqgb6oGmrPBMbAAP2Vk-UO5PoCA"
+# --- YENİ TOKENI BURAYA YAPIŞTIR (Token süresi dolunca 403 hatası alırsın) ---
+MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiIyZGE3a2Y4amYiLCJpZGVudGl0eSI6ImVuZHVzZXIiLCJhbm9ueW1vdXMiOmZhbHNlLCJ1c2VySWQiOiJlNGMzYWY2Yi05YWQyLTQ3NDYtYTVlNC0yNGQ1ODQyNjZmYzMiLCJjbGFpbXMiOnsiZW1haWwiOiJmYXRtYW51cnJrcmttenoxODZAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJwaXJ0aXN0YW4iLCJwcm9maWxlSWQiOiJVUkNNUURMRExYSkxITFBGQkFOMFpJOVYiLCJwcm9maWxlQXZhdGFyIjoiUCIsImlzS2lkUHJvZmlsZSI6ZmFsc2V9LCJzZXNzaW9uSWQiOiIyOTVhNWM4N2RlYTk0Y2FhOTcyOTZlYzY2OWNiYjBmZCIsImlhdCI6MTc2OTE5NjA1MywiZXhwIjoxNzcxNzg4MDUzfQ.yKLLAEotOL9BWz3oFDsVyos7zcfMxnPFgRJpmsn50B6IbBe3SMgeZo02X0ghZdz93xB5kUETdBlDRmt1QHzAJ_7z_4qOLukh-z2pnPeaImVT-fRZGjK4Ez--GjRS_sOdnXgNVIdzYkiEsqyVabi8wL46K0C-1oo5B9bJ7sjAxaadAAs4rFKQ-bKx-c1rKgOso31XArEn3zIo0bhjhuvuOECNwvVbDu5Dg2LcgqkbDRA8LQ37iDudkaAwF9jVnxTNHLzmrxMf6KwftzgdmkIoizrsThFw1vVJWXTdaXNXlS5ZbOvC-iQ3UH3gAk2Yjv6gDxk0YgvRRYsDE3vwNKrbeQ"
 
-# --- SABİTLER ---
+# --- PROJE VE PROFİL ID'LERİ ---
 PROJECT_ID = "2da7kf8jf"
-PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V" 
+ADULT_PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V" # Yetişkin (Film/Dizi/Program)
+KIDS_PROFILE_ID = "KIBPFC0Q9Z08Q1UMMJTO61NI"  # Çocuk (Kids - Senin verdiğin ID)
 
-# Çalışan Kategoriler
-TARGET_SLUGS = ["%2Ffilm", "%2Fdizi", "%2Fprogram"]
-# Kids için ayrı profil ID gerektiğinden şimdilik çıkardık.
+TARGETS = [
+    {
+        "name": "Film",
+        "profile_id": ADULT_PROFILE_ID,
+        "url_param": "slug=%2Ffilm"
+    },
+    {
+        "name": "Dizi",
+        "profile_id": ADULT_PROFILE_ID,
+        "url_param": "slug=%2Fdizi"
+    },
+    {
+        "name": "Program",
+        "profile_id": ADULT_PROFILE_ID,
+        "url_param": "slug=%2Fprogram"
+    },
+    {
+        "name": "Kids",
+        "profile_id": KIDS_PROFILE_ID,
+        "url_param": "categoryName=MAIN-PAGE" # Kids için özel parametre
+    }
+]
 
-# URL Şablonları
-CATEGORY_URL_TEMPLATE = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaylistsByCategory/{PROFILE_ID}?slug={{}}&__culture=tr-tr"
-PLAYBACK_URL_TEMPLATE = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaybackInfo/{PROFILE_ID}/"
+BASE_API = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -26,14 +44,16 @@ HEADERS = {
     "Referer": "https://www.gain.tv/"
 }
 
-def get_contents_from_slug(slug):
-    """Kategoriyi tarar"""
+def get_contents(target):
+    profile_id = target["profile_id"]
+    param = target["url_param"]
+    cat_name = target["name"]
+    target_url = f"{BASE_API}/getPlaylistsByCategory/{profile_id}?{param}&__culture=tr-tr"
+    
     auth_headers = HEADERS.copy()
     auth_headers["Authorization"] = f"Bearer {MANUAL_TOKEN}"
     
-    target_url = CATEGORY_URL_TEMPLATE.format(slug)
-    readable_slug = slug.replace("%2F", "/")
-    print(f"\n🌍 '{readable_slug}' sayfası taranıyor...")
+    print(f"\n🌍 '{cat_name}' sayfası taranıyor...")
     
     try:
         response = requests.get(target_url, headers=auth_headers)
@@ -52,51 +72,39 @@ def get_contents_from_slug(slug):
         print(f"   📦 {len(playlists)} farklı raf bulundu.")
 
         for playlist in playlists:
-            # Raf başlığı (Örn: Aksiyon, Komedi)
-            cat_title = playlist.get("title", "Genel")
+            shelf_title = playlist.get("title", "Genel")
             items = playlist.get("items", [])
-            
             for item in items:
                 direct_id = item.get("videoContentId")
                 title = item.get("name") or item.get("title") or item.get("originalTitle")
                 poster = item.get("logoImageUrl") or item.get("posterImageUrl")
-                
-                # Türü temizleyelim (Slug'a göre manuel belirleyelim daha temiz olur)
-                clean_type = readable_slug.replace("/", "").capitalize() # Film, Dizi...
-
                 if direct_id:
                     items_found.append({
                         "id": direct_id,
                         "title": title,
-                        "category": clean_type, # Ana Kategori (Dizi/Film)
-                        "sub_category": cat_title, # Alt Kategori (Aksiyon/Komedi)
-                        "poster": poster or ""
+                        "category": cat_name,
+                        "sub_category": shelf_title,
+                        "poster": poster or "",
+                        "profile_id": profile_id
                     })
-        
-        print(f"   ✅ '{readable_slug}' içinden {len(items_found)} içerik alındı.")
+        print(f"   ✅ '{cat_name}' kategorisinden {len(items_found)} içerik alındı.")
         return items_found
-
     except Exception as e:
-        print(f"🔥 Hata ({readable_slug}): {e}")
+        print(f"🔥 Hata ({cat_name}): {e}")
         return []
 
 def get_stream_url(content):
-    """Yayın linkini çeker"""
-    params = {
-        "videoContentId": content["id"], 
-        "packageType": "Dash",
-        "__culture": "tr-tr"
-    }
+    profile_id = content["profile_id"]
+    params = {"videoContentId": content["id"], "packageType": "Dash", "__culture": "tr-tr"}
     auth_headers = HEADERS.copy()
     auth_headers["Authorization"] = f"Bearer {MANUAL_TOKEN}"
     
     try:
-        response = requests.get(PLAYBACK_URL_TEMPLATE, headers=auth_headers, params=params)
+        response = requests.get(f"{BASE_API}/getPlaybackInfo/{profile_id}/", headers=auth_headers, params=params)
         if response.status_code == 200:
             data = response.json()
             current = data.get("currentVideoContent", {})
             playback_url = current.get("playbackUrl")
-            
             if playback_url:
                 content["stream_url"] = playback_url
                 content["license_url"] = current.get("licenseUrl")
@@ -106,20 +114,15 @@ def get_stream_url(content):
     return None
 
 def save_as_m3u(data_list, filename="fanatik_gain.m3u"):
-    """Listeyi M3U formatında kaydeder"""
     print(f"\n📺 M3U dosyası oluşturuluyor: {filename}...")
     try:
         with open(filename, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for item in data_list:
-                # M3U Formatı Hazırlığı
                 title = item.get("title", "Bilinmeyen")
-                # Grup Başlığı: Gain - Dizi, Gain - Film vs.
                 group = f"Gain - {item.get('category', 'Genel')}"
                 logo = item.get("poster", "")
                 url = item.get("stream_url", "")
-                
-                # User-Agent header ekleyelim (Bazı oynatıcılar için gereklidir)
                 f.write(f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}", {title}\n')
                 f.write('#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)\n')
                 f.write(f"{url}\n")
@@ -135,10 +138,9 @@ def main():
     all_content = []
     processed_ids = set()
 
-    # 1. ADIM: Kategorileri Gez
-    for slug in TARGET_SLUGS:
-        slug_items = get_contents_from_slug(slug)
-        for item in slug_items:
+    for target in TARGETS:
+        target_items = get_contents(target)
+        for item in target_items:
             if item["id"] not in processed_ids:
                 all_content.append(item)
                 processed_ids.add(item["id"])
@@ -150,27 +152,18 @@ def main():
         return
 
     print(f"\n🚀 TOPLAM {total} BENZERSİZ İÇERİK BULUNDU! Linkler çekiliyor...")
-
     final_list = []
     for i, content in enumerate(all_content):
         full_data = get_stream_url(content)
         if full_data:
+            if "profile_id" in full_data: del full_data["profile_id"]
             final_list.append(full_data)
-        
-        if (i + 1) % 20 == 0:
-            print(f"   👍 {i+1} içerik tarandı... ({len(final_list)} başarılı)")
-            
+        if (i + 1) % 20 == 0: print(f"   👍 {i+1} içerik tarandı... ({len(final_list)} başarılı)")
         time.sleep(0.05)
 
-    # 2. ADIM: JSON Kaydet
-    json_filename = "gain_full_archive.json"
-    print(f"\n💾 JSON kaydediliyor: {json_filename}...")
-    with open(json_filename, "w", encoding="utf-8") as f:
+    with open("gain_full_archive.json", "w", encoding="utf-8") as f:
         json.dump(final_list, f, indent=4, ensure_ascii=False)
-    
-    # 3. ADIM: M3U Kaydet
     save_as_m3u(final_list, "fanatik_gain.m3u")
-
     print("\n🏁 TÜM İŞLEMLER TAMAMLANDI!")
 
 if __name__ == "__main__":
