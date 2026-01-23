@@ -1,0 +1,41 @@
+name: Gain Scraper
+
+on:
+  workflow_dispatch: # Manuel tetikleme butonu
+  schedule:
+    - cron: '0 0 * * *' # Her gece 00:00'da çalışır
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Depoyu Çek (Checkout)
+      uses: actions/checkout@v3
+
+    - name: Python Kur
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Kütüphaneleri Yükle
+      run: pip install -r requirements.txt
+
+    - name: Botu Çalıştır
+      run: python main.py
+
+    - name: Veriyi Kaydet (Commit & Push)
+      run: |
+        git config --global user.name "GainBot"
+        git config --global user.email "bot@github.com"
+        # Dosya varsa commit et, yoksa hata verip durma
+        if [ -f gain_data.json ]; then
+          git add gain_data.json
+          git commit -m "Veriler güncellendi" || echo "Değişiklik yok"
+          git push
+        else
+          echo "gain_data.json oluşmadı, commit atlanıyor."
+        fi
