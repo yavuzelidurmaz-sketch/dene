@@ -22,7 +22,7 @@ jobs:
         python-version: '3.9'
 
     - name: Kütüphaneleri Yükle
-      run: pip install -r requirements.txt
+      run: pip install requests
 
     - name: Botu Çalıştır
       run: python main.py
@@ -31,11 +31,13 @@ jobs:
       run: |
         git config --global user.name "GainBot"
         git config --global user.email "bot@github.com"
-        # Dosya varsa commit et, yoksa hata verip durma
-        if [ -f gain_data.json ]; then
-          git add gain_data.json
-          git commit -m "Veriler güncellendi" || echo "Değişiklik yok"
+        
+        # Yeni dosya adını (gain_movies.json) ekliyoruz
+        if [ -f gain_movies.json ]; then
+          git add gain_movies.json
+          git commit -m "Film listesi güncellendi $(date)" || echo "Değişiklik yok"
           git push
         else
-          echo "gain_data.json oluşmadı, commit atlanıyor."
+          echo "⚠️ gain_movies.json dosyası bulunamadı!"
+          exit 1
         fi
