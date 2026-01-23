@@ -9,8 +9,9 @@ MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiIyZGE3a2Y
 PROJECT_ID = "2da7kf8jf"
 PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V" 
 
-# Hedef Kategoriler (Sunucuya uygun şifreli halleri)
-TARGET_SLUGS = ["%2Ffilm", "%2Fdizi", "%2Fprogram", "%2Fkids", "%2Fbelgesel"]
+# Çalışan Kategoriler
+TARGET_SLUGS = ["%2Ffilm", "%2Fdizi", "%2Fprogram"]
+# Kids için ayrı profil ID gerektiğinden şimdilik çıkardık.
 
 # URL Şablonları
 CATEGORY_URL_TEMPLATE = f"https://api.gain.tv/{PROJECT_ID}/CALL/ProfileTitle/getPlaylistsByCategory/{PROFILE_ID}?slug={{}}&__culture=tr-tr"
@@ -26,7 +27,7 @@ HEADERS = {
 }
 
 def get_contents_from_slug(slug):
-    """Kategoriyi tarar, boş dönerse sebebini yazar"""
+    """Kategoriyi tarar"""
     auth_headers = HEADERS.copy()
     auth_headers["Authorization"] = f"Bearer {MANUAL_TOKEN}"
     
@@ -36,30 +37,22 @@ def get_contents_from_slug(slug):
     
     try:
         response = requests.get(target_url, headers=auth_headers)
-        
-        # Hata Kontrolü 1: HTTP Hatası var mı?
         if response.status_code != 200:
-            print(f"   ❌ HTTP Hatası: {response.status_code}")
+            print(f"   ❌ Erişim Hatası: {response.status_code}")
             return []
 
         data = response.json()
-        
-        # Hata Kontrolü 2: Gain 'Success: false' dedi mi?
-        if not data.get("Success", True): # Bazen Success alanı hiç gelmeyebilir, o yüzden default True
-             print(f"   ⚠️ API Uyarısı: {data.get('Message')}")
-
         playlists = data.get("playlists", [])
         
-        # Eğer liste boşsa sunucu cevabını görelim
         if not playlists:
-            print(f"   ⚠️ Liste boş geldi! Sunucu cevabı şuydu:")
-            print(json.dumps(data, indent=2, ensure_ascii=False)[:500]) # İlk 500 karakter
+            print(f"   ⚠️ Liste boş geldi.")
             return []
 
         items_found = []
         print(f"   📦 {len(playlists)} farklı raf bulundu.")
 
         for playlist in playlists:
+            # Raf başlığı (Örn: Aksiyon, Komedi)
             cat_title = playlist.get("title", "Genel")
             items = playlist.get("items", [])
             
@@ -67,16 +60,17 @@ def get_contents_from_slug(slug):
                 direct_id = item.get("videoContentId")
                 title = item.get("name") or item.get("title") or item.get("originalTitle")
                 poster = item.get("logoImageUrl") or item.get("posterImageUrl")
-                ctype = item.get("contentType", {}).get("text", "Bilinmiyor")
+                
+                # Türü temizleyelim (Slug'a göre manuel belirleyelim daha temiz olur)
+                clean_type = readable_slug.replace("/", "").capitalize() # Film, Dizi...
 
                 if direct_id:
                     items_found.append({
                         "id": direct_id,
                         "title": title,
-                        "category": cat_title,
-                        "type": ctype,
-                        "poster": poster,
-                        "source": readable_slug
+                        "category": clean_type, # Ana Kategori (Dizi/Film)
+                        "sub_category": cat_title, # Alt Kategori (Aksiyon/Komedi)
+                        "poster": poster or ""
                     })
         
         print(f"   ✅ '{readable_slug}' içinden {len(items_found)} içerik alındı.")
@@ -100,7 +94,6 @@ def get_stream_url(content):
         response = requests.get(PLAYBACK_URL_TEMPLATE, headers=auth_headers, params=params)
         if response.status_code == 200:
             data = response.json()
-            # Yeni yapıya göre linki alıyoruz
             current = data.get("currentVideoContent", {})
             playback_url = current.get("playbackUrl")
             
@@ -112,6 +105,28 @@ def get_stream_url(content):
         pass
     return None
 
+def save_as_m3u(data_list, filename="fanatik_gain.m3u"):
+    """Listeyi M3U formatında kaydeder"""
+    print(f"\n📺 M3U dosyası oluşturuluyor: {filename}...")
+    try:
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for item in data_list:
+                # M3U Formatı Hazırlığı
+                title = item.get("title", "Bilinmeyen")
+                # Grup Başlığı: Gain - Dizi, Gain - Film vs.
+                group = f"Gain - {item.get('category', 'Genel')}"
+                logo = item.get("poster", "")
+                url = item.get("stream_url", "")
+                
+                # User-Agent header ekleyelim (Bazı oynatıcılar için gereklidir)
+                f.write(f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}", {title}\n')
+                f.write('#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)\n')
+                f.write(f"{url}\n")
+        print("✅ M3U Kaydedildi!")
+    except Exception as e:
+        print(f"❌ M3U Hatası: {e}")
+
 def main():
     if "BURAYA" in MANUAL_TOKEN:
         print("⛔ Lütfen Token'ı girmeyi unutma!")
@@ -120,7 +135,7 @@ def main():
     all_content = []
     processed_ids = set()
 
-    # 1. ADIM: Tüm Kategorileri Gez
+    # 1. ADIM: Kategorileri Gez
     for slug in TARGET_SLUGS:
         slug_items = get_contents_from_slug(slug)
         for item in slug_items:
@@ -131,8 +146,7 @@ def main():
 
     total = len(all_content)
     if total == 0:
-        print("\n⛔ HİÇBİR İÇERİK BULUNAMADI.")
-        print("👉 Lütfen tarayıcıdan YENİ BİR TOKEN alıp kodu güncelle.")
+        print("\n⛔ HİÇBİR İÇERİK BULUNAMADI. Token'ı yenilemen gerekiyor.")
         return
 
     print(f"\n🚀 TOPLAM {total} BENZERSİZ İÇERİK BULUNDU! Linkler çekiliyor...")
@@ -148,12 +162,16 @@ def main():
             
         time.sleep(0.05)
 
-    # Dosya adını 'archive' yaptık ki hepsi bir olsun
-    filename = "gain_full_archive.json"
-    print(f"\n💾 {len(final_list)} içerik '{filename}' dosyasına kaydediliyor...")
-    with open(filename, "w", encoding="utf-8") as f:
+    # 2. ADIM: JSON Kaydet
+    json_filename = "gain_full_archive.json"
+    print(f"\n💾 JSON kaydediliyor: {json_filename}...")
+    with open(json_filename, "w", encoding="utf-8") as f:
         json.dump(final_list, f, indent=4, ensure_ascii=False)
-    print("🏁 OPERASYON TAMAMLANDI!")
+    
+    # 3. ADIM: M3U Kaydet
+    save_as_m3u(final_list, "fanatik_gain.m3u")
+
+    print("\n🏁 TÜM İŞLEMLER TAMAMLANDI!")
 
 if __name__ == "__main__":
     main()
