@@ -32,12 +32,12 @@ jobs:
         git config --global user.name "GainBot"
         git config --global user.email "bot@github.com"
         
-        # Yeni dosya adını (gain_movies.json) ekliyoruz
+        # HATA DÜZELTİLDİ: Artık doğru dosya adını (gain_movies.json) ekliyoruz
         if [ -f gain_movies.json ]; then
           git add gain_movies.json
           git commit -m "Film listesi güncellendi $(date)" || echo "Değişiklik yok"
           git push
         else
-          echo "⚠️ gain_movies.json dosyası bulunamadı!"
+          echo "⚠️ gain_movies.json dosyası bulunamadı, bir şeyler ters gitti!"
           exit 1
         fi
