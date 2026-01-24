@@ -1,29 +1,23 @@
 import requests
 import json
 import os
-import sys
 
-# Token'ı GitHub Secrets'tan alıyoruz (Güvenlik için)
-TOKEN = os.environ.get("SSPORT_TOKEN")
+# --- AYARLAR (TOKEN İÇİNDE GÖMÜLÜ) ---
+TOKEN = "59790226f62e8e4df21962131f0f431dc9500f289c8d40ee1f8e359df201ee64565485371940835d426b5b777fb896db"
 
-if not TOKEN:
-    print("HATA: Token bulunamadı! Lütfen GitHub Secrets'a 'SSPORT_TOKEN' ekleyin.")
-    sys.exit(1)
-
-# API Ayarları
 HEADERS = {
     "Authorization": f"Bearer {TOKEN}",
     "Content-Type": "application/json",
     "Origin": "https://app.ssportplus.com",
     "Referer": "https://app.ssportplus.com/",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
-    "uilanguage": "tr"
+    "uilanguage": "tr",
+    "sngt": "1079460410356963642469465811" # cURL'den gelen güvenlik parametresi
 }
 
-API_BASE = "https://api.ssportplus.com/MW"
-
 def veri_cek():
-    endpoint = f"{API_BASE}/GetCurrentLiveContents"
+    url = "https://api.ssportplus.com/MW/GetCurrentLiveContents"
+    
     payload = {
         "action": "GetCurrentLiveContents",
         "pageNumber": 1,
@@ -31,23 +25,31 @@ def veri_cek():
         "TSID": 1769277736
     }
     
-    print("Veri çekiliyor...")
+    print("Veriler çekiliyor...")
+    
     try:
-        response = requests.post(endpoint, headers=HEADERS, json=payload)
+        response = requests.post(url, headers=HEADERS, json=payload)
+        
         if response.status_code == 200:
             data = response.json()
             
             # Veriyi dosyaya yaz
             with open("canli_yayinlar.json", "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4, ensure_ascii=False)
-            print("✅ Veri başarıyla güncellendi: canli_yayinlar.json")
+            
+            print("✅ İŞLEM BAŞARILI! 'canli_yayinlar.json' oluşturuldu.")
+            
+            # Örnek olarak kaç yayın olduğunu yazdıralım
+            if "Data" in data:
+                print(f"Toplam {len(data['Data'])} adet canlı yayın bulundu.")
         else:
-            print(f"❌ Hata: {response.status_code} - {response.text}")
-            sys.exit(1) # Hata varsa Action'ı durdur
+            print(f"❌ HATA: {response.status_code}")
+            print(response.text)
+            exit(1) # GitHub Action hatayı görsün diye
             
     except Exception as e:
-        print(f"Script hatası: {e}")
-        sys.exit(1)
+        print(f"Kod hatası: {e}")
+        exit(1)
 
 if __name__ == "__main__":
     veri_cek()
