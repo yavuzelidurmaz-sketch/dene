@@ -1,19 +1,19 @@
-name: S Sport Otomatik Bot
+name: S Sport Proxy Bot
 
 on:
-  workflow_dispatch:      # Butona basınca çalıştır
+  workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *' # Her 2 saatte bir çalıştır
+    - cron: '0 */3 * * *' # 3 saatte bir
 
 permissions:
   contents: write
 
 jobs:
-  veri-guncelle:
+  run-bot:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Depoyu Çek
+      - name: Kodları Çek
         uses: actions/checkout@v3
 
       - name: Python Kur
@@ -22,15 +22,15 @@ jobs:
           python-version: '3.9'
 
       - name: Kütüphaneleri Yükle
-        run: pip install -r requirements.txt
+        run: pip install requests
 
-      - name: Scripti Çalıştır
+      - name: Botu Çalıştır
         run: python main.py
 
-      - name: Sonucu Kaydet (Push)
+      - name: Sonucu Kaydet
         run: |
-          git config --global user.name "S Sport Bot"
+          git config --global user.name "Bot"
           git config --global user.email "bot@github.com"
           git add canli_yayinlar.json
-          git commit -m "Otomatik güncelleme: $(date)" || echo "Değişiklik yok"
+          git commit -m "Veri guncellendi" || echo "Degisiklik yok"
           git push
