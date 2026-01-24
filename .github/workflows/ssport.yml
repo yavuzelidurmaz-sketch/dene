@@ -1,0 +1,43 @@
+name: S Sport Veri Güncelleyici
+
+on:
+  # 1. Belirli zamanlarda otomatik çalış (UTC saatiyle)
+  schedule:
+    - cron: '0 */3 * * *'  # Her 3 saatte bir çalışır. (İstersen '*/30 * * * *' yaparak 30 dakikada bir yapabilirsin)
+  
+  # 2. GitHub sayfasından butona basarak manuel çalıştırabilmek için
+  workflow_dispatch:
+
+permissions:
+  contents: write  # JSON dosyasını repoya geri yüklemek (push) için izin
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Depoyu Çek (Checkout)
+      uses: actions/checkout@v3
+
+    - name: Python Kurulumu
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Kütüphaneleri Yükle
+      run: |
+        pip install requests
+
+    - name: Python Scriptini Çalıştır
+      env:
+        SSPORT_TOKEN: ${{ secrets.SSPORT_TOKEN }} # Secret'ı buraya bağlıyoruz
+      run: python main2.py
+
+    - name: Değişiklikleri Kontrol Et ve Pushla
+      run: |
+        git config --global user.name "GitHub Action Bot"
+        git config --global user.email "actions@github.com"
+        git add canli_yayinlar.json
+        # Eğer değişiklik yoksa hata vermemesi için "|| exit 0" ekledik
+        git commit -m "Veriler güncellendi: $(date)" || exit 0
+        git push
