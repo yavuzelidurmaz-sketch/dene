@@ -1,181 +1,1325 @@
-import requests
-from bs4 import BeautifulSoup
-import json
-import re
-import time
-from datetime import datetime
-
-# --- AYARLAR ---
-BASE_URL = "https://betparktv252.com"  
-OUTPUT_FILE = "data.json"
-
-# Bot olduğumuzu gizlemek için
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Referer": "https://www.google.com/",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
-}
-
-def extract_m3u8(iframe_url):
-    """
-    Iframe adresine gidip JavaScript değişkenleri içine gizlenmiş .m3u8 linkini bulur.
-    """
-    if not iframe_url:
-        return None
-    
-    try:
-        # Iframe'e giderken Referer olarak ana siteyi gösteriyoruz (Çok Önemli!)
-        frame_headers = HEADERS.copy()
-        frame_headers["Referer"] = BASE_URL
-        
-        # Iframe içeriğini çek
-        response = requests.get(iframe_url, headers=frame_headers, timeout=10)
-        
-        if response.status_code == 200:
-            content = response.text
-            
-            # --- YÖNTEM 1: Basit .m3u8 arama ---
-            # "http... .m3u8" kalıbını arar
-            simple_pattern = r'(https?://[^\s"\']+\.m3u8[^\s"\']*)'
-            matches = re.search(simple_pattern, content)
-            if matches:
-                return matches.group(1).replace('\\/', '/')
-
-            # --- YÖNTEM 2: Oynatıcı değişkenlerini arama (Kakirikodes vb. için) ---
-            # source: "..." veya file: "..." şeklindeki yapıları arar
-            player_pattern = r'(?:source|file|src)\s*:\s*["\']([^"\']+)["\']'
-            matches_js = re.findall(player_pattern, content)
-            
-            for match in matches_js:
-                if ".m3u8" in match:
-                    # Bazen link relative (kısmi) olabilir, onu tamamlama mantığı eklenebilir
-                    # Ama genelde bu playerlar full link verir.
-                    return match.replace('\\/', '/')
-
-            # --- YÖNTEM 3: JSON içindeki url'i arama ---
-            # Bazen veri json objesi içindedir
-            json_pattern = r'["\'](https?://.*?\.m3u8.*?)["\']'
-            matches_json = re.search(json_pattern, content)
-            if matches_json:
-                return matches_json.group(1).replace('\\/', '/')
-
-    except Exception as e:
-        print(f"   [!] M3U8 Hatası ({iframe_url}): {e}")
-    
-    return None
-
-def main():
-    print(f"[{datetime.now()}] Tarama Başlıyor: {BASE_URL}")
-    
-    try:
-        response = requests.get(BASE_URL, headers=HEADERS, timeout=15)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'lxml')
-        
-        # JSON İskeleti
-        data = {
-            "meta": {
-                "updated_at": str(datetime.now()),
-                "source": BASE_URL,
-                "note": "Stream linklerini oynatırken Header göndermeyi unutmayın."
-            },
-            "channels": [],
-            "matches": []
+{
+    "meta": {
+        "updated_at": "2026-01-24 19:06:53.506305",
+        "source": "https://betparktv252.com",
+        "note": "Stream linklerini oynatırken Header göndermeyi unutmayın."
+    },
+    "channels": [
+        {
+            "name": "Bein Sports 1",
+            "slug": "Bein-Sports-1",
+            "logo": "https://betparktv252.com/tv/bein-sports-1",
+            "url": "https://betparktv252.com/kanal/Bein-Sports-1"
+        },
+        {
+            "name": "Bein Sports 1 HD Alternatif",
+            "slug": "Bein-Sports-1-HD-Alternatif",
+            "logo": "https://betparktv252.com/tv/bein-sports-1-hd-alternatif",
+            "url": "https://betparktv252.com/kanal/Bein-Sports-1-HD-Alternatif"
+        },
+        {
+            "name": "Bein Sports 1 Alternatif",
+            "slug": "Bein-Sports-1-Alternatif",
+            "logo": "https://betparktv252.com/tv/bein-sports-1-alternatif",
+            "url": "https://betparktv252.com/kanal/Bein-Sports-1-Alternatif"
+        },
+        {
+            "name": "Bein Sports 2",
+            "slug": "Bein-Sports-2",
+            "logo": "https://betparktv252.com/tv/bein-sports-2",
+            "url": "https://betparktv252.com/kanal/Bein-Sports-2"
+        },
+        {
+            "name": "Bein Sports 3",
+            "slug": "Bein-Sports-3",
+            "logo": "https://betparktv252.com/tv/bein-sports-3",
+            "url": "https://betparktv252.com/kanal/Bein-Sports-3"
+        },
+        {
+            "name": "Bein Sports 4",
+            "slug": "Bein-Sports-4",
+            "logo": "https://betparktv252.com/tv/bein-sports-4",
+            "url": "https://betparktv252.com/kanal/Bein-Sports-4"
+        },
+        {
+            "name": "Bein Sports 5",
+            "slug": "Bein-Sports-5",
+            "logo": "https://betparktv252.com/tv/bein-sports-5",
+            "url": "https://betparktv252.com/kanal/Bein-Sports-5"
+        },
+        {
+            "name": "Bein Spor Max 1",
+            "slug": "Bein-Spor-Max-1",
+            "logo": "https://betparktv252.com/tv/bein-spor-max-1",
+            "url": "https://betparktv252.com/kanal/Bein-Spor-Max-1"
+        },
+        {
+            "name": "Bein Sports Max 2",
+            "slug": "Bein-Sports-Max-2",
+            "logo": "https://betparktv252.com/tv/bein-sports-max-2",
+            "url": "https://betparktv252.com/kanal/Bein-Sports-Max-2"
+        },
+        {
+            "name": "Bein Connect 1",
+            "slug": "Bein-Connect-1",
+            "logo": "https://betparktv252.com/tv/bein-connect-1",
+            "url": "https://betparktv252.com/kanal/Bein-Connect-1"
+        },
+        {
+            "name": "Bein Connect 2",
+            "slug": "Bein-Connect-2",
+            "logo": "https://betparktv252.com/tv/bein-connect-2",
+            "url": "https://betparktv252.com/kanal/Bein-Connect-2"
+        },
+        {
+            "name": "Bein Connect 3",
+            "slug": "Bein-Connect-3",
+            "logo": "https://betparktv252.com/tv/bein-connect-3",
+            "url": "https://betparktv252.com/kanal/Bein-Connect-3"
+        },
+        {
+            "name": "Bein Connect 4",
+            "slug": "Bein-Connect-4",
+            "logo": "https://betparktv252.com/tv/bein-connect-4",
+            "url": "https://betparktv252.com/kanal/Bein-Connect-4"
+        },
+        {
+            "name": "Bein Sports Haber",
+            "slug": "Bein-Sports-Haber",
+            "logo": "https://betparktv252.com/tv/bein-sports-haber",
+            "url": "https://betparktv252.com/kanal/Bein-Sports-Haber"
+        },
+        {
+            "name": "TRT 1",
+            "slug": "TRT-1",
+            "logo": "https://betparktv252.com/tv/trt-1",
+            "url": "https://betparktv252.com/kanal/TRT-1"
+        },
+        {
+            "name": "TRT Spor",
+            "slug": "TRT-Spor",
+            "logo": "https://betparktv252.com/tv/trt-spor",
+            "url": "https://betparktv252.com/kanal/TRT-Spor"
+        },
+        {
+            "name": "TRT Spor 2",
+            "slug": "TRT-Spor-2",
+            "logo": "https://betparktv252.com/tv/trt-spor-2",
+            "url": "https://betparktv252.com/kanal/TRT-Spor-2"
+        },
+        {
+            "name": "Tivibu Spor 1",
+            "slug": "Tivibu-Spor-1",
+            "logo": "https://betparktv252.com/tv/tivibu-spor-1",
+            "url": "https://betparktv252.com/kanal/Tivibu-Spor-1"
+        },
+        {
+            "name": "Euro Sport 2",
+            "slug": "Euro-Sport-2",
+            "logo": "https://betparktv252.com/tv/euro-sport-2",
+            "url": "https://betparktv252.com/kanal/Euro-Sport-2"
+        },
+        {
+            "name": "Tivibu Spor 2",
+            "slug": "Tivibu-Spor-2",
+            "logo": "https://betparktv252.com/tv/tivibu-spor-2",
+            "url": "https://betparktv252.com/kanal/Tivibu-Spor-2"
+        },
+        {
+            "name": "Tivibu Spor 3",
+            "slug": "Tivibu-Spor-3",
+            "logo": "https://betparktv252.com/tv/tivibu-spor-3",
+            "url": "https://betparktv252.com/kanal/Tivibu-Spor-3"
+        },
+        {
+            "name": "Smart Spor",
+            "slug": "Smart-Spor",
+            "logo": "https://betparktv252.com/tv/smart-spor",
+            "url": "https://betparktv252.com/kanal/Smart-Spor"
+        },
+        {
+            "name": "Smart Spor 2",
+            "slug": "Smart-Spor-2",
+            "logo": "https://betparktv252.com/tv/smart-spor-2",
+            "url": "https://betparktv252.com/kanal/Smart-Spor-2"
+        },
+        {
+            "name": "S Sports",
+            "slug": "S-Sports",
+            "logo": "https://betparktv252.com/tv/s-sports",
+            "url": "https://betparktv252.com/kanal/S-Sports"
+        },
+        {
+            "name": "S Sports 2",
+            "slug": "S-Sports-2",
+            "logo": "https://betparktv252.com/tv/s-sports-2",
+            "url": "https://betparktv252.com/kanal/S-Sports-2"
+        },
+        {
+            "name": "Nba Tv",
+            "slug": "Nba-Tv",
+            "logo": "https://betparktv252.com/tv/nba-tv",
+            "url": "https://betparktv252.com/kanal/Nba-Tv"
+        },
+        {
+            "name": "Euro Sport 1",
+            "slug": "Euro-Sport-1",
+            "logo": "https://betparktv252.com/tv/euro-sport-1",
+            "url": "https://betparktv252.com/kanal/Euro-Sport-1"
+        },
+        {
+            "name": "A Spor",
+            "slug": "A-Spor",
+            "logo": "https://betparktv252.com/tv/a-spor",
+            "url": "https://betparktv252.com/kanal/A-Spor"
+        },
+        {
+            "name": "ATV",
+            "slug": "ATV",
+            "logo": "https://betparktv252.com/tv/atv",
+            "url": "https://betparktv252.com/kanal/ATV"
+        },
+        {
+            "name": "Tv 8",
+            "slug": "Tv-8",
+            "logo": "https://betparktv252.com/tv/tv-8",
+            "url": "https://betparktv252.com/kanal/Tv-8"
+        },
+        {
+            "name": "Star Tv",
+            "slug": "Star-Tv",
+            "logo": "https://betparktv252.com/tv/star-tv",
+            "url": "https://betparktv252.com/kanal/Star-Tv"
+        },
+        {
+            "name": "TV 8.5",
+            "slug": "TV-8.5",
+            "logo": "https://betparktv252.com/tv/tv-8.5",
+            "url": "https://betparktv252.com/kanal/TV-8.5"
+        },
+        {
+            "name": "Exxen Sport 1 HD",
+            "slug": "Exxen-Sport-1-HD",
+            "logo": "https://betparktv252.com/tv/exxen-sport-1-hd",
+            "url": "https://betparktv252.com/kanal/Exxen-Sport-1-HD"
+        },
+        {
+            "name": "Exxen Sport 2 HD",
+            "slug": "Exxen-Sport-2-HD",
+            "logo": "https://betparktv252.com/tv/exxen-sport-2-hd",
+            "url": "https://betparktv252.com/kanal/Exxen-Sport-2-HD"
+        },
+        {
+            "name": "Exxen Sport 3 HD",
+            "slug": "Exxen-Sport-3-HD",
+            "logo": "https://betparktv252.com/tv/exxen-sport-3-hd",
+            "url": "https://betparktv252.com/kanal/Exxen-Sport-3-HD"
+        },
+        {
+            "name": "Exxen Sport 4 HD",
+            "slug": "Exxen-Sport-4-HD",
+            "logo": "https://betparktv252.com/tv/exxen-sport-4-hd",
+            "url": "https://betparktv252.com/kanal/Exxen-Sport-4-HD"
+        },
+        {
+            "name": "Exxen Sport 5 HD",
+            "slug": "Exxen-Sport-5-HD",
+            "logo": "https://betparktv252.com/tv/exxen-sport-5-hd",
+            "url": "https://betparktv252.com/kanal/Exxen-Sport-5-HD"
+        },
+        {
+            "name": "Exxen Sport 6 HD",
+            "slug": "Exxen-Sport-6-HD",
+            "logo": "https://betparktv252.com/tv/exxen-sport-6-hd",
+            "url": "https://betparktv252.com/kanal/Exxen-Sport-6-HD"
+        },
+        {
+            "name": "Ssport Plus 1",
+            "slug": "Ssport-Plus-1",
+            "logo": "https://betparktv252.com/tv/ssport-plus-1",
+            "url": "https://betparktv252.com/kanal/Ssport-Plus-1"
+        },
+        {
+            "name": "Exxen Sport 7 HD",
+            "slug": "Exxen-Sport-7-HD",
+            "logo": "https://betparktv252.com/tv/exxen-sport-7-hd",
+            "url": "https://betparktv252.com/kanal/Exxen-Sport-7-HD"
+        },
+        {
+            "name": "Ssport Plus 2",
+            "slug": "Ssport-Plus-2",
+            "logo": "https://betparktv252.com/tv/ssport-plus-2",
+            "url": "https://betparktv252.com/kanal/Ssport-Plus-2"
+        },
+        {
+            "name": "Exxen Sport 8 HD",
+            "slug": "Exxen-Sport-8-HD",
+            "logo": "https://betparktv252.com/tv/exxen-sport-8-hd",
+            "url": "https://betparktv252.com/kanal/Exxen-Sport-8-HD"
+        },
+        {
+            "name": "GS TV",
+            "slug": "GS-TV",
+            "logo": "https://betparktv252.com/tv/gs-tv",
+            "url": "https://betparktv252.com/kanal/GS-TV"
+        },
+        {
+            "name": "Ht Spor",
+            "slug": "Ht-Spor",
+            "logo": "https://betparktv252.com/tv/ht-spor",
+            "url": "https://betparktv252.com/kanal/Ht-Spor"
+        },
+        {
+            "name": "Tabii ",
+            "slug": "Tabii-",
+            "logo": "https://betparktv252.com/tv/tabii-",
+            "url": "https://betparktv252.com/kanal/Tabii-"
+        },
+        {
+            "name": "Tabii 1",
+            "slug": "Tabii-1",
+            "logo": "https://betparktv252.com/tv/tabii-1",
+            "url": "https://betparktv252.com/kanal/Tabii-1"
+        },
+        {
+            "name": "Tabii 2",
+            "slug": "Tabii-2",
+            "logo": "https://betparktv252.com/tv/tabii-2",
+            "url": "https://betparktv252.com/kanal/Tabii-2"
+        },
+        {
+            "name": "Tabii 3",
+            "slug": "Tabii-3",
+            "logo": "https://betparktv252.com/tv/tabii-3",
+            "url": "https://betparktv252.com/kanal/Tabii-3"
+        },
+        {
+            "name": "Tabii 4",
+            "slug": "Tabii-4",
+            "logo": "https://betparktv252.com/tv/tabii-4",
+            "url": "https://betparktv252.com/kanal/Tabii-4"
+        },
+        {
+            "name": "Tabii 5",
+            "slug": "Tabii-5",
+            "logo": "https://betparktv252.com/tv/tabii-5",
+            "url": "https://betparktv252.com/kanal/Tabii-5"
+        },
+        {
+            "name": "Tabii 6",
+            "slug": "Tabii-6",
+            "logo": "https://betparktv252.com/tv/tabii-6",
+            "url": "https://betparktv252.com/kanal/Tabii-6"
+        },
+        {
+            "name": "Tabii 7",
+            "slug": "Tabii-7",
+            "logo": "https://betparktv252.com/tv/tabii-7",
+            "url": "https://betparktv252.com/kanal/Tabii-7"
+        },
+        {
+            "name": "Tabii 8",
+            "slug": "Tabii-8",
+            "logo": "https://betparktv252.com/tv/tabii-8",
+            "url": "https://betparktv252.com/kanal/Tabii-8"
+        },
+        {
+            "name": "Tabii 9",
+            "slug": "Tabii-9",
+            "logo": "https://betparktv252.com/tv/tabii-9",
+            "url": "https://betparktv252.com/kanal/Tabii-9"
+        },
+        {
+            "name": "Tabii 10",
+            "slug": "Tabii-10",
+            "logo": "https://betparktv252.com/tv/tabii-10",
+            "url": "https://betparktv252.com/kanal/Tabii-10"
+        },
+        {
+            "name": "Tabii 1 Yedek",
+            "slug": "Tabii-1-Yedek",
+            "logo": "https://betparktv252.com/tv/tabii-1-yedek",
+            "url": "https://betparktv252.com/kanal/Tabii-1-Yedek"
+        },
+        {
+            "name": "Tabii 2 Yedek",
+            "slug": "Tabii-2-Yedek",
+            "logo": "https://betparktv252.com/tv/tabii-2-yedek",
+            "url": "https://betparktv252.com/kanal/Tabii-2-Yedek"
+        },
+        {
+            "name": "Tabii 3 Yedek",
+            "slug": "Tabii-3-Yedek",
+            "logo": "https://betparktv252.com/tv/tabii-3-yedek",
+            "url": "https://betparktv252.com/kanal/Tabii-3-Yedek"
+        },
+        {
+            "name": "NTV",
+            "slug": "NTV",
+            "logo": "https://betparktv252.com/tv/ntv",
+            "url": "https://betparktv252.com/kanal/NTV"
+        },
+        {
+            "name": "Private1",
+            "slug": "Private1",
+            "logo": "https://betparktv252.com/tv/private1",
+            "url": "https://betparktv252.com/kanal/Private1"
+        },
+        {
+            "name": "Private2",
+            "slug": "Private2",
+            "logo": "https://betparktv252.com/tv/private2",
+            "url": "https://betparktv252.com/kanal/Private2"
+        },
+        {
+            "name": "Private3",
+            "slug": "Private3",
+            "logo": "https://betparktv252.com/tv/private3",
+            "url": "https://betparktv252.com/kanal/Private3"
+        },
+        {
+            "name": "Private4",
+            "slug": "Private4",
+            "logo": "https://betparktv252.com/tv/private4",
+            "url": "https://betparktv252.com/kanal/Private4"
+        },
+        {
+            "name": "Private5",
+            "slug": "Private5",
+            "logo": "https://betparktv252.com/tv/private5",
+            "url": "https://betparktv252.com/kanal/Private5"
+        },
+        {
+            "name": "Private7",
+            "slug": "Private7",
+            "logo": "https://betparktv252.com/tv/private7",
+            "url": "https://betparktv252.com/kanal/Private7"
+        },
+        {
+            "name": "Private8",
+            "slug": "Private8",
+            "logo": "https://betparktv252.com/tv/private8",
+            "url": "https://betparktv252.com/kanal/Private8"
+        },
+        {
+            "name": "Private6",
+            "slug": "Private6",
+            "logo": "https://betparktv252.com/tv/private6",
+            "url": "https://betparktv252.com/kanal/Private6"
         }
-
-        # --- KANALLARI ÇEK ---
-        print("--- Kanallar Taranıyor ---")
-        channel_elements = soup.select('.channel-list .single-channel')
-        for ch in channel_elements:
-            name = ch.get('data-name')
-            stream_slug = ch.get('data-stream')
-            
-            img_tag = ch.find('img')
-            img_url = ""
-            if img_tag:
-                src = img_tag.get('src', '')
-                if src.startswith('//'):
-                    img_url = "https:" + src
-                elif src.startswith('/'):
-                    img_url = BASE_URL + src
-                else:
-                    img_url = src
-
-            # Kanalın kendi sayfasını bulup oradan m3u8 çekmek gerekebilir
-            # Şimdilik sadece ana bilgileri alıyoruz
-            data["channels"].append({
-                "name": name,
-                "slug": stream_slug,
-                "logo": img_url,
-                "url": f"{BASE_URL}/kanal/{stream_slug}"
-            })
-
-        # --- MAÇLARI ÇEK ---
-        print("--- Maçlar ve M3U8 Linkleri Taranıyor ---")
-        match_elements = soup.select('.bet-matches a.single-match')
-        
-        for match in match_elements:
-            home = match.get('data-home')
-            away = match.get('data-away')
-            match_title = f"{home} vs {away}"
-            
-            iframe_src = match.get('data-iframe')
-            
-            # Logolar
-            home_logo_tag = match.find('img', class_='homeLogo')
-            home_logo = home_logo_tag['src'] if home_logo_tag else ""
-            
-            away_logo_tag = match.find('img', class_='awayLogo')
-            away_logo = away_logo_tag['src'] if away_logo_tag else ""
-
-            print(f" > İşleniyor: {match_title}...")
-
-            # Canlı yayın linkini avla
-            real_stream_url = extract_m3u8(iframe_src)
-            
-            # Referer belirleme (Video oynatıcı bu referer olmadan çalışmaz)
-            # Genelde iframe'in ana domaini referer olarak istenir
-            referer_header = "https://sttc2.kakirikodes.shop/"
-            if iframe_src:
-                try:
-                    # Iframe domainini parse et
-                    from urllib.parse import urlparse
-                    parsed_uri = urlparse(iframe_src)
-                    referer_header = '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri)
-                except:
-                    pass
-
-            match_data = {
-                "title": match_title,
-                "home": home,
-                "away": away,
-                "time": match.get('data-saat'),
-                "sport": match.get('data-matchtype'),
-                "home_logo": home_logo,
-                "away_logo": away_logo,
-                "iframe_url": iframe_src,
-                "stream_url": real_stream_url, # <-- BURASI ARTIK DOLU OLMALI
-                "headers": {
-                    "User-Agent": HEADERS["User-Agent"],
-                    "Referer": referer_header,
-                    "Origin": referer_header.rstrip('/')
-                }
+    ],
+    "matches": [
+        {
+            "title": "Game Hunters vs Red Canids",
+            "home": "Game Hunters",
+            "away": "Red Canids",
+            "time": "19:15",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/330869.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791044",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
             }
-            
-            data["matches"].append(match_data)
-            
-            # Rate limit yememek için minik bekleme
-            time.sleep(0.2)
-
-        # JSON DOSYASINA YAZ
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-            
-        print(f"\nBaşarılı! 'data.json' dosyasına yazıldı.")
-
-    except Exception as e:
-        print(f"KRİTİK HATA: {e}")
-
-if __name__ == "__main__":
-    main()
+        },
+        {
+            "title": "Dharani Village Bihar Club vs Screaming Eagles",
+            "home": "Dharani Village Bihar Club",
+            "away": "Screaming Eagles",
+            "time": "19:45",
+            "sport": "Kriket",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790762",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "KNSA Ahmedabad vs PDEU",
+            "home": "KNSA Ahmedabad",
+            "away": "PDEU",
+            "time": "19:56",
+            "sport": "Kriket",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790795",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Paris Volley vs Chaumont Volley-Ball 52",
+            "home": "Paris Volley",
+            "away": "Chaumont Volley-Ball 52",
+            "time": "20:00",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790830",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Georgia Tech Yellow Jackets vs Clemson Tigers",
+            "home": "Georgia Tech Yellow Jackets",
+            "away": "Clemson Tigers",
+            "time": "20:00",
+            "sport": "Basketbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/118133.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790854",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Team Recrent vs Team 9pasha",
+            "home": "Team Recrent",
+            "away": "Team 9pasha",
+            "time": "20:00",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791036",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Haze Clan vs Spirit Academy",
+            "home": "Haze Clan",
+            "away": "Spirit Academy",
+            "time": "20:14",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/8870b8791f065984319f49e13b79c0e1.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791034",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Prime Legion vs Freedom Fighters",
+            "home": "Prime Legion",
+            "away": "Freedom Fighters",
+            "time": "20:21",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790846",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Sanga Milano  vs Milano Stars ",
+            "home": "Sanga Milano ",
+            "away": "Milano Stars ",
+            "time": "20:30",
+            "sport": "Basketbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790891",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Neom SC vs Al-Ahli SC",
+            "home": "Neom SC",
+            "away": "Al-Ahli SC",
+            "time": "20:30",
+            "sport": "Futbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790962",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "TuB Bocholt vs Aligse",
+            "home": "TuB Bocholt",
+            "away": "Aligse",
+            "time": "20:30",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/3d0cc3be44a72b2623b6b9e0c7720551.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791020",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "CV Barcelona  vs Grau Castello ",
+            "home": "CV Barcelona ",
+            "away": "Grau Castello ",
+            "time": "20:30",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791022",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Mumbai Indians  vs Kolkata Knight Riders ",
+            "home": "Mumbai Indians ",
+            "away": "Kolkata Knight Riders ",
+            "time": "20:35",
+            "sport": "Kriket",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790871",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Alliance vs Almaz Moscow",
+            "home": "Alliance",
+            "away": "Almaz Moscow",
+            "time": "20:40",
+            "sport": "Hockey",
+            "home_logo": "https://macdata.net/img/0eb5d0078fa61f26e2851f6f860880a3.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790912",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Georgia Bulldogs vs Texas Longhorns",
+            "home": "Georgia Bulldogs",
+            "away": "Texas Longhorns",
+            "time": "20:45",
+            "sport": "Basketbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/ji7fzc1583873324.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790966",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Leleman Valencia vs Leganes",
+            "home": "Leleman Valencia",
+            "away": "Leganes",
+            "time": "20:45",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/tm0adr1616443898.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790990",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Tarragona vs Pamesa Teruel",
+            "home": "Tarragona",
+            "away": "Pamesa Teruel",
+            "time": "20:45",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790991",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Drake Bulldogs vs Indiana State",
+            "home": "Drake Bulldogs",
+            "away": "Indiana State",
+            "time": "20:45",
+            "sport": "Basketbol",
+            "home_logo": "https://macdata.net/img/7052.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791011",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Rennes vs AS Illac",
+            "home": "Rennes",
+            "away": "AS Illac",
+            "time": "20:45",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/ypturx1473504818.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791021",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "SV Union Halle-Neustadt  vs Frisch Auf Göppingen ",
+            "home": "SV Union Halle-Neustadt ",
+            "away": "Frisch Auf Göppingen ",
+            "time": "21:00",
+            "sport": "Hentbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790925",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "PARIVISION vs FURIA",
+            "home": "PARIVISION",
+            "away": "FURIA",
+            "time": "21:00",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/861337.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790941",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Basket Girls Ancona  vs Faenza ",
+            "home": "Basket Girls Ancona ",
+            "away": "Faenza ",
+            "time": "21:00",
+            "sport": "Basketbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790964",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Plessis Robinson vs Nice Volley-Ball",
+            "home": "Plessis Robinson",
+            "away": "Nice Volley-Ball",
+            "time": "21:00",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790986",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Helios Grizzlys Giesen vs VCO Berlin",
+            "home": "Helios Grizzlys Giesen",
+            "away": "VCO Berlin",
+            "time": "21:00",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790987",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Levallois Paris Saint-Cloud  vs RC Cannes ",
+            "home": "Levallois Paris Saint-Cloud ",
+            "away": "RC Cannes ",
+            "time": "21:00",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790988",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Marcq Baroeul  vs Bordeaux Merignac ",
+            "home": "Marcq Baroeul ",
+            "away": "Bordeaux Merignac ",
+            "time": "21:00",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790989",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Team Nemesis vs GenOne",
+            "home": "Team Nemesis",
+            "away": "GenOne",
+            "time": "21:00",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790994",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Ohio State Buckeyes  vs St. Thomas ",
+            "home": "Ohio State Buckeyes ",
+            "away": "St. Thomas ",
+            "time": "21:00",
+            "sport": "Hockey",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791012",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Gil Eanes-Lagos  vs S.L. Benfica ",
+            "home": "Gil Eanes-Lagos ",
+            "away": "S.L. Benfica ",
+            "time": "21:00",
+            "sport": "Hentbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/9202.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791027",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "ex-RUBY vs Eternal Fire",
+            "home": "ex-RUBY",
+            "away": "Eternal Fire",
+            "time": "21:00",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/ab864c66ef18b0a51bc3c82569c18e23.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791033",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "India  vs Australia ",
+            "home": "India ",
+            "away": "Australia ",
+            "time": "21:05",
+            "sport": "Kriket",
+            "home_logo": "https://macdata.net/img/kgpver1597857601.png",
+            "away_logo": "https://macdata.net/img/qbo96a1591990988.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790996",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Elena Naumenko vs Daryana Volchek",
+            "home": "Elena Naumenko",
+            "away": "Daryana Volchek",
+            "time": "21:16",
+            "sport": "Tenis",
+            "home_logo": "https://macdata.net/img/30647e3d234124023cf06081cea42936.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791030",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "The Radiant vs The Dire",
+            "home": "The Radiant",
+            "away": "The Dire",
+            "time": "21:18",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790997",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Pavel Gushchin vs Sergey Filippov",
+            "home": "Pavel Gushchin",
+            "away": "Sergey Filippov",
+            "time": "21:20",
+            "sport": "Tenis",
+            "home_logo": "https://macdata.net/img/fc632bd69251f27005371f85e8675fab.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791031",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Igor Shkurin vs Yuri Fedortsov",
+            "home": "Igor Shkurin",
+            "away": "Yuri Fedortsov",
+            "time": "21:20",
+            "sport": "Masatenisi",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791052",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Pittsburgh Penguins  vs Colorado Avalanche ",
+            "home": "Pittsburgh Penguins ",
+            "away": "Colorado Avalanche ",
+            "time": "21:22",
+            "sport": "Hockey",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791017",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Fast Runners vs Millionaires",
+            "home": "Fast Runners",
+            "away": "Millionaires",
+            "time": "21:30",
+            "sport": "Kriket",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/11288812d0d8aa23de9ab1e136752556.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791040",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "BIG vs Alliance",
+            "home": "BIG",
+            "away": "Alliance",
+            "time": "21:30",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/nzzfv81564356563.png",
+            "away_logo": "https://macdata.net/img/0eb5d0078fa61f26e2851f6f860880a3.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791042",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "FORZE Reload vs rottweilers",
+            "home": "FORZE Reload",
+            "away": "rottweilers",
+            "time": "21:30",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791043",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Triumphants vs Sportable",
+            "home": "Triumphants",
+            "away": "Sportable",
+            "time": "21:30",
+            "sport": "Kriket",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790995",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Uruguay vs Peru",
+            "home": "Uruguay",
+            "away": "Peru",
+            "time": "21:30",
+            "sport": "Hentbol",
+            "home_logo": "https://macdata.net/img/bvyp1z1566382945.png",
+            "away_logo": "https://macdata.net/img/38h9vi1625195706.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791010",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Sırbistan U20 vs Yeni Zelanda U20",
+            "home": "Sırbistan U20",
+            "away": "Yeni Zelanda U20",
+            "time": "21:30",
+            "sport": "Hockey",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791013",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "ASV Dachau vs TSV Haching Munchen",
+            "home": "ASV Dachau",
+            "away": "TSV Haching Munchen",
+            "time": "21:30",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791018",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Duren vs Warnemunde",
+            "home": "Duren",
+            "away": "Warnemunde",
+            "time": "21:30",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791019",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Sant Joan  vs Paterna-Liceo ",
+            "home": "Sant Joan ",
+            "away": "Paterna-Liceo ",
+            "time": "21:30",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791023",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Torrejon  vs Cuesta Piedra Santa Crus ",
+            "home": "Torrejon ",
+            "away": "Cuesta Piedra Santa Crus ",
+            "time": "21:30",
+            "sport": "Voleybol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791024",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Rocasa Gran Canaria  vs GK Bera Bera ",
+            "home": "Rocasa Gran Canaria ",
+            "away": "GK Bera Bera ",
+            "time": "21:30",
+            "sport": "Hentbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791026",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Füchse Berlin  vs Kirchhof ",
+            "home": "Füchse Berlin ",
+            "away": "Kirchhof ",
+            "time": "21:30",
+            "sport": "Hentbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791029",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Lvy Novosibirsk vs Dynamo Omsk",
+            "home": "Lvy Novosibirsk",
+            "away": "Dynamo Omsk",
+            "time": "21:30",
+            "sport": "Hockey",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791014",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Kamil Rogowski vs Marcin Olszewski ",
+            "home": "Kamil Rogowski",
+            "away": "Marcin Olszewski ",
+            "time": "21:30",
+            "sport": "Masatenisi",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791053",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Gujarat Titans  vs Lucknow Super Giants ",
+            "home": "Gujarat Titans ",
+            "away": "Lucknow Super Giants ",
+            "time": "21:35",
+            "sport": "Kriket",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791041",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Zvezda Samara vs Medvedi Moscow",
+            "home": "Zvezda Samara",
+            "away": "Medvedi Moscow",
+            "time": "21:40",
+            "sport": "Hockey",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791015",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Sitapur Stars vs Gurugram Kings",
+            "home": "Sitapur Stars",
+            "away": "Gurugram Kings",
+            "time": "21:40",
+            "sport": "Kriket",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791039",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Igor Egorov V. vs Alexey Demidov",
+            "home": "Igor Egorov V.",
+            "away": "Alexey Demidov",
+            "time": "21:40",
+            "sport": "Masatenisi",
+            "home_logo": "https://macdata.net/img/f65c534ab21b623f1aa74bb21b5dfe55.png",
+            "away_logo": "https://macdata.net/img/2411839.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791049",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Wang An Bo vs Ye Chang Qing",
+            "home": "Wang An Bo",
+            "away": "Ye Chang Qing",
+            "time": "21:42",
+            "sport": "Masatenisi",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791045",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Eduardo Perez Moya vs Eduardo Perez Valles",
+            "home": "Eduardo Perez Moya",
+            "away": "Eduardo Perez Valles",
+            "time": "21:42",
+            "sport": "Masatenisi",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791047",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        },
+        {
+            "title": "Loud vs LOS",
+            "home": "Loud",
+            "away": "LOS",
+            "time": "22:00",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/d0m1211580590964.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791035",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Referer": "https://sttc2.kakirikodes.shop/",
+                "Origin": "https://sttc2.kakirikodes.shop"
+            }
+        }
+    ]
+}
