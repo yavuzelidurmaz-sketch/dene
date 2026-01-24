@@ -1,0 +1,23 @@
+{
+    "Rtx": 0,
+    "NextInquiryMilis": 0,
+    "Machine": "NGTV-HP07",
+    "SessionIsAlive": false,
+    "HasContent": true,
+    "RetryAfter": 0,
+    "Status": {
+        "Description": "Şu anda başka bir cihaz üzerinden oturum açmış bulunuyorsunuz, oturumunuza buradan devam etmek için lütfen diğer oturumlarınızı kapatın ve sayfayı yenileyin.",
+        "Code": 401,
+        "Level": 3,
+        "MessageCode": "TE403",
+        "ErrorSourceCode": "ngTV",
+        "HttpStatusResult": 200,
+        "GenerateDate": 1769278537
+    },
+    "Paging": {
+        "TotalItemsCount": 0,
+        "PageNumber": 1,
+        "ItemsPerPage": 0
+    },
+    "Is3dSecure": false
+}
