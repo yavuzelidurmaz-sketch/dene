@@ -2,7 +2,7 @@ import requests
 import json
 import sys
 import time
-from datetime import datetime
+import random
 
 # ================= KULLANICI BİLGİLERİ =================
 EMAIL = "Tolgaatalay91@gmail.com"
@@ -10,6 +10,7 @@ SIFRE = "1324.Kova"
 
 # ================= AYARLAR =================
 API_BASE = "https://api.ssportplus.com/MW"
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
     "Content-Type": "application/json",
@@ -18,102 +19,106 @@ HEADERS = {
     "uilanguage": "tr"
 }
 
-def giris_yap():
-    """Giriş yapıp Token alır."""
+# --- TÜRKİYE PROXY LİSTESİ (Deneme için) ---
+# GitHub sunucusu yurtdışında olduğu için trafiği Türkiye üzerinden geçirmeliyiz.
+# Eğer bunlar çalışmazsa taze bir proxy bulup buraya yazmalısın.
+PROXY_LISTESI = [
+    # Format: "ip:port"
+    "88.255.102.126:8080",
+    "85.105.77.22:8080",
+    "212.156.128.98:8080"
+]
+
+def get_proxy():
+    """Rastgele bir TR proxy seçer ve requests formatına sokar."""
+    proxy_ip = random.choice(PROXY_LISTESI)
+    print(f"🌍 Bağlantı şu Türkiye Proxy üzerinden denenecek: {proxy_ip}")
+    return {
+        "http": f"http://{proxy_ip}",
+        "https": f"http://{proxy_ip}"
+    }
+
+def giris_yap(proxy):
+    """Siteye giriş yapıp Token alır."""
     url = f"{API_BASE}/User/Login"
     payload = {"email": EMAIL, "password": SIFRE}
     
-    print(f"🔐 Giriş yapılıyor...")
+    print(f"🔐 Giriş deneniyor...")
+    
     try:
-        response = requests.post(url, headers=HEADERS, json=payload, timeout=20)
+        # Timeout ekledik çünkü proxy yavaş olabilir
+        response = requests.post(url, headers=HEADERS, json=payload, proxies=proxy, timeout=15)
+        
         if response.status_code == 200:
             data = response.json()
             token = data.get("ServiceTicket") or data.get("Token") or data.get("Data", {}).get("Token")
+            
             if token:
-                print("✅ Giriş Başarılı!")
+                print("✅ Giriş Başarılı! Token alındı.")
                 return token
+            else:
+                print("⚠️ Token bulunamadı. Cevap:", data)
+                return None
+        else:
+            print(f"❌ Giriş Başarısız. Hata Kodu: {response.status_code}")
+            print("Sunucu Cevabı:", response.text)
+            return None
+            
     except Exception as e:
-        print(f"Giriş Hatası: {e}")
-    
-    print("❌ Giriş yapılamadı.")
-    return None
+        print(f"Bağlantı/Proxy hatası: {e}")
+        return None
 
-def canli_yayinlari_cek(token):
-    """Şu an yayında olan maçları çeker."""
-    url = f"{API_BASE}/GetCurrentLiveContents"
+def kategorileri_tara(token, proxy):
+    """Kategorileri tek tek tarar."""
+    kategoriler = ["Film", "Dizi", "Program", "Belgesel", "Kids"]
+    bulunan_icerikler = []
+    
     auth_headers = HEADERS.copy()
     auth_headers["Authorization"] = f"Bearer {token}"
     
+    url = f"{API_BASE}/GetCategories" # Kategori endpointi (Tahmini)
+    # Veya canlı yayın endpointi ile test edelim, en garantisi o:
+    url_live = f"{API_BASE}/GetCurrentLiveContents"
+
+    # Test için Canlı Yayınları çekiyoruz (Daha garanti)
+    print("\n🌍 CANLI YAYINLAR TARANIYOR...")
     payload = {
         "action": "GetCurrentLiveContents",
         "pageNumber": 1,
-        "count": 50,
+        "count": 100,
         "TSID": int(time.time())
     }
-    
-    print("\n📡 CANLI YAYINLAR TARANIYOR...")
+
     try:
-        response = requests.post(url, headers=auth_headers, json=payload)
+        response = requests.post(url_live, headers=auth_headers, json=payload, proxies=proxy, timeout=15)
+        
         if response.status_code == 200:
             data = response.json()
             items = data.get("Data", [])
-            print(f"✅ {len(items)} adet Canlı Yayın bulundu.")
-            return items
+            print(f"✅ Başarılı! {len(items)} adet içerik bulundu.")
+            
+            # Kaydet
+            with open("canli_yayinlar.json", "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=4, ensure_ascii=False)
+            print("💾 Dosya kaydedildi: canli_yayinlar.json")
+            
         else:
-            print(f"❌ Hata: {response.status_code}")
-            return []
+            print(f"❌ Erişim Hatası (Kod {response.status_code})")
+            print("Detay:", response.text) # Hatanın sebebini görmek için
+            
     except Exception as e:
-        print(f"Hata: {e}")
-        return []
-
-def yayin_akisini_cek(token):
-    """Bugünün yayın akışını (Maç programını) çeker."""
-    # S Sport'ta yayın akışı genelde bu adrestedir
-    url = f"{API_BASE}/EPG/GetDailyFlow"
-    
-    auth_headers = HEADERS.copy()
-    auth_headers["Authorization"] = f"Bearer {token}"
-    
-    # Bugünün tarihi (Örn: 2024-01-24)
-    bugun = datetime.now().strftime("%Y-%m-%d")
-    
-    params = {
-        "day": "today",  # Veya "date": bugun
-        "date": bugun
-    }
-    
-    print(f"\n📅 BUGÜNÜN MAÇ PROGRAMI ÇEKİLİYOR ({bugun})...")
-    try:
-        response = requests.get(url, headers=auth_headers, params=params)
-        if response.status_code == 200:
-            data = response.json()
-            # Yapı bazen değişebilir, genelde 'Data' veya direkt liste döner
-            items = data.get("Data", []) if isinstance(data, dict) else data
-            print(f"✅ {len(items)} adet Program/Maç bulundu.")
-            return items
-        else:
-            print(f"❌ Akış çekilemedi: {response.status_code}")
-            return []
-    except Exception as e:
-        print(f"Hata: {e}")
-        return []
+        print(f"Hata oluştu: {e}")
 
 if __name__ == "__main__":
-    token = giris_yap()
+    # Proxy seç
+    secilen_proxy = get_proxy()
+    
+    # İşlemi başlat
+    token = giris_yap(secilen_proxy)
     
     if token:
-        tum_veriler = {}
-        
-        # 1. Canlı Yayınları Al
-        tum_veriler["Canli"] = canli_yayinlari_cek(token)
-        
-        # 2. Günlük Maç Programını Al
-        tum_veriler["YayinAkisi"] = yayin_akisini_cek(token)
-        
-        # 3. Hepsini Tek Dosyaya Kaydet
-        with open("mac_verileri.json", "w", encoding="utf-8") as f:
-            json.dump(tum_veriler, f, indent=4, ensure_ascii=False)
-            
-        print("\n💾 TÜM VERİLER 'mac_verileri.json' OLARAK KAYDEDİLDİ.")
+        kategorileri_tara(token, secilen_proxy)
     else:
+        print("\n🛑 Token alınamadığı için işlem durduruldu.")
+        # GitHub Action hata versin diye
         sys.exit(1)
