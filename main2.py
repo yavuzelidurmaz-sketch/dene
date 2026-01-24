@@ -2,16 +2,14 @@ import requests
 import json
 import sys
 import time
+from datetime import datetime
 
-# ================= KULLANICI BİLGİLERİ (GÖMÜLÜ) =================
-# Senin verdiğin bilgiler buraya yazıldı.
+# ================= KULLANICI BİLGİLERİ =================
 EMAIL = "Tolgaatalay91@gmail.com"
 SIFRE = "1324.Kova" 
 
 # ================= AYARLAR =================
 API_BASE = "https://api.ssportplus.com/MW"
-
-# Tarayıcı gibi görünmek için başlıklar
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
     "Content-Type": "application/json",
@@ -21,94 +19,101 @@ HEADERS = {
 }
 
 def giris_yap():
-    """Siteye kullanıcı adı şifre ile girip Token alır."""
+    """Giriş yapıp Token alır."""
     url = f"{API_BASE}/User/Login"
+    payload = {"email": EMAIL, "password": SIFRE}
     
-    payload = {
-        "email": EMAIL,
-        "password": SIFRE
-    }
-    
-    print(f"🔐 {EMAIL} ile giriş yapılıyor...")
-    
+    print(f"🔐 Giriş yapılıyor...")
     try:
-        response = requests.post(url, headers=HEADERS, json=payload)
-        
-        # Cevabı kontrol edelim
+        response = requests.post(url, headers=HEADERS, json=payload, timeout=20)
         if response.status_code == 200:
             data = response.json()
-            
-            # Token genelde bu isimlerle gelir, hepsini kontrol ediyoruz
             token = data.get("ServiceTicket") or data.get("Token") or data.get("Data", {}).get("Token")
-            
             if token:
-                print("✅ Giriş Başarılı! Token alındı.")
+                print("✅ Giriş Başarılı!")
                 return token
-            else:
-                print("⚠️ Giriş yapıldı ama Token bulunamadı. Gelen cevap:")
-                print(data)
-                return None
-        else:
-            print(f"❌ Giriş Hatası! Kod: {response.status_code}")
-            print("Cevap:", response.text)
-            
-            # Eğer 'VPN' veya 'Region' hatası varsa uyaralım
-            if "VPN" in response.text or "Country" in response.text:
-                print("\n🔴 KRİTİK HATA: S Sport, sunucunun yurtdışında olduğunu anladı ve engelledi.")
-            return None
-            
     except Exception as e:
-        print(f"Bağlantı hatası: {e}")
-        return None
-
-def verileri_cek(token):
-    """Alınan token ile canlı yayın listesini çeker."""
-    url = f"{API_BASE}/GetCurrentLiveContents"
+        print(f"Giriş Hatası: {e}")
     
-    # Token'ı başlığa ekle
+    print("❌ Giriş yapılamadı.")
+    return None
+
+def canli_yayinlari_cek(token):
+    """Şu an yayında olan maçları çeker."""
+    url = f"{API_BASE}/GetCurrentLiveContents"
     auth_headers = HEADERS.copy()
     auth_headers["Authorization"] = f"Bearer {token}"
     
-    # İstek paketi
     payload = {
         "action": "GetCurrentLiveContents",
         "pageNumber": 1,
-        "count": 100,
+        "count": 50,
         "TSID": int(time.time())
     }
     
-    print("📡 Canlı yayın listesi çekiliyor...")
-    
+    print("\n📡 CANLI YAYINLAR TARANIYOR...")
     try:
         response = requests.post(url, headers=auth_headers, json=payload)
-        
         if response.status_code == 200:
             data = response.json()
-            
-            # Dosyaya kaydet
-            dosya_adi = "canli_yayinlar.json"
-            with open(dosya_adi, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=4, ensure_ascii=False)
-                
-            print(f"✅ İŞLEM TAMAM! Veriler '{dosya_adi}' dosyasına kaydedildi.")
-            
-            # Kaç yayın olduğunu gösterelim
-            sayi = len(data.get("Data", []))
-            print(f"Toplam {sayi} adet canlı içerik bulundu.")
-            
+            items = data.get("Data", [])
+            print(f"✅ {len(items)} adet Canlı Yayın bulundu.")
+            return items
         else:
-            print(f"❌ Veri Çekme Hatası: {response.status_code}")
-            print(response.text)
-            sys.exit(1) # Action hata versin diye
-            
+            print(f"❌ Hata: {response.status_code}")
+            return []
     except Exception as e:
-        print(f"Veri çekme sırasında hata: {e}")
-        sys.exit(1)
+        print(f"Hata: {e}")
+        return []
+
+def yayin_akisini_cek(token):
+    """Bugünün yayın akışını (Maç programını) çeker."""
+    # S Sport'ta yayın akışı genelde bu adrestedir
+    url = f"{API_BASE}/EPG/GetDailyFlow"
+    
+    auth_headers = HEADERS.copy()
+    auth_headers["Authorization"] = f"Bearer {token}"
+    
+    # Bugünün tarihi (Örn: 2024-01-24)
+    bugun = datetime.now().strftime("%Y-%m-%d")
+    
+    params = {
+        "day": "today",  # Veya "date": bugun
+        "date": bugun
+    }
+    
+    print(f"\n📅 BUGÜNÜN MAÇ PROGRAMI ÇEKİLİYOR ({bugun})...")
+    try:
+        response = requests.get(url, headers=auth_headers, params=params)
+        if response.status_code == 200:
+            data = response.json()
+            # Yapı bazen değişebilir, genelde 'Data' veya direkt liste döner
+            items = data.get("Data", []) if isinstance(data, dict) else data
+            print(f"✅ {len(items)} adet Program/Maç bulundu.")
+            return items
+        else:
+            print(f"❌ Akış çekilemedi: {response.status_code}")
+            return []
+    except Exception as e:
+        print(f"Hata: {e}")
+        return []
 
 if __name__ == "__main__":
     token = giris_yap()
+    
     if token:
-        verileri_cek(token)
+        tum_veriler = {}
+        
+        # 1. Canlı Yayınları Al
+        tum_veriler["Canli"] = canli_yayinlari_cek(token)
+        
+        # 2. Günlük Maç Programını Al
+        tum_veriler["YayinAkisi"] = yayin_akisini_cek(token)
+        
+        # 3. Hepsini Tek Dosyaya Kaydet
+        with open("mac_verileri.json", "w", encoding="utf-8") as f:
+            json.dump(tum_veriler, f, indent=4, ensure_ascii=False)
+            
+        print("\n💾 TÜM VERİLER 'mac_verileri.json' OLARAK KAYDEDİLDİ.")
     else:
-        print("Login olunamadığı için işlem iptal edildi.")
         sys.exit(1)
