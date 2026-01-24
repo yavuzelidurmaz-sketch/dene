@@ -1,414 +1,84 @@
 {
     "meta": {
-        "updated_at": "2026-01-24 19:06:53.506305",
-        "source": "https://betparktv252.com",
-        "note": "Stream linklerini oynatırken Header göndermeyi unutmayın."
+        "updated_at": "2026-01-24 19:13:25.407290",
+        "source": "https://betparktv252.com"
     },
-    "channels": [
-        {
-            "name": "Bein Sports 1",
-            "slug": "Bein-Sports-1",
-            "logo": "https://betparktv252.com/tv/bein-sports-1",
-            "url": "https://betparktv252.com/kanal/Bein-Sports-1"
-        },
-        {
-            "name": "Bein Sports 1 HD Alternatif",
-            "slug": "Bein-Sports-1-HD-Alternatif",
-            "logo": "https://betparktv252.com/tv/bein-sports-1-hd-alternatif",
-            "url": "https://betparktv252.com/kanal/Bein-Sports-1-HD-Alternatif"
-        },
-        {
-            "name": "Bein Sports 1 Alternatif",
-            "slug": "Bein-Sports-1-Alternatif",
-            "logo": "https://betparktv252.com/tv/bein-sports-1-alternatif",
-            "url": "https://betparktv252.com/kanal/Bein-Sports-1-Alternatif"
-        },
-        {
-            "name": "Bein Sports 2",
-            "slug": "Bein-Sports-2",
-            "logo": "https://betparktv252.com/tv/bein-sports-2",
-            "url": "https://betparktv252.com/kanal/Bein-Sports-2"
-        },
-        {
-            "name": "Bein Sports 3",
-            "slug": "Bein-Sports-3",
-            "logo": "https://betparktv252.com/tv/bein-sports-3",
-            "url": "https://betparktv252.com/kanal/Bein-Sports-3"
-        },
-        {
-            "name": "Bein Sports 4",
-            "slug": "Bein-Sports-4",
-            "logo": "https://betparktv252.com/tv/bein-sports-4",
-            "url": "https://betparktv252.com/kanal/Bein-Sports-4"
-        },
-        {
-            "name": "Bein Sports 5",
-            "slug": "Bein-Sports-5",
-            "logo": "https://betparktv252.com/tv/bein-sports-5",
-            "url": "https://betparktv252.com/kanal/Bein-Sports-5"
-        },
-        {
-            "name": "Bein Spor Max 1",
-            "slug": "Bein-Spor-Max-1",
-            "logo": "https://betparktv252.com/tv/bein-spor-max-1",
-            "url": "https://betparktv252.com/kanal/Bein-Spor-Max-1"
-        },
-        {
-            "name": "Bein Sports Max 2",
-            "slug": "Bein-Sports-Max-2",
-            "logo": "https://betparktv252.com/tv/bein-sports-max-2",
-            "url": "https://betparktv252.com/kanal/Bein-Sports-Max-2"
-        },
-        {
-            "name": "Bein Connect 1",
-            "slug": "Bein-Connect-1",
-            "logo": "https://betparktv252.com/tv/bein-connect-1",
-            "url": "https://betparktv252.com/kanal/Bein-Connect-1"
-        },
-        {
-            "name": "Bein Connect 2",
-            "slug": "Bein-Connect-2",
-            "logo": "https://betparktv252.com/tv/bein-connect-2",
-            "url": "https://betparktv252.com/kanal/Bein-Connect-2"
-        },
-        {
-            "name": "Bein Connect 3",
-            "slug": "Bein-Connect-3",
-            "logo": "https://betparktv252.com/tv/bein-connect-3",
-            "url": "https://betparktv252.com/kanal/Bein-Connect-3"
-        },
-        {
-            "name": "Bein Connect 4",
-            "slug": "Bein-Connect-4",
-            "logo": "https://betparktv252.com/tv/bein-connect-4",
-            "url": "https://betparktv252.com/kanal/Bein-Connect-4"
-        },
-        {
-            "name": "Bein Sports Haber",
-            "slug": "Bein-Sports-Haber",
-            "logo": "https://betparktv252.com/tv/bein-sports-haber",
-            "url": "https://betparktv252.com/kanal/Bein-Sports-Haber"
-        },
-        {
-            "name": "TRT 1",
-            "slug": "TRT-1",
-            "logo": "https://betparktv252.com/tv/trt-1",
-            "url": "https://betparktv252.com/kanal/TRT-1"
-        },
-        {
-            "name": "TRT Spor",
-            "slug": "TRT-Spor",
-            "logo": "https://betparktv252.com/tv/trt-spor",
-            "url": "https://betparktv252.com/kanal/TRT-Spor"
-        },
-        {
-            "name": "TRT Spor 2",
-            "slug": "TRT-Spor-2",
-            "logo": "https://betparktv252.com/tv/trt-spor-2",
-            "url": "https://betparktv252.com/kanal/TRT-Spor-2"
-        },
-        {
-            "name": "Tivibu Spor 1",
-            "slug": "Tivibu-Spor-1",
-            "logo": "https://betparktv252.com/tv/tivibu-spor-1",
-            "url": "https://betparktv252.com/kanal/Tivibu-Spor-1"
-        },
-        {
-            "name": "Euro Sport 2",
-            "slug": "Euro-Sport-2",
-            "logo": "https://betparktv252.com/tv/euro-sport-2",
-            "url": "https://betparktv252.com/kanal/Euro-Sport-2"
-        },
-        {
-            "name": "Tivibu Spor 2",
-            "slug": "Tivibu-Spor-2",
-            "logo": "https://betparktv252.com/tv/tivibu-spor-2",
-            "url": "https://betparktv252.com/kanal/Tivibu-Spor-2"
-        },
-        {
-            "name": "Tivibu Spor 3",
-            "slug": "Tivibu-Spor-3",
-            "logo": "https://betparktv252.com/tv/tivibu-spor-3",
-            "url": "https://betparktv252.com/kanal/Tivibu-Spor-3"
-        },
-        {
-            "name": "Smart Spor",
-            "slug": "Smart-Spor",
-            "logo": "https://betparktv252.com/tv/smart-spor",
-            "url": "https://betparktv252.com/kanal/Smart-Spor"
-        },
-        {
-            "name": "Smart Spor 2",
-            "slug": "Smart-Spor-2",
-            "logo": "https://betparktv252.com/tv/smart-spor-2",
-            "url": "https://betparktv252.com/kanal/Smart-Spor-2"
-        },
-        {
-            "name": "S Sports",
-            "slug": "S-Sports",
-            "logo": "https://betparktv252.com/tv/s-sports",
-            "url": "https://betparktv252.com/kanal/S-Sports"
-        },
-        {
-            "name": "S Sports 2",
-            "slug": "S-Sports-2",
-            "logo": "https://betparktv252.com/tv/s-sports-2",
-            "url": "https://betparktv252.com/kanal/S-Sports-2"
-        },
-        {
-            "name": "Nba Tv",
-            "slug": "Nba-Tv",
-            "logo": "https://betparktv252.com/tv/nba-tv",
-            "url": "https://betparktv252.com/kanal/Nba-Tv"
-        },
-        {
-            "name": "Euro Sport 1",
-            "slug": "Euro-Sport-1",
-            "logo": "https://betparktv252.com/tv/euro-sport-1",
-            "url": "https://betparktv252.com/kanal/Euro-Sport-1"
-        },
-        {
-            "name": "A Spor",
-            "slug": "A-Spor",
-            "logo": "https://betparktv252.com/tv/a-spor",
-            "url": "https://betparktv252.com/kanal/A-Spor"
-        },
-        {
-            "name": "ATV",
-            "slug": "ATV",
-            "logo": "https://betparktv252.com/tv/atv",
-            "url": "https://betparktv252.com/kanal/ATV"
-        },
-        {
-            "name": "Tv 8",
-            "slug": "Tv-8",
-            "logo": "https://betparktv252.com/tv/tv-8",
-            "url": "https://betparktv252.com/kanal/Tv-8"
-        },
-        {
-            "name": "Star Tv",
-            "slug": "Star-Tv",
-            "logo": "https://betparktv252.com/tv/star-tv",
-            "url": "https://betparktv252.com/kanal/Star-Tv"
-        },
-        {
-            "name": "TV 8.5",
-            "slug": "TV-8.5",
-            "logo": "https://betparktv252.com/tv/tv-8.5",
-            "url": "https://betparktv252.com/kanal/TV-8.5"
-        },
-        {
-            "name": "Exxen Sport 1 HD",
-            "slug": "Exxen-Sport-1-HD",
-            "logo": "https://betparktv252.com/tv/exxen-sport-1-hd",
-            "url": "https://betparktv252.com/kanal/Exxen-Sport-1-HD"
-        },
-        {
-            "name": "Exxen Sport 2 HD",
-            "slug": "Exxen-Sport-2-HD",
-            "logo": "https://betparktv252.com/tv/exxen-sport-2-hd",
-            "url": "https://betparktv252.com/kanal/Exxen-Sport-2-HD"
-        },
-        {
-            "name": "Exxen Sport 3 HD",
-            "slug": "Exxen-Sport-3-HD",
-            "logo": "https://betparktv252.com/tv/exxen-sport-3-hd",
-            "url": "https://betparktv252.com/kanal/Exxen-Sport-3-HD"
-        },
-        {
-            "name": "Exxen Sport 4 HD",
-            "slug": "Exxen-Sport-4-HD",
-            "logo": "https://betparktv252.com/tv/exxen-sport-4-hd",
-            "url": "https://betparktv252.com/kanal/Exxen-Sport-4-HD"
-        },
-        {
-            "name": "Exxen Sport 5 HD",
-            "slug": "Exxen-Sport-5-HD",
-            "logo": "https://betparktv252.com/tv/exxen-sport-5-hd",
-            "url": "https://betparktv252.com/kanal/Exxen-Sport-5-HD"
-        },
-        {
-            "name": "Exxen Sport 6 HD",
-            "slug": "Exxen-Sport-6-HD",
-            "logo": "https://betparktv252.com/tv/exxen-sport-6-hd",
-            "url": "https://betparktv252.com/kanal/Exxen-Sport-6-HD"
-        },
-        {
-            "name": "Ssport Plus 1",
-            "slug": "Ssport-Plus-1",
-            "logo": "https://betparktv252.com/tv/ssport-plus-1",
-            "url": "https://betparktv252.com/kanal/Ssport-Plus-1"
-        },
-        {
-            "name": "Exxen Sport 7 HD",
-            "slug": "Exxen-Sport-7-HD",
-            "logo": "https://betparktv252.com/tv/exxen-sport-7-hd",
-            "url": "https://betparktv252.com/kanal/Exxen-Sport-7-HD"
-        },
-        {
-            "name": "Ssport Plus 2",
-            "slug": "Ssport-Plus-2",
-            "logo": "https://betparktv252.com/tv/ssport-plus-2",
-            "url": "https://betparktv252.com/kanal/Ssport-Plus-2"
-        },
-        {
-            "name": "Exxen Sport 8 HD",
-            "slug": "Exxen-Sport-8-HD",
-            "logo": "https://betparktv252.com/tv/exxen-sport-8-hd",
-            "url": "https://betparktv252.com/kanal/Exxen-Sport-8-HD"
-        },
-        {
-            "name": "GS TV",
-            "slug": "GS-TV",
-            "logo": "https://betparktv252.com/tv/gs-tv",
-            "url": "https://betparktv252.com/kanal/GS-TV"
-        },
-        {
-            "name": "Ht Spor",
-            "slug": "Ht-Spor",
-            "logo": "https://betparktv252.com/tv/ht-spor",
-            "url": "https://betparktv252.com/kanal/Ht-Spor"
-        },
-        {
-            "name": "Tabii ",
-            "slug": "Tabii-",
-            "logo": "https://betparktv252.com/tv/tabii-",
-            "url": "https://betparktv252.com/kanal/Tabii-"
-        },
-        {
-            "name": "Tabii 1",
-            "slug": "Tabii-1",
-            "logo": "https://betparktv252.com/tv/tabii-1",
-            "url": "https://betparktv252.com/kanal/Tabii-1"
-        },
-        {
-            "name": "Tabii 2",
-            "slug": "Tabii-2",
-            "logo": "https://betparktv252.com/tv/tabii-2",
-            "url": "https://betparktv252.com/kanal/Tabii-2"
-        },
-        {
-            "name": "Tabii 3",
-            "slug": "Tabii-3",
-            "logo": "https://betparktv252.com/tv/tabii-3",
-            "url": "https://betparktv252.com/kanal/Tabii-3"
-        },
-        {
-            "name": "Tabii 4",
-            "slug": "Tabii-4",
-            "logo": "https://betparktv252.com/tv/tabii-4",
-            "url": "https://betparktv252.com/kanal/Tabii-4"
-        },
-        {
-            "name": "Tabii 5",
-            "slug": "Tabii-5",
-            "logo": "https://betparktv252.com/tv/tabii-5",
-            "url": "https://betparktv252.com/kanal/Tabii-5"
-        },
-        {
-            "name": "Tabii 6",
-            "slug": "Tabii-6",
-            "logo": "https://betparktv252.com/tv/tabii-6",
-            "url": "https://betparktv252.com/kanal/Tabii-6"
-        },
-        {
-            "name": "Tabii 7",
-            "slug": "Tabii-7",
-            "logo": "https://betparktv252.com/tv/tabii-7",
-            "url": "https://betparktv252.com/kanal/Tabii-7"
-        },
-        {
-            "name": "Tabii 8",
-            "slug": "Tabii-8",
-            "logo": "https://betparktv252.com/tv/tabii-8",
-            "url": "https://betparktv252.com/kanal/Tabii-8"
-        },
-        {
-            "name": "Tabii 9",
-            "slug": "Tabii-9",
-            "logo": "https://betparktv252.com/tv/tabii-9",
-            "url": "https://betparktv252.com/kanal/Tabii-9"
-        },
-        {
-            "name": "Tabii 10",
-            "slug": "Tabii-10",
-            "logo": "https://betparktv252.com/tv/tabii-10",
-            "url": "https://betparktv252.com/kanal/Tabii-10"
-        },
-        {
-            "name": "Tabii 1 Yedek",
-            "slug": "Tabii-1-Yedek",
-            "logo": "https://betparktv252.com/tv/tabii-1-yedek",
-            "url": "https://betparktv252.com/kanal/Tabii-1-Yedek"
-        },
-        {
-            "name": "Tabii 2 Yedek",
-            "slug": "Tabii-2-Yedek",
-            "logo": "https://betparktv252.com/tv/tabii-2-yedek",
-            "url": "https://betparktv252.com/kanal/Tabii-2-Yedek"
-        },
-        {
-            "name": "Tabii 3 Yedek",
-            "slug": "Tabii-3-Yedek",
-            "logo": "https://betparktv252.com/tv/tabii-3-yedek",
-            "url": "https://betparktv252.com/kanal/Tabii-3-Yedek"
-        },
-        {
-            "name": "NTV",
-            "slug": "NTV",
-            "logo": "https://betparktv252.com/tv/ntv",
-            "url": "https://betparktv252.com/kanal/NTV"
-        },
-        {
-            "name": "Private1",
-            "slug": "Private1",
-            "logo": "https://betparktv252.com/tv/private1",
-            "url": "https://betparktv252.com/kanal/Private1"
-        },
-        {
-            "name": "Private2",
-            "slug": "Private2",
-            "logo": "https://betparktv252.com/tv/private2",
-            "url": "https://betparktv252.com/kanal/Private2"
-        },
-        {
-            "name": "Private3",
-            "slug": "Private3",
-            "logo": "https://betparktv252.com/tv/private3",
-            "url": "https://betparktv252.com/kanal/Private3"
-        },
-        {
-            "name": "Private4",
-            "slug": "Private4",
-            "logo": "https://betparktv252.com/tv/private4",
-            "url": "https://betparktv252.com/kanal/Private4"
-        },
-        {
-            "name": "Private5",
-            "slug": "Private5",
-            "logo": "https://betparktv252.com/tv/private5",
-            "url": "https://betparktv252.com/kanal/Private5"
-        },
-        {
-            "name": "Private7",
-            "slug": "Private7",
-            "logo": "https://betparktv252.com/tv/private7",
-            "url": "https://betparktv252.com/kanal/Private7"
-        },
-        {
-            "name": "Private8",
-            "slug": "Private8",
-            "logo": "https://betparktv252.com/tv/private8",
-            "url": "https://betparktv252.com/kanal/Private8"
-        },
-        {
-            "name": "Private6",
-            "slug": "Private6",
-            "logo": "https://betparktv252.com/tv/private6",
-            "url": "https://betparktv252.com/kanal/Private6"
-        }
-    ],
     "matches": [
+        {
+            "title": "Burnley vs Totthenham",
+            "home": "Burnley",
+            "away": "Totthenham",
+            "time": "18:00",
+            "sport": "Futbol",
+            "home_logo": "https://macdata.net/img/sqrttx1448811003.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/790040",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "Fulham vs Brighton",
+            "home": "Fulham",
+            "away": "Brighton",
+            "time": "18:00",
+            "sport": "Futbol",
+            "home_logo": "https://macdata.net/img/xwwvyt1448811086.png",
+            "away_logo": "https://macdata.net/img/ywypts1448810904.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/790041",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "Manchester City vs Wolverhampton",
+            "home": "Manchester City",
+            "away": "Wolverhampton",
+            "time": "18:00",
+            "sport": "Futbol",
+            "home_logo": "https://macdata.net/img/vwpvry1467462651.png",
+            "away_logo": "https://macdata.net/img/qwvuqy1448811552.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/790042",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "Bournemouth vs Liverpool",
+            "home": "Bournemouth",
+            "away": "Liverpool",
+            "time": "20:30",
+            "sport": "Futbol",
+            "home_logo": "https://macdata.net/img/y08nak1534071116.png",
+            "away_logo": "https://macdata.net/img/uvxuqq1448813372.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/790050",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "Marsilya vs Lens",
+            "home": "Marsilya",
+            "away": "Lens",
+            "time": "23:05",
+            "sport": "Futbol",
+            "home_logo": "https://macdata.net/img/1641.png",
+            "away_logo": "https://macdata.net/img/3pxoum1598797195.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/790116",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
         {
             "title": "Game Hunters vs Red Canids",
             "home": "Game Hunters",
@@ -420,25 +90,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791044",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
-            }
-        },
-        {
-            "title": "Dharani Village Bihar Club vs Screaming Eagles",
-            "home": "Dharani Village Bihar Club",
-            "away": "Screaming Eagles",
-            "time": "19:45",
-            "sport": "Kriket",
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790762",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -452,41 +105,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790795",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
-            }
-        },
-        {
-            "title": "Paris Volley vs Chaumont Volley-Ball 52",
-            "home": "Paris Volley",
-            "away": "Chaumont Volley-Ball 52",
-            "time": "20:00",
-            "sport": "Voleybol",
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790830",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
-            }
-        },
-        {
-            "title": "Georgia Tech Yellow Jackets vs Clemson Tigers",
-            "home": "Georgia Tech Yellow Jackets",
-            "away": "Clemson Tigers",
-            "time": "20:00",
-            "sport": "Basketbol",
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/118133.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790854",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -500,9 +120,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791036",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -516,9 +135,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791034",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -532,9 +150,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790846",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -548,9 +165,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790891",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -564,9 +180,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790962",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -580,9 +195,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791020",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -596,9 +210,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791022",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -612,9 +225,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790871",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -628,9 +240,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790912",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -644,9 +255,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790966",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -660,9 +270,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790990",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -676,9 +285,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790991",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -692,9 +300,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791011",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -708,9 +315,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791021",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -724,9 +330,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790925",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -740,9 +345,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790941",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -756,9 +360,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790964",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -772,9 +375,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790986",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -788,9 +390,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790987",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -804,9 +405,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790988",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -820,9 +420,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790989",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -836,9 +435,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790994",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -852,9 +450,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791012",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -868,9 +465,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791027",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -884,9 +480,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791033",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -900,9 +495,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790996",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -916,9 +510,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791030",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -932,9 +525,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790997",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -948,25 +540,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791031",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
-            }
-        },
-        {
-            "title": "Igor Shkurin vs Yuri Fedortsov",
-            "home": "Igor Shkurin",
-            "away": "Yuri Fedortsov",
-            "time": "21:20",
-            "sport": "Masatenisi",
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791052",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -980,9 +555,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791017",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -996,9 +570,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791040",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1012,9 +585,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791042",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1028,9 +600,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791043",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1044,9 +615,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/790995",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1060,9 +630,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791010",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1076,9 +645,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791013",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1092,9 +660,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791018",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1108,9 +675,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791019",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1124,9 +690,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791023",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1140,9 +705,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791024",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1156,9 +720,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791026",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1172,41 +735,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791029",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
-            }
-        },
-        {
-            "title": "Lvy Novosibirsk vs Dynamo Omsk",
-            "home": "Lvy Novosibirsk",
-            "away": "Dynamo Omsk",
-            "time": "21:30",
-            "sport": "Hockey",
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791014",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
-            }
-        },
-        {
-            "title": "Kamil Rogowski vs Marcin Olszewski ",
-            "home": "Kamil Rogowski",
-            "away": "Marcin Olszewski ",
-            "time": "21:30",
-            "sport": "Masatenisi",
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791053",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1220,9 +750,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791041",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1236,9 +765,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791015",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1252,9 +780,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791039",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1268,9 +795,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791049",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1284,9 +810,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791045",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1300,9 +825,8 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791047",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         },
         {
@@ -1316,9 +840,23 @@
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791035",
             "stream_url": null,
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sttc2.kakirikodes.shop/",
-                "Origin": "https://sttc2.kakirikodes.shop"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "Marsilya vs Lens",
+            "home": "Marsilya",
+            "away": "Lens",
+            "time": "23:05",
+            "sport": "Futbol",
+            "home_logo": "",
+            "away_logo": "",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/790116",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
             }
         }
     ]
