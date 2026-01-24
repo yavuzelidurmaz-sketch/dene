@@ -3,19 +3,21 @@ import json
 import time
 
 # --- TOKEN (GÜNCEL TOKEN'I BURAYA YAPIŞTIR) ---
-MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9..." # Kendi token'ını buraya yapıştır
+MANUAL_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOiIyZGE3a2Y4amYiLCJpZGVudGl0eSI6ImVuZHVzZXIiLCJhbm9ueW1vdXMiOmZhbHNlLCJ1c2VySWQiOiJlNGMzYWY2Yi05YWQyLTQ3NDYtYTVlNC0yNGQ1ODQyNjZmYzMiLCJjbGFpbXMiOnsiZnVsbE5hbWUiOiJNZXJ0IFNlcmthbiIsInByb2ZpbGVJZCI6ImU0YzNhZjZiLTlhZDItNDc0Ni1hNWU0LTI0ZDU4NDI2NmZjMyIsInN0YXR1cyI6IkFDVElWRSJ9LCJzZXNzaW9uSWQiOiI0YWYzODNjZGM2ZmY0MGQ1ODcwNjMyM2M3ZDU2MDMxYSIsImlhdCI6MTc2OTE4NDM3OCwiZXhwIjoxNzcxNzc2Mzc4fQ.gKxehjzWnPQNzfr8ZbnhoQ3NPjqkRIoZYiMzK3QRs1dhXMRUGdIq8Fgi5BlChASeL6sxo-BE2bh7ZjxNu_RDI6aLpbMrIFNXbZAOdY0cRyrU_TEfRdEVceM9z_DoHkHNVVYhiAOled05dBVVZuspuHFLHd-KSB-S5etuLaXYZ6qYzopnAf-23MaHzatn8sUqS3E5ZKTqj5fUQqLbs8nM00R7StNBiPefXmnj2JCFirC9_ZdSUTA1UkES7GR078nPBfrK8wp3xSNhwUs-Z-lWzj4wUaBpLheL3IplSKNcysz5TKjo_kHrrWUjapf5jD3LrCWZLo90_Ucj1RV0CzAZqQ"
 
 # --- AYARLAR ---
 PROJECT_ID = "2da7kf8jf"
 ADULT_PROFILE_ID = "URCMQDLDLXJLHLPFBAN0ZI9V"
 KIDS_PROFILE_ID = "KIBPFC0Q9Z08Q1UMMJTO61NI"
 
-# Taranacak Ana Kategoriler
+# Taranacak Kategoriler (ANA SAYFA EKLENDİ)
 TARGETS = [
+    # HTML Analizine göre Ana Sayfa (Keşfet) rotası /kesfet şeklindedir.
+    {"name": "Keşfet (Ana Sayfa)", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Fkesfet"},
     {"name": "Film", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Ffilm"},
     {"name": "Dizi", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Fdizi"},
     {"name": "Program", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Fprogram"},
-    {"name": "Belgesel", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Fbelgesel"},
+    {"name": "Belgesel", "profile_id": ADULT_PROFILE_ID, "param": "slug=%2Fbelgesel"}, # Genelde ayrı olabilir, ekledim.
     {"name": "Kids", "profile_id": KIDS_PROFILE_ID, "param": "categoryName=MAIN-PAGE"}
 ]
 
@@ -29,10 +31,9 @@ HEADERS = {
 }
 
 def get_episodes(title_id, season_id, profile_id):
-    """
-    Bir dizinin/programın spesifik sezonundaki tüm bölümleri çeker.
-    """
-    url = f"{BASE_API}/getProfileSeason/{profile_id}?seasonId={season_id}&titleId={title_id}&__culture=tr-tr"
+    """Sezon içindeki bölümleri çeker"""
+    # pagination size artırıldı
+    url = f"{BASE_API}/getProfileSeason/{profile_id}?seasonId={season_id}&titleId={title_id}&__culture=tr-tr&pageSize=100"
     try:
         res = requests.get(url, headers=HEADERS)
         if res.status_code == 200:
@@ -41,76 +42,33 @@ def get_episodes(title_id, season_id, profile_id):
         pass
     return []
 
-def get_full_playlist_items(playlist_id, profile_id):
-    """
-    YENİ: Bir rafın (Slider) içindeki TÜM içerikleri çeker (Pagination Logic).
-    Sayfadaki görünen 10 tane ile yetinmez, 'Tümünü Gör' yapmış gibi hepsini çeker.
-    """
-    all_items = []
-    page = 0
-    page_size = 100  # Tek seferde 100 içerik iste
-    
-    while True:
-        # getPlaylistItems endpoint'i rafın tamamını verir
-        url = f"{BASE_API}/getPlaylistItems/{profile_id}?playlistId={playlist_id}&page={page}&pageSize={page_size}&__culture=tr-tr"
-        try:
-            res = requests.get(url, headers=HEADERS)
-            if res.status_code != 200:
-                break
-                
-            data = res.json()
-            items = data.get("items", [])
-            
-            if not items:
-                break
-                
-            all_items.extend(items)
-            
-            # Eğer gelen içerik sayısı sayfa limitinden azsa son sayfadayız demektir
-            if len(items) < page_size:
-                break
-                
-            page += 1
-            time.sleep(0.2) # API'yi boğmamak için minik bekleme
-            
-        except Exception as e:
-            print(f"   ⚠️ Raf detay hatası: {e}")
-            break
-            
-    return all_items
-
 def get_contents(target):
-    """
-    Ana kategori sayfasındaki rafları bulur ve her rafı derinlemesine tarar.
-    """
-    url = f"{BASE_API}/getPlaylistsByCategory/{target['profile_id']}?{target['param']}&__culture=tr-tr"
-    print(f"\n🌍 KATEGORİ TARANIYOR: '{target['name']}'...")
+    """Kategoriyi tarar (Filtresiz Mod + Slider Desteği)"""
+    # pageSize=500 ekleyerek slider içindeki tüm içerikleri almaya zorluyoruz
+    url = f"{BASE_API}/getPlaylistsByCategory/{target['profile_id']}?{target['param']}&__culture=tr-tr&pageSize=500"
+    print(f"\n🌍 '{target['name']}' taranıyor...")
 
     contents = []
-    processed_ids = set() # Aynı içerik farklı raflarda olabilir, tekrar eklemeyelim
-
+    # processed_ids global kümede tutulmalı ki sayfalar arası tekrar olmasın,
+    # ancak fonksiyon yapısı gereği burada liste bazlı dönüyoruz. 
+    # Duplicate kontrolü main fonksiyonunda veya burada set ile yapılabilir.
+    
     try:
         res = requests.get(url, headers=HEADERS)
         if res.status_code != 200:
-            print(f"   ❌ Erişim Hatası (Token kontrol et): {res.status_code}")
+            print(f"   ❌ Erişim Hatası ({target['name']}): {res.status_code}")
             return []
 
-        # Ana sayfadaki rafları (Sliderları) al
         playlists = res.json().get("playlists", [])
-        print(f"   📦 {len(playlists)} adet raf (kategori başlığı) bulundu.")
+        print(f"   📦 {len(playlists)} adet raf/slider bulundu. Analiz ediliyor...")
 
         for playlist in playlists:
-            playlist_name = playlist.get("name", "Bilinmeyen Raf")
-            playlist_id = playlist.get("id")
+            # Slider başlığını al (örn: "Yeni Çıkanlar", "Popüler Diziler")
+            playlist_name = playlist.get("name", "Genel")
             
-            if not playlist_id:
-                continue
+            items = playlist.get("items", [])
+            print(f"      👉 Raf: {playlist_name} ({len(items)} içerik)")
 
-            print(f"      📂 Raf Taranıyor: {playlist_name}...")
-            
-            # BU RAFIN İÇİNDEKİ HER ŞEYİ ÇEK (Limitsiz)
-            items = get_full_playlist_items(playlist_id, target['profile_id'])
-            
             for item in items:
                 title_id = item.get("titleId")
                 video_id = item.get("videoContentId")
@@ -118,55 +76,55 @@ def get_contents(target):
                 poster = item.get("logoImageUrl") or item.get("posterImageUrl")
                 seasons = item.get("seasons", [])
                 
-                # Çift kayıt engelleme
-                if title_id in processed_ids: 
-                    continue
-                processed_ids.add(title_id)
-
-                # --- MANTIK: SEZON VARSA DİZİDİR, YOKSA FİLMDİR ---
-
-                # 1. DİZİLER VE PROGRAMLAR (Sezon Yapısı Olanlar)
+                # İçerik Tipi Belirleme ve İşleme
+                
+                # 1. TİP: DİZİ (Sezon bilgisi varsa)
                 if seasons:
-                    # print(f"         Found Series/Program: {name}") # İstersen logu aç
+                    # Dizi olduğu için loglayalım ama detayları sonra çekeceğiz
                     for season in seasons:
                         episodes = get_episodes(title_id, season.get("id"), target['profile_id'])
                         for ep in episodes:
-                            # Bölüm adını oluştur
-                            season_num = ep.get("seasonNumber", 1)
-                            episode_num = ep.get("episode", 0)
-                            ep_name = ep.get("name", "")
+                            # Bölüm adını ve numarasını düzgün formatla
+                            ep_num = ep.get('episode', 0)
+                            season_num = ep.get('season', 1) # API'den geliyorsa al, yoksa 1
+                            ep_name = ep.get('name', '')
                             
-                            full_title = f"{name} - S{season_num}E{episode_num} - {ep_name}"
+                            full_title = f"{name} - S{season_num}B{ep_num} - {ep_name}"
                             
                             contents.append({
                                 "id": ep.get("videoContentId"),
+                                "title_id": title_id, # Tekrar kontrolü için
                                 "title": full_title,
-                                "group": f"Gain - {target['name']} (Diziler)", 
+                                "group": f"Gain Dizi - {name}", 
                                 "poster": poster,
                                 "profile_id": target['profile_id']
                             })
 
-                # 2. FİLMLER VE TEKİL VİDEOLAR
+                # 2. TİP: FİLM veya TEK BÖLÜMLÜK İÇERİK
                 elif video_id:
+                    group_name = "Gain Film" if target['name'] == "Film" else f"Gain {target['name']}"
+                    # Eğer slider içinden geldiyse ve kategori belliyse onu kullan
+                    if "Film" in playlist_name: group_name = "Gain Film"
+                    if "Belgesel" in playlist_name: group_name = "Gain Belgesel"
+
                     contents.append({
                         "id": video_id,
+                        "title_id": title_id, # Tekrar kontrolü için
                         "title": name,
-                        "group": f"Gain - {target['name']} (Filmler)",
+                        "group": group_name,
                         "poster": poster,
                         "profile_id": target['profile_id']
                     })
 
-        print(f"   ✅ '{target['name']}' kategorisinden toplam {len(contents)} benzersiz video kuyruğa alındı.")
+        print(f"   ✅ '{target['name']}' tamamlandı. Toplam bulunan aday: {len(contents)}")
         return contents
 
     except Exception as e:
-        print(f"🔥 Kritik Hata: {e}")
+        print(f"🔥 Hata: {e}")
         return []
 
 def get_stream_url(content):
-    """
-    Video ID'si ile oynatma linkini (MPD/HLS) alır.
-    """
+    """Videoların gerçek izleme linkini (MPD/HLS) çeker"""
     url = f"{BASE_API}/getPlaybackInfo/{content['profile_id']}/"
     params = {"videoContentId": content["id"], "packageType": "Dash", "__culture": "tr-tr"}
     try:
@@ -180,65 +138,73 @@ def get_stream_url(content):
         pass
     return None
 
-def save_m3u(data, filename="fanatik_gain_full.m3u"):
-    print(f"\n📺 M3U Dosyası Yazılıyor: {filename}...")
+def save_m3u(data, filename="fanatik_gain.m3u"):
+    print(f"\n📺 M3U oluşturuluyor: {filename}...")
     with open(filename, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for item in data:
-            # Grup ismini düzenle
-            group = item.get("group", "Gain Genel")
-            title = item.get("title", "Bilinmeyen İçerik")
-            poster = item.get("poster", "")
-            url = item.get("stream_url", "")
-            
-            f.write(f'#EXTINF:-1 group-title="{group}" tvg-logo="{poster}", {title}\n')
+            f.write(f'#EXTINF:-1 group-title="{item["group"]}" tvg-logo="{item["poster"]}", {item["title"]}\n')
             f.write('#EXTVLCOPT:http-user-agent=Mozilla/5.0\n')
-            f.write(f"{url}\n")
-    print("✅ M3U Hazır! İyi seyirler.")
+            f.write(f"{item['stream_url']}\n")
+    print("✅ M3U Hazır!")
 
 def main():
-    if "eyJ" not in MANUAL_TOKEN:
-        print("⛔ Lütfen geçerli bir TOKEN girin!")
+    if "BURAYA" in MANUAL_TOKEN:
+        print("⛔ Token girmeyi unutma!")
         return
 
-    all_videos = []
+    all_raw_items = []
     
     # Tüm kategorileri gez
     for target in TARGETS:
         items = get_contents(target)
-        all_videos.extend(items)
-        time.sleep(1) # Kategoriler arası bekleme
+        all_raw_items.extend(items)
+        time.sleep(1) # API spam engellemek için bekleme
 
-    total = len(all_videos)
+    # --- TEKRAR EDEN İÇERİKLERİ TEMİZLE ---
+    # Aynı içerik hem "Keşfet" hem "Film" altında gelebilir.
+    # ID'ye göre benzersizleştirme yapıyoruz.
+    unique_items = {}
+    print("\n🧹 Tekrar eden içerikler temizleniyor...")
+    for item in all_raw_items:
+        # Anahtar olarak video ID kullanıyoruz
+        unique_id = item['id']
+        if unique_id not in unique_items:
+            unique_items[unique_id] = item
+    
+    final_processing_list = list(unique_items.values())
+    total = len(final_processing_list)
+    
     if total == 0:
-        print("\n⛔ HİÇ İÇERİK BULUNAMADI. Token süresi dolmuş veya hatalı olabilir.")
+        print("\n⛔ HİÇ İÇERİK YOK. Token süresi dolmuş olabilir.")
         return
 
-    print(f"\n🚀 TOPLAM {total} VİDEO İÇİN LİNKLER ÜRETİLİYOR (Biraz sürebilir)...")
+    print(f"\n🚀 TOPLAM {total} BENZERSİZ İÇERİK İÇİN LİNKLER ÇEKİLİYOR...")
 
-    final_list = []
-    # Linkleri tek tek çöz
-    for i, video in enumerate(all_videos):
+    ready_list = []
+    for i, video in enumerate(final_processing_list):
         full_data = get_stream_url(video)
         if full_data:
-            # Gereksiz datayı temizle
+            # Gereksiz alanları temizle
             if "profile_id" in full_data: del full_data["profile_id"]
-            final_list.append(full_data)
+            if "title_id" in full_data: del full_data["title_id"]
+            
+            ready_list.append(full_data)
+            
+            # İlerleme çubuğu benzeri çıktı
+            percent = (i + 1) / total * 100
+            if (i+1) % 5 == 0 or (i+1) == total:
+                print(f"   👍 %{percent:.1f} tamamlandı ({i+1}/{total}) - {full_data['title']}")
         
-        # İlerleme çubuğu
-        if (i+1) % 50 == 0: 
-            print(f"   👍 {i+1}/{total} işlendi...")
-        
-        # API Limitine takılmamak için çok kısa bekleme
-        time.sleep(0.02)
+        time.sleep(0.05)
 
-    # JSON Yedeği
-    with open("gain_archive_full.json", "w", encoding="utf-8") as f:
-        json.dump(final_list, f, indent=4, ensure_ascii=False)
+    # JSON Kaydet
+    with open("gain_full_archive.json", "w", encoding="utf-8") as f:
+        json.dump(ready_list, f, indent=4, ensure_ascii=False)
 
-    # M3U Oluştur
-    save_m3u(final_list)
-    print(f"\n🏁 İŞLEM TAMAM! Toplam {len(final_list)} içerik listeye eklendi.")
+    # M3U Kaydet
+    save_m3u(ready_list)
+    print("\n🏁 MUTLU SON! Dosyalar hazır.")
 
 if __name__ == "__main__":
     main()
