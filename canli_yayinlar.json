@@ -1,23 +1,36 @@
 {
     "Rtx": 0,
     "NextInquiryMilis": 0,
-    "Machine": "NGTV-HP10",
+    "Subscriber": {
+        "ID": 913629,
+        "LoginPreferedMethod": 0,
+        "State": 0,
+        "AcceptNotifications": false,
+        "IsPersonalDataAllowed": false,
+        "IsConnectionPermited": 0,
+        "IsHPriv": false,
+        "Type": 0,
+        "ConfirmationState": 0
+    },
+    "Machine": "NGTV-HP11",
+    "IPs": "r.RC[US]/_CsLRC[TR]",
     "SessionIsAlive": false,
     "HasContent": true,
     "RetryAfter": 0,
     "Status": {
-        "Description": "Şu anda başka bir cihaz üzerinden oturum açmış bulunuyorsunuz, oturumunuza buradan devam etmek için lütfen diğer oturumlarınızı kapatın ve sayfayı yenileyin.",
-        "Code": 401,
+        "Description": "Kaynak değişikliği isteğine izin verilmiyor. VPN Kullanmadığınızdan Emin Olun ",
+        "Code": 630,
         "Level": 3,
-        "MessageCode": "TE403",
+        "MessageCode": "TE425",
         "ErrorSourceCode": "ngTV",
         "HttpStatusResult": 200,
-        "GenerateDate": 1769278761
+        "GenerateDate": 1769278902
     },
     "Paging": {
         "TotalItemsCount": 0,
         "PageNumber": 1,
         "ItemsPerPage": 0
     },
+    "LatestStatusChange": 1769268032,
     "Is3dSecure": false
 }
