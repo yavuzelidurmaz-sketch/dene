@@ -1,36 +1,38 @@
-name: S Sport Proxy Bot
+name: Fanatik IPTV Güncelleyici
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: '0 */3 * * *' # 3 saatte bir
-
-permissions:
-  contents: write
+    # Her 30 dakikada bir çalıştır (Tokenler hızlı değiştiği için sık çalışmalı)
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # Manuel tetikleme butonu ekler
 
 jobs:
-  run-bot:
+  scrape_and_update:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Kodları Çek
+      - name: Depoyu Çek (Checkout)
         uses: actions/checkout@v3
 
-      - name: Python Kur
+      - name: Python Kurulumu
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
       - name: Kütüphaneleri Yükle
-        run: pip install requests
+        run: |
+          pip install -r requirements.txt
 
       - name: Botu Çalıştır
         run: python main.py
 
-      - name: Sonucu Kaydet
+      - name: Değişiklikleri Kaydet ve Gönder
         run: |
-          git config --global user.name "Bot"
-          git config --global user.email "bot@github.com"
-          git add canli_yayinlar.json
-          git commit -m "Veri guncellendi" || echo "Degisiklik yok"
-          git push
+          git config --global user.name "FanatikBot"
+          git config --global user.email "actions@github.com"
+          git add data.json
+          # Eğer değişiklik yoksa hata verme, varsa commit yap
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Canlı yayınlar güncellendi: $(date)" && git push)
