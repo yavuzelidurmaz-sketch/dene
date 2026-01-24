@@ -2,116 +2,151 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+import time
 from datetime import datetime
 
-# Hedef Site
-BASE_URL = "https://betparktv252.com" 
+# --- AYARLAR ---
+BASE_URL = "https://betparktv252.com"  # Site adresi değişirse buradan güncelle
 OUTPUT_FILE = "data.json"
 
-# Headerlar (Referer çok önemli, yoksa yayın açılmaz)
+# Bot olduğumuzu gizlemek ve yayını açabilmek için gerekli başlıklar
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
     "Referer": "https://www.google.com/"
 }
 
-def extract_m3u8_from_iframe(iframe_url):
+def extract_m3u8(iframe_url):
     """
-    Iframe adresine gidip kaynak kodun içinden .m3u8 linkini regex ile arar.
+    Iframe adresine gidip gizli .m3u8 linkini bulmaya çalışır.
     """
     if not iframe_url:
         return None
-        
+    
     try:
-        # Iframe'e istek atarken Referer olarak ana siteyi gösteriyoruz
-        iframe_headers = HEADERS.copy()
-        iframe_headers["Referer"] = BASE_URL
+        # Iframe'e giderken Referer olarak ana siteyi gösteriyoruz
+        frame_headers = HEADERS.copy()
+        frame_headers["Referer"] = BASE_URL
         
-        response = requests.get(iframe_url, headers=iframe_headers, timeout=10)
+        # Iframe içeriğini çek
+        response = requests.get(iframe_url, headers=frame_headers, timeout=10)
         
         if response.status_code == 200:
-            # Regex ile .m3u8 ile biten linkleri arıyoruz (genelde "source": "..." içinde olur)
-            # Bu regex http veya https ile başlayan ve .m3u8 ile biten stringi yakalar
+            content = response.text
+            
+            # 1. Yöntem: Standart .m3u8 arama
+            # (http veya https ile başlayan ve .m3u8 ile biten stringleri bul)
             m3u8_pattern = r'(https?://[^\s"\']+\.m3u8[^\s"\']*)'
-            matches = re.search(m3u8_pattern, response.text)
+            matches = re.search(m3u8_pattern, content)
             
             if matches:
-                return matches.group(1)
-            else:
-                # Bazen m3u8 base64 veya farklı bir değişken içinde olabilir,
-                # bu basit regex çoğu standart player (Clappr, JWPlayer) için çalışır.
-                return None
+                # Linkte escape karakterleri (\/) varsa düzelt
+                clean_link = matches.group(1).replace('\\/', '/')
+                return clean_link
+            
+            # 2. Yöntem: Eğer m3u8 yoksa, belki başka bir .php veya tokenli link vardır
+            # Burası sitenin yapısına göre özelleştirilebilir.
+            
     except Exception as e:
-        print(f"M3U8 çekme hatası: {e}")
-        return None
+        print(f"   [!] M3U8 Hatası ({iframe_url}): {e}")
+    
+    return None
 
-def scrape_data():
-    print(f"[{datetime.now()}] Site taranıyor: {BASE_URL}")
+def main():
+    print(f"[{datetime.now()}] Tarama Başlıyor: {BASE_URL}")
     
     try:
         response = requests.get(BASE_URL, headers=HEADERS, timeout=15)
         response.raise_for_status()
-        
         soup = BeautifulSoup(response.text, 'lxml')
         
-        data_output = {
-            "last_updated": str(datetime.now()),
-            "channels": [], # Kanal mantığı maçlarla aynıysa buraya da uygulanabilir
+        # JSON İskeleti
+        data = {
+            "meta": {
+                "updated_at": str(datetime.now()),
+                "source": BASE_URL
+            },
+            "channels": [],
             "matches": []
         }
 
-        # --- MAÇ LİSTESİNİ VE M3U8 LİNKLERİNİ ÇEKME ---
+        # --- KANALLARI ÇEK ---
+        # (Slider kısmındaki sabit kanallar)
+        print("--- Kanallar Taranıyor ---")
+        channel_elements = soup.select('.channel-list .single-channel')
+        for ch in channel_elements:
+            name = ch.get('data-name')
+            stream_slug = ch.get('data-stream')
+            
+            # Resim linkini düzelt
+            img_tag = ch.find('img')
+            img_url = ""
+            if img_tag:
+                src = img_tag.get('src', '')
+                if src.startswith('//'):
+                    img_url = "https:" + src
+                elif src.startswith('/'):
+                    img_url = BASE_URL + src
+                else:
+                    img_url = src
+
+            data["channels"].append({
+                "name": name,
+                "slug": stream_slug,
+                "logo": img_url,
+                "url": f"{BASE_URL}/kanal/{stream_slug}" # Kanalın sayfa linki
+            })
+
+        # --- MAÇLARI ÇEK ---
+        print("--- Maçlar ve M3U8 Linkleri Taranıyor ---")
         match_elements = soup.select('.bet-matches a.single-match')
         
-        print(f"{len(match_elements)} adet maç bulundu, m3u8 linkleri taranıyor...")
-
         for match in match_elements:
-            home_team = match.get('data-home')
-            away_team = match.get('data-away')
-            match_name = f"{home_team} vs {away_team}"
+            home = match.get('data-home')
+            away = match.get('data-away')
+            match_title = f"{home} vs {away}"
             
-            # Iframe URL'ini al
             iframe_src = match.get('data-iframe')
+            match_time = match.get('data-saat')
+            sport_type = match.get('data-matchtype')
             
-            # ---> KRİTİK NOKTA: Iframe'e gidip m3u8'i alıyoruz <---
-            # Token varsa URL'e eklememiz gerekebilir, HTML'de data-token varsa onu da alabilirsin.
-            # Senin HTML örneğinde iframe url'i token içeriyor gibi görünüyordu.
-            
-            direct_stream_url = extract_m3u8_from_iframe(iframe_src)
-            
-            # Görseller
-            home_img = match.find('img', class_='homeLogo')
-            home_logo = home_img['src'] if home_img else ""
-            
-            away_img = match.find('img', class_='awayLogo')
-            away_logo = away_img['src'] if away_img else ""
+            # Logolar
+            home_logo = match.find('img', class_='homeLogo')['src']
+            away_logo = match.find('img', class_='awayLogo')['src']
 
-            # Sadece yayını bulunanları listeye eklemek istersen if direct_stream_url: kullanabilirsin.
-            data_output["matches"].append({
-                "name": match_name,
-                "home_team": home_team,
-                "away_team": away_team,
+            print(f" > İşleniyor: {match_title}...")
+
+            # Canlı yayın linkini avla
+            real_stream_url = extract_m3u8(iframe_src)
+            
+            match_data = {
+                "title": match_title,
+                "home": home,
+                "away": away,
+                "time": match_time,
+                "sport": sport_type,
                 "home_logo": home_logo,
                 "away_logo": away_logo,
-                "time": match.get('data-saat'),
-                "sport": match.get('data-matchtype'),
-                "iframe_url": iframe_src,     # Yedek olarak kalsın
-                "stream_url": direct_stream_url, # İŞTE BU SENİN M3U8 LİNKİN
-                "headers": { # Oynatıcıya (ExoPlayer) bu headerları göndermen gerekebilir
-                    "Referer": "https://sttc2.kakirikodes.shop/", 
-                    "User-Agent": HEADERS["User-Agent"]
+                "iframe_url": iframe_src, # Yedek olarak dursun
+                "stream_url": real_stream_url, # ASIL LİNK (varsa)
+                "headers": { # Oynatıcıya gönderilecek headerlar
+                    "User-Agent": HEADERS["User-Agent"],
+                    "Referer": "https://sttc2.kakirikodes.shop/" # Genelde iframe domaini referer istenir
                 }
-            })
+            }
             
-            print(f"Çekildi: {match_name} -> {direct_stream_url if direct_stream_url else 'LINK YOK'}")
+            data["matches"].append(match_data)
+            
+            # Sunucuyu yormamak için çok kısa bekle
+            time.sleep(0.1)
 
-        # JSON Kaydetme
+        # JSON DOSYASINA YAZ
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump(data_output, f, indent=4, ensure_ascii=False)
+            json.dump(data, f, indent=4, ensure_ascii=False)
             
-        print("İşlem tamamlandı. data.json kontrol et.")
+        print(f"\nBaşarılı! Toplam {len(data['matches'])} maç bulundu. 'data.json' dosyasına yazıldı.")
 
     except Exception as e:
-        print(f"Genel Hata: {e}")
+        print(f"KRİTİK HATA: {e}")
 
 if __name__ == "__main__":
-    scrape_data()
+    main()
