@@ -1,19 +1,19 @@
-name: Mac Verisi Cek
+name: S Sport Otomatik Bot
 
 on:
-  workflow_dispatch:      # Butona basınca çalışması için
+  workflow_dispatch:      # Butona basınca çalıştır
   schedule:
-    - cron: '*/30 * * * *' # Her 30 dakikada bir otomatik çalışması için
+    - cron: '0 */2 * * *' # Her 2 saatte bir çalıştır
 
 permissions:
-  contents: write         # JSON dosyasını repoya kaydetmek için izin
+  contents: write
 
 jobs:
-  veri-cekme-isleri:
+  veri-guncelle:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Kodları İndir (Checkout)
+      - name: Depoyu Çek
         uses: actions/checkout@v3
 
       - name: Python Kur
@@ -21,16 +21,16 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Gerekli Kütüphaneyi Kur
-        run: pip install requests
+      - name: Kütüphaneleri Yükle
+        run: pip install -r requirements.txt
 
       - name: Scripti Çalıştır
-        run: python main2.py
+        run: python main.py
 
-      - name: Sonuçları Kaydet (Git Push)
+      - name: Sonucu Kaydet (Push)
         run: |
-          git config --global user.name "Bot"
+          git config --global user.name "S Sport Bot"
           git config --global user.email "bot@github.com"
           git add canli_yayinlar.json
-          git commit -m "Veriler güncellendi" || echo "Değişiklik yok"
+          git commit -m "Otomatik güncelleme: $(date)" || echo "Değişiklik yok"
           git push
