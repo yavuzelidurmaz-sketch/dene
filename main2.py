@@ -1,133 +1,82 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-import re
 import time
+import re
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from webdriver_manager.chrome import ChromeDriverManager
 
 # --- AYARLAR ---
 BASE_URL = "https://betparktv252.com"  
 OUTPUT_FILE = "data.json"
 
-# --- JS UNPACKER SINIFI (Senin attığın Kotlin kodunun Python hali) ---
-class JsUnpacker:
-    def __init__(self, packedJS):
-        self.packedJS = packedJS
-
-    def detect(self):
-        """JavaScript'in P.A.C.K.E.R. formatında olup olmadığını kontrol eder."""
-        if not self.packedJS: return False
-        js = self.packedJS.replace(" ", "")
-        return bool(re.search(r"eval\(function\(p,a,c,k,e,[rd]", js))
-
-    def unpack(self):
-        """Şifreli JS kodunu çözer."""
-        if not self.packedJS: return None
-        
-        try:
-            # P.A.C.K.E.R. Regex deseni (Kotlin kodundaki mantık)
-            pattern = r"}\s*\('(.*)',\s*(.*?),\s*(\d+),\s*'(.*?)'\.split\('\|'\)"
-            match = re.search(pattern, self.packedJS, re.DOTALL)
-            
-            if match and len(match.groups()) == 4:
-                payload = match.group(1).replace("\\'", "'")
-                radix = int(match.group(2))
-                count = int(match.group(3))
-                keywords = match.group(4).split('|')
-
-                if len(keywords) != count:
-                    return None # Hatalı paket
-
-                # Base kod çözücü
-                def unbase(val, base):
-                    if 2 <= base <= 36:
-                        return int(val, base)
-                    else:
-                        # Base62+ desteği (Kotlin kodundaki Unbase mantığı)
-                        ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                        ret = 0
-                        for i, char in enumerate(val[::-1]):
-                            ret += ALPHABET.index(char) * (base ** i)
-                        return ret
-
-                def lookup(match):
-                    word = match.group(0)
-                    index = unbase(word, radix)
-                    if 0 <= index < len(keywords):
-                        return keywords[index] if keywords[index] else word
-                    return word
-
-                # Payload içindeki şifreli kelimeleri değiştir
-                # \b kelime sınırı demektir, alfanümerik kelimeleri bulur
-                decoded = re.sub(r'\b\w+\b', lookup, payload)
-                return decoded
-
-        except Exception as e:
-            print(f"Unpack Hatası: {e}")
-        
-        return None
-
-# --- TARAYICI AYARLARI ---
+# --- TARAYICIYI HAZIRLA (AĞ DİNLEME MODU) ---
 def get_driver():
     chrome_options = Options()
-    chrome_options.add_argument("--headless") 
+    chrome_options.add_argument("--headless")  # Ekransız mod
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--mute-audio") # Sesi kapat
     chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
     
+    # Performans Loglarını Aç (Ağ trafiğini izlemek için)
+    capabilities = DesiredCapabilities.CHROME
+    capabilities["goog:loggingPrefs"] = {"performance": "ALL"}
+    chrome_options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
     return driver
 
-def extract_stream_url(driver, iframe_url):
+def sniff_m3u8(driver, iframe_url):
     """
-    Iframe'e gider, şifreli JS'i bulur ve çözer.
+    Iframe adresine gider, videonun yüklenmesini bekler ve
+    AĞ TRAFİĞİNDEN (Network Logs) .m3u8 linkini yakalar.
     """
     if not iframe_url: return None
     
-    print(f"    -> Analiz ediliyor: {iframe_url}")
+    print(f"    -> Trafik dinleniyor: {iframe_url}")
     try:
         driver.get(iframe_url)
-        time.sleep(2) # JS yüklenmesi için bekle
+        time.sleep(5)  # Sayfanın ve playerın yüklenmesi için bekleme süresi (Gerekirse arttır)
         
-        page_source = driver.page_source
+        # Tarayıcının performans loglarını (Ağ istekleri dahil) çek
+        logs = driver.get_log("performance")
         
-        # 1. YÖNTEM: Direkt açıkta olan m3u8 var mı?
-        simple_m3u8 = re.search(r'(https?://[^\s"\']+\.m3u8[^\s"\']*)', page_source)
-        if simple_m3u8:
-            return simple_m3u8.group(1).replace('\\/', '/')
-
-        # 2. YÖNTEM: P.A.C.K.E.R (eval(function(p,a,c,k,e,d)) koruması var mı?
-        # Sayfa kaynağındaki script etiketlerini tara
-        scripts = re.findall(r'<script.*?>(.*?)</script>', page_source, re.DOTALL)
+        # Logları tersten tara (En son yüklenen genellikle master playlisttir)
+        found_m3u8 = None
         
-        for script_content in scripts:
-            unpacker = JsUnpacker(script_content)
-            if unpacker.detect():
-                print("    [!] Şifreli kod bulundu, çözülüyor...")
-                decoded_js = unpacker.unpack()
+        for entry in logs:
+            message = json.loads(entry["message"])["message"]
+            
+            # Sadece ağ isteklerini filtrele
+            if message["method"] == "Network.requestWillBeSent":
+                request_url = message["params"]["request"]["url"]
                 
-                if decoded_js:
-                    # Çözülen kodun içinde m3u8 ara
-                    hidden_m3u8 = re.search(r'(https?://[^\s"\']+\.m3u8[^\s"\']*)', decoded_js)
-                    if hidden_m3u8:
-                        return hidden_m3u8.group(1).replace('\\/', '/')
+                # Linkin içinde .m3u8 geçiyor mu?
+                if ".m3u8" in request_url:
+                    found_m3u8 = request_url
+                    # Eğer 'master.m3u8' bulursak en iyisi odur, direkt döndür
+                    if "master.m3u8" in request_url or "playlist.m3u8" in request_url:
+                         return request_url
+        
+        return found_m3u8
 
     except Exception as e:
-        print(f"    [!] Hata: {e}")
-        
-    return None
+        print(f"    [!] Sniff Hatası: {e}")
+        return None
 
 def main():
-    print(f"[{datetime.now()}] Tarama Başlıyor (Selenium + JsUnpacker)...")
+    print(f"[{datetime.now()}] Tarama Başlıyor (Network Sniffing Modu)...")
     
     headers = {"User-Agent": "Mozilla/5.0"}
     try:
-        # Ana sayfayı çek
+        # Ana sayfayı normal requests ile çek (Hız için)
         response = requests.get(BASE_URL, headers=headers, timeout=15)
         soup = BeautifulSoup(response.text, 'lxml')
         
@@ -146,7 +95,7 @@ def main():
 
         count = 0
         for match in match_elements:
-            # Test için limit (Github'a yüklerken bu limiti kaldırabilirsin)
+            # GitHub Action süresi dolmasın diye test amaçlı limit koyabilirsin
             if count >= 30: break 
             
             home = match.get('data-home')
@@ -160,19 +109,23 @@ def main():
 
             stream_url = None
             if iframe_src:
-                stream_url = extract_stream_url(driver, iframe_src)
+                # Iframe linkini tarayıcıya gönder ve ağ trafiğini dinle
+                stream_url = sniff_m3u8(driver, iframe_src)
             
             if stream_url:
-                print(f" [V] Link Çözüldü: {match_title}")
+                print(f" [V] YAKALANDI: {match_title}")
+                print(f"     Link: {stream_url[:60]}...") # Linkin başını göster
             else:
-                print(f" [X] Link Bulunamadı: {match_title}")
+                print(f" [X] Bulunamadı: {match_title}")
 
-            # Referer, iframe'in ana domaini olmalı
+            # Referer Header'ı oluştur
             referer_header = "https://sttc2.kakirikodes.shop/"
             if iframe_src and "http" in iframe_src:
-                from urllib.parse import urlparse
-                parsed = urlparse(iframe_src)
-                referer_header = f"{parsed.scheme}://{parsed.netloc}/"
+                try:
+                    from urllib.parse import urlparse
+                    parsed = urlparse(iframe_src)
+                    referer_header = f"{parsed.scheme}://{parsed.netloc}/"
+                except: pass
 
             data["matches"].append({
                 "title": match_title,
@@ -202,8 +155,7 @@ def main():
         print(f"Genel Hata: {e}")
         try:
             driver.quit()
-        except:
-            pass
+        except: pass
 
 if __name__ == "__main__":
     main()
