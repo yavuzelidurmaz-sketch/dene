@@ -3,6 +3,6 @@ beautifulsoup4
 lxml
 selenium
 webdriver-manager
-pip install undetected-chromedriver
-pip install curl_cffi beautifulsoup4
+undetected-chromedriver
+curl_cffi beautifulsoup4
 
