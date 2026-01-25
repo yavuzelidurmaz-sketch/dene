@@ -1,8 +1,4 @@
-requests
+curl_cffi
 beautifulsoup4
 lxml
-selenium
-webdriver-manager
-undetected-chromedriver
-curl_cffi-beautifulsoup4
-
+requests
