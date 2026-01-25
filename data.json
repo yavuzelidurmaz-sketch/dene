@@ -1,9 +1,20 @@
 {
-    "meta": {
-        "updated_at": "2026-01-25 07:41:08.527752",
-        "source": "https://betparktv252.com"
-    },
     "matches": [
+        {
+            "title": "Bournemouth vs Liverpool",
+            "home": "Bournemouth",
+            "away": "Liverpool",
+            "time": "20:30",
+            "sport": "Futbol",
+            "home_logo": "https://macdata.net/img/y08nak1534071116.png",
+            "away_logo": "https://macdata.net/img/uvxuqq1448813372.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/790050",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
         {
             "title": "Marsilya vs Lens",
             "home": "Marsilya",
@@ -58,36 +69,6 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791993",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            }
-        },
-        {
-            "title": "SYGaming vs WLT",
-            "home": "SYGaming",
-            "away": "WLT",
-            "time": "08:00",
-            "sport": "Esport",
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792058",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            }
-        },
-        {
-            "title": "Team Skuzo vs Qupar Esports",
-            "home": "Team Skuzo",
-            "away": "Qupar Esports",
-            "time": "08:26",
-            "sport": "Esport",
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/791998",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -230,21 +211,6 @@
             }
         },
         {
-            "title": "Denver Nuggets  vs Dallas Mavericks ",
-            "home": "Denver Nuggets ",
-            "away": "Dallas Mavericks ",
-            "time": "09:20",
-            "sport": "Basketbol",
-            "home_logo": "https://macdata.net/img/8o8j5k1546016274.png",
-            "away_logo": "https://macdata.net/img/yqrxrs1420568796.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792071",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            }
-        },
-        {
             "title": "Hydra Esports vs Starlit Exiles",
             "home": "Hydra Esports",
             "away": "Starlit Exiles",
@@ -253,21 +219,6 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792079",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            }
-        },
-        {
-            "title": "Military vs Courageous",
-            "home": "Military",
-            "away": "Courageous",
-            "time": "09:30",
-            "sport": "Kriket",
-            "home_logo": "https://macdata.net/img/541d78958145c6ddf8194996123221ba.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792075",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -313,21 +264,6 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792109",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            }
-        },
-        {
-            "title": "Zalgiris  vs Olimpia ",
-            "home": "Zalgiris ",
-            "away": "Olimpia ",
-            "time": "09:35",
-            "sport": "Basketbol",
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/791db2f83b922af3e238e45052775b5e.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792158",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -448,6 +384,66 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792128",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "Pittsburgh Penguins  vs Dallas Stars ",
+            "home": "Pittsburgh Penguins ",
+            "away": "Dallas Stars ",
+            "time": "09:51",
+            "sport": "Hockey",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792147",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "Kursk  vs Orenburg ",
+            "home": "Kursk ",
+            "away": "Orenburg ",
+            "time": "09:55",
+            "sport": "Basketbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/357045.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792116",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "Magadan vs Anapa",
+            "home": "Magadan",
+            "away": "Anapa",
+            "time": "09:57",
+            "sport": "Basketbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792115",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "Apollo vs Infinity Hoop",
+            "home": "Apollo",
+            "away": "Infinity Hoop",
+            "time": "10:00",
+            "sport": "Basketbol",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792122",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
