@@ -1,24 +1,9 @@
 {
     "meta": {
-        "updated_at": "2026-01-25 07:35:55.055429",
+        "updated_at": "2026-01-25 07:41:08.527752",
         "source": "https://betparktv252.com"
     },
     "matches": [
-        {
-            "title": "Bournemouth vs Liverpool",
-            "home": "Bournemouth",
-            "away": "Liverpool",
-            "time": "20:30",
-            "sport": "Futbol",
-            "home_logo": "https://macdata.net/img/y08nak1534071116.png",
-            "away_logo": "https://macdata.net/img/uvxuqq1448813372.png",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/790050",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            }
-        },
         {
             "title": "Marsilya vs Lens",
             "home": "Marsilya",
@@ -448,6 +433,21 @@
             "home_logo": "https://macdata.net/img/0vx0bn1526727024.png",
             "away_logo": "https://macdata.net/img/15tpfg1558894726.png",
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792102",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            }
+        },
+        {
+            "title": "SpeedRunners vs Unstoppable",
+            "home": "SpeedRunners",
+            "away": "Unstoppable",
+            "time": "09:45",
+            "sport": "Esport",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/792128",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
