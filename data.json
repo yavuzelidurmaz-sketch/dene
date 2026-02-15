@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "Rams Başakşehir vs Beşiktaş",
-            "home": "Rams Başakşehir",
-            "away": "Beşiktaş",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822840",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/qpswyp1448199205.png",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Rayo Vallecano vs Atletico Madrid",
             "home": "Rayo Vallecano",
             "away": "Atletico Madrid",
@@ -43,36 +28,6 @@
             "home_logo": "https://macdata.net/img/xqyyvq1473453233.png",
             "away_logo": "https://macdata.net/img/5885.png",
             "time": "17:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Göztepe vs Kayserispor",
-            "home": "Göztepe",
-            "away": "Kayserispor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822823",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/9jwk7o1513952059.png",
-            "away_logo": "https://macdata.net/img/bvskgi1601668985.png",
-            "time": "17:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Kocaelispor vs Gaziantep FK",
-            "home": "Kocaelispor",
-            "away": "Gaziantep FK",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822816",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/502049.png",
-            "away_logo": "https://macdata.net/img/54j6ik1579458093.png",
-            "time": "14:30",
             "sport": "Futbol"
         },
         {
@@ -106,21 +61,6 @@
             "sport": "Tenis"
         },
         {
-            "title": "Rams Başakşehir vs Beşiktaş",
-            "home": "Rams Başakşehir",
-            "away": "Beşiktaş",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822840",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Rayo Vallecano vs Atletico Madrid",
             "home": "Rayo Vallecano",
             "away": "Atletico Madrid",
@@ -148,51 +88,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "17:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Göztepe vs Kayserispor",
-            "home": "Göztepe",
-            "away": "Kayserispor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822823",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "17:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Kocaelispor vs Gaziantep FK",
-            "home": "Kocaelispor",
-            "away": "Gaziantep FK",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822816",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "14:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Feyenoord vs GA Eagles",
-            "home": "Feyenoord",
-            "away": "GA Eagles",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822815",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "14:15",
             "sport": "Futbol"
         }
     ]
