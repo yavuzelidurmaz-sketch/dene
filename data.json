@@ -76,21 +76,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Torino vs Bologna",
-            "home": "Torino",
-            "away": "Bologna",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822841",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/xxprty1448806802.png",
-            "away_logo": "https://macdata.net/img/ytytyp1448806245.png",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Glasgow Rangers vs Hearts",
             "home": "Glasgow Rangers",
             "away": "Hearts",
@@ -286,21 +271,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Parma vs Verona",
-            "home": "Parma",
-            "away": "Verona",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822826",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/otbbzf1521402015.png",
-            "away_logo": "https://macdata.net/img/p6camf1593457737.png",
-            "time": "17:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Cremonese vs Genoa",
             "home": "Cremonese",
             "away": "Genoa",
@@ -449,6 +419,36 @@
             "away_logo": "https://macdata.net/img/54j6ik1579458093.png",
             "time": "14:30",
             "sport": "Futbol"
+        },
+        {
+            "title": "Feyenoord vs GA Eagles",
+            "home": "Feyenoord",
+            "away": "GA Eagles",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822815",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/uturtx1473534803.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "14:15",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Unicaja Malaga vs Real Madrid",
+            "home": "Unicaja Malaga",
+            "away": "Real Madrid",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822844",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/vwvwrw1473502969.png",
+            "time": "21:00",
+            "sport": "Basketbol"
         }
     ]
 }
