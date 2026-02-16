@@ -166,36 +166,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Macclesfield vs Brentford",
-            "home": "Macclesfield",
-            "away": "Brentford",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822856",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Real Sociedad B vs Malaga",
-            "home": "Real Sociedad B",
-            "away": "Malaga",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822857",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Cagliari vs Lecce",
             "home": "Cagliari",
             "away": "Lecce",
@@ -208,36 +178,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "22:45",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Al Shorta vs Al Duhail",
-            "home": "Al Shorta",
-            "away": "Al Duhail",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822855",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Al Hilal vs Al Wahda",
-            "home": "Al Hilal",
-            "away": "Al Wahda",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822854",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:15",
             "sport": "Futbol"
         }
     ]
