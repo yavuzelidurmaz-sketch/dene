@@ -106,6 +106,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Darüşşafaka vs Göztepe",
+            "home": "Darüşşafaka",
+            "away": "Göztepe",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822853",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/h3q5n41545862222.png",
+            "away_logo": "https://macdata.net/img/9jwk7o1513952059.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Al Ahli vs Al Ahli Dubai",
             "home": "Al Ahli",
             "away": "Al Ahli Dubai",
@@ -253,6 +268,21 @@
             "home_logo": "",
             "away_logo": "",
             "time": "21:15",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Darüşşafaka vs Göztepe",
+            "home": "Darüşşafaka",
+            "away": "Göztepe",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/822853",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "20:00",
             "sport": "Futbol"
         },
         {
