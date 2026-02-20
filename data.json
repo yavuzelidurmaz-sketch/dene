@@ -61,21 +61,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "MKE Ankaragücü vs TED Ankara Kolejliler",
-            "home": "MKE Ankaragücü",
-            "away": "TED Ankara Kolejliler",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823697",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/ghb09n1575364895.png",
-            "time": "17:00",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Çaykur Rizespor vs Kocaelispor",
             "home": "Çaykur Rizespor",
             "away": "Kocaelispor",
@@ -117,6 +102,21 @@
             },
             "home_logo": "https://macdata.net/img/xystvp1448806138.png",
             "away_logo": "https://macdata.net/img/p6camf1593457737.png",
+            "time": "22:45",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Brest vs Marsilya",
+            "home": "Brest",
+            "away": "Marsilya",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823691",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/05ae032aa77edef810e6be8f43eca549.png",
+            "away_logo": "https://macdata.net/img/1641.png",
             "time": "22:45",
             "sport": "Futbol"
         },
@@ -178,36 +178,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Mainz 05 vs Hamburg",
-            "home": "Mainz 05",
-            "away": "Hamburg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823692",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Sassuolo vs Hellas Verona",
-            "home": "Sassuolo",
-            "away": "Hellas Verona",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823690",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:45",
             "sport": "Futbol"
         }
     ]
