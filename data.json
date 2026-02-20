@@ -46,19 +46,19 @@
             "sport": "Basketbol"
         },
         {
-            "title": "MKE Ankaragücü vs TED Ankara Kolejliler",
-            "home": "MKE Ankaragücü",
-            "away": "TED Ankara Kolejliler",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823697",
+            "title": "Mainz 05 vs Hamburg",
+            "home": "Mainz 05",
+            "away": "Hamburg",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823692",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
                 "Referer": "https://sttc2.kakirikodes.shop/"
             },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/ghb09n1575364895.png",
-            "time": "17:00",
-            "sport": "Basketbol"
+            "home_logo": "https://macdata.net/img/2556.png",
+            "away_logo": "https://macdata.net/img/tvtppt1473453296.png",
+            "time": "22:30",
+            "sport": "Futbol"
         },
         {
             "title": "Çaykur Rizespor vs Kocaelispor",
@@ -166,21 +166,6 @@
             "sport": "Voleybol"
         },
         {
-            "title": "Bochum vs Nürnberg",
-            "home": "Bochum",
-            "away": "Nürnberg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823694",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Athletic Bilbao vs Elche",
             "home": "Athletic Bilbao",
             "away": "Elche",
@@ -196,10 +181,10 @@
             "sport": "Futbol"
         },
         {
-            "title": "Fenerbahçe Beko vs Türk Telekom",
-            "home": "Fenerbahçe Beko",
-            "away": "Türk Telekom",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823696",
+            "title": "Mainz 05 vs Hamburg",
+            "home": "Mainz 05",
+            "away": "Hamburg",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823692",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -207,8 +192,8 @@
             },
             "home_logo": "",
             "away_logo": "",
-            "time": "20:45",
-            "sport": "Basketbol"
+            "time": "22:30",
+            "sport": "Futbol"
         },
         {
             "title": "Sassuolo vs Hellas Verona",
