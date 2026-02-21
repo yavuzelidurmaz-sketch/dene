@@ -224,51 +224,6 @@
             "away_logo": "https://macdata.net/img/yuvtsy1447594254.png",
             "time": "21:00",
             "sport": "Futbol"
-        },
-        {
-            "title": "Japonya vs Rusya",
-            "home": "Japonya",
-            "away": "Rusya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/823687",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/ffsyxz1591989843.png",
-            "away_logo": "https://macdata.net/img/qtttsy1455466096.png",
-            "time": "07:30",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "Polonya vs Rusya",
-            "home": "Polonya",
-            "away": "Rusya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/823653",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/ttvrxy1455466076.png",
-            "away_logo": "https://macdata.net/img/qtttsy1455466096.png",
-            "time": "09:45",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "Prisons Rift vs Eldoret Water",
-            "home": "Prisons Rift",
-            "away": "Eldoret Water",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/823685",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "10:00",
-            "sport": "Voleybol"
         }
     ]
 }
