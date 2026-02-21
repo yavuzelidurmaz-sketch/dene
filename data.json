@@ -61,21 +61,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Real Sociedad vs Real Oviedo",
-            "home": "Real Sociedad",
-            "away": "Real Oviedo",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823702",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/vptvpr1473502986.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "16:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Alanyaspor vs Rams Başakşehir",
             "home": "Alanyaspor",
             "away": "Rams Başakşehir",
@@ -181,21 +166,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Real Betis vs Rayo Vallecano",
-            "home": "Real Betis",
-            "away": "Rayo Vallecano",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823712",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rrxvww1473502887.png",
-            "away_logo": "https://macdata.net/img/xsvwqu1473503721.png",
-            "time": "18:15",
-            "sport": "Futbol"
-        },
-        {
             "title": "Lecce vs Inter",
             "home": "Lecce",
             "away": "Inter",
@@ -237,36 +207,6 @@
             },
             "home_logo": "https://macdata.net/img/yutyxs1467459956.png",
             "away_logo": "https://macdata.net/img/y08nak1534071116.png",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Osasuna vs Real Madrid",
-            "home": "Osasuna",
-            "away": "Real Madrid",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823717",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rvspvt1473502960.png",
-            "away_logo": "https://macdata.net/img/vwvwrw1473502969.png",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Osasuna vs Real Madrid",
-            "home": "Osasuna",
-            "away": "Real Madrid",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823718",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rvspvt1473502960.png",
-            "away_logo": "https://macdata.net/img/vwvwrw1473502969.png",
             "time": "20:30",
             "sport": "Futbol"
         },
@@ -329,21 +269,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "10:00",
             "sport": "Voleybol"
-        },
-        {
-            "title": "Toulouse vs Paris FC",
-            "home": "Toulouse",
-            "away": "Paris FC",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823720",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:00",
-            "sport": "Futbol"
         }
     ]
 }
