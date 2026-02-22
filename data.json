@@ -136,51 +136,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Paderborn vs Hertha Berlin",
-            "home": "Paderborn",
-            "away": "Hertha Berlin",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823726",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "15:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Gaziantep FK vs Trabzonspor",
-            "home": "Gaziantep FK",
-            "away": "Trabzonspor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823728",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "16:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Çorum FK vs Ümraniyespor",
-            "home": "Çorum FK",
-            "away": "Ümraniyespor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823729",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "16:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Auxerre vs Rennes",
             "home": "Auxerre",
             "away": "Rennes",
