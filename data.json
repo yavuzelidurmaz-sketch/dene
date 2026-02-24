@@ -74,21 +74,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "20:30",
             "sport": "Futbol"
-        },
-        {
-            "title": "Harem Spor vs Balıkesir BB",
-            "home": "Harem Spor",
-            "away": "Balıkesir BB",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823743",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "17:00",
-            "sport": "Basketbol"
         }
     ]
 }
