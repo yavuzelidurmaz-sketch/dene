@@ -104,36 +104,6 @@
             "away_logo": "https://macdata.net/img/7t684j1520879174.png",
             "time": "23:00",
             "sport": "Futbol"
-        },
-        {
-            "title": "Coritiba vs Sao Paulo",
-            "home": "Coritiba",
-            "away": "Sao Paulo",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823764",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "01:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Bragantino SP. vs Paranaense",
-            "home": "Bragantino SP.",
-            "away": "Paranaense",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823763",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "01:00",
-            "sport": "Futbol"
         }
     ]
 }
