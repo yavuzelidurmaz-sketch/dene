@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "Inter vs Bodo Glimt",
-            "home": "Inter",
-            "away": "Bodo Glimt",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823755",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/xqyvuy1448806439.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Bayer Leverkusen vs Olympiakos",
             "home": "Bayer Leverkusen",
             "away": "Olympiakos",
@@ -28,21 +13,6 @@
             "home_logo": "https://macdata.net/img/2681.png",
             "away_logo": "https://macdata.net/img/xj60no1534872393.png",
             "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Atletico Madrid vs Club Brugge",
-            "home": "Atletico Madrid",
-            "away": "Club Brugge",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823751",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/kzifae1578852277.png",
-            "away_logo": "https://macdata.net/img/ov3w9j1536001717.png",
-            "time": "20:45",
             "sport": "Futbol"
         },
         {
