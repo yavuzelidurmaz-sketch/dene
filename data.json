@@ -209,36 +209,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "01:30",
             "sport": "Futbol"
-        },
-        {
-            "title": "Santos vs Vasco da Gama",
-            "home": "Santos",
-            "away": "Vasco da Gama",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823781",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "01:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "River Plate vs Banfield",
-            "home": "River Plate",
-            "away": "Banfield",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823782",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "01:30",
-            "sport": "Futbol"
         }
     ]
 }
