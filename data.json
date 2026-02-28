@@ -31,6 +31,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Kocaelispor vs Beşiktaş",
+            "home": "Kocaelispor",
+            "away": "Beşiktaş",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823812",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/502049.png",
+            "away_logo": "https://macdata.net/img/qpswyp1448199205.png",
+            "time": "16:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Como vs Lecce",
             "home": "Como",
             "away": "Lecce",
