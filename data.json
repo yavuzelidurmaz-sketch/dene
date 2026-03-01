@@ -151,6 +151,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Como vs Lecce",
+            "home": "Como",
+            "away": "Lecce",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823813",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/11947.png",
+            "time": "17:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Bayer Leverkusen vs Mainz",
             "home": "Bayer Leverkusen",
             "away": "Mainz",
@@ -283,6 +298,21 @@
             "home_logo": "https://macdata.net/img/xwxsxq1473504775.png",
             "away_logo": "https://macdata.net/img/jgmk4p1598796830.png",
             "time": "21:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Inter vs Genoa",
+            "home": "Inter",
+            "away": "Genoa",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823827",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/xqyvuy1448806439.png",
+            "away_logo": "https://macdata.net/img/rqqvwv1448806429.png",
+            "time": "22:45",
             "sport": "Futbol"
         },
         {
