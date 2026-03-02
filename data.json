@@ -16,6 +16,21 @@
             "sport": "Basketbol"
         },
         {
+            "title": "Real Madrid vs Getafe",
+            "home": "Real Madrid",
+            "away": "Getafe",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823851",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/vwvwrw1473502969.png",
+            "away_logo": "https://macdata.net/img/2l9ie91549394595.png",
+            "time": "23:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Manisa FK vs Çorum FK",
             "home": "Manisa FK",
             "away": "Çorum FK",
@@ -28,36 +43,6 @@
             "home_logo": "https://macdata.net/img/216878.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Pisa vs Bologna",
-            "home": "Pisa",
-            "away": "Bologna",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823846",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/ytytyp1448806245.png",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Udinese vs Fiorentina",
-            "home": "Udinese",
-            "away": "Fiorentina",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823850",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/vwvstr1448806811.png",
-            "away_logo": "https://macdata.net/img/twwqss1448806409.png",
-            "time": "22:45",
             "sport": "Futbol"
         },
         {
@@ -121,10 +106,10 @@
             "sport": "Basketbol"
         },
         {
-            "title": "Udinese vs Fiorentina",
-            "home": "Udinese",
-            "away": "Fiorentina",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823850",
+            "title": "Real Madrid vs Getafe",
+            "home": "Real Madrid",
+            "away": "Getafe",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823851",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -132,22 +117,7 @@
             },
             "home_logo": "",
             "away_logo": "",
-            "time": "22:45",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Al Duhail vs Al Ahli",
-            "home": "Al Duhail",
-            "away": "Al Ahli",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823848",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:15",
+            "time": "23:00",
             "sport": "Futbol"
         }
     ]
