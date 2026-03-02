@@ -46,36 +46,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Torino vs Lazio",
-            "home": "Torino",
-            "away": "Lazio",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823838",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/xxprty1448806802.png",
-            "away_logo": "https://macdata.net/img/rwqyvs1448806608.png",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Torino vs Lazio",
-            "home": "Torino",
-            "away": "Lazio",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823839",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/xxprty1448806802.png",
-            "away_logo": "https://macdata.net/img/rwqyvs1448806608.png",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Real Betis vs Sevilla",
             "home": "Real Betis",
             "away": "Sevilla",
@@ -118,21 +88,6 @@
             "home_logo": "https://macdata.net/img/2giize1534005340.png",
             "away_logo": "https://macdata.net/img/8r0dab1598797469.png",
             "time": "19:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Roma vs Juventus",
-            "home": "Roma",
-            "away": "Juventus",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823842",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/xqpqpq1448806641.png",
-            "away_logo": "https://macdata.net/img/180451.png",
-            "time": "22:45",
             "sport": "Futbol"
         }
     ]
