@@ -1,34 +1,19 @@
 {
     "matches": [
         {
-            "title": "Türkiye vs Sırbistan",
-            "home": "Türkiye",
-            "away": "Sırbistan",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823847",
+            "title": "İspanya vs Ukrayna",
+            "home": "İspanya",
+            "away": "Ukrayna",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823849",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
                 "Referer": "https://sttc2.kakirikodes.shop/"
             },
-            "home_logo": "https://macdata.net/img/70c4oo1591982459.png",
-            "away_logo": "https://macdata.net/img/0vx0bn1526727024.png",
-            "time": "21:00",
+            "home_logo": "https://macdata.net/img/obs41m1574507346.png",
+            "away_logo": "https://macdata.net/img/k36g2e1591982718.png",
+            "time": "22:30",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Real Madrid vs Getafe",
-            "home": "Real Madrid",
-            "away": "Getafe",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823851",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/vwvwrw1473502969.png",
-            "away_logo": "https://macdata.net/img/2l9ie91549394595.png",
-            "time": "23:00",
-            "sport": "Futbol"
         },
         {
             "title": "Manisa FK vs Çorum FK",
@@ -76,21 +61,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Gil Vicente vs Benfica",
-            "home": "Gil Vicente",
-            "away": "Benfica",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823852",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/88bsg41626201503.png",
-            "away_logo": "https://macdata.net/img/7t684j1520879174.png",
-            "time": "23:15",
-            "sport": "Futbol"
-        },
-        {
             "title": "Al Duhail vs Al Ahli",
             "home": "Al Duhail",
             "away": "Al Ahli",
@@ -104,6 +74,21 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "21:15",
             "sport": "Futbol"
+        },
+        {
+            "title": "Litvanya vs İzlanda",
+            "home": "Litvanya",
+            "away": "İzlanda",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823844",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/tsgevw1616072670.png",
+            "away_logo": "https://macdata.net/img/y70lqn1593635741.png",
+            "time": "19:30",
+            "sport": "Basketbol"
         },
         {
             "title": "Al Ahli vs Tractor Sazi",
@@ -121,10 +106,10 @@
             "sport": "Futbol"
         },
         {
-            "title": "Türkiye vs Sırbistan",
-            "home": "Türkiye",
-            "away": "Sırbistan",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823847",
+            "title": "İspanya vs Ukrayna",
+            "home": "İspanya",
+            "away": "Ukrayna",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823849",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -132,53 +117,8 @@
             },
             "home_logo": "",
             "away_logo": "",
-            "time": "21:00",
+            "time": "22:30",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Real Madrid vs Getafe",
-            "home": "Real Madrid",
-            "away": "Getafe",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823851",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Manisa FK vs Çorum FK",
-            "home": "Manisa FK",
-            "away": "Çorum FK",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823845",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Pisa vs Bologna",
-            "home": "Pisa",
-            "away": "Bologna",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823846",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:30",
-            "sport": "Futbol"
         },
         {
             "title": "Udinese vs Fiorentina",
@@ -196,21 +136,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Gil Vicente vs Benfica",
-            "home": "Gil Vicente",
-            "away": "Benfica",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823852",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "23:15",
-            "sport": "Futbol"
-        },
-        {
             "title": "Al Duhail vs Al Ahli",
             "home": "Al Duhail",
             "away": "Al Ahli",
@@ -223,21 +148,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "21:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Al Ahli vs Tractor Sazi",
-            "home": "Al Ahli",
-            "away": "Tractor Sazi",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823843",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "19:00",
             "sport": "Futbol"
         }
     ]
