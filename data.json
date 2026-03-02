@@ -1,36 +1,6 @@
 {
     "matches": [
         {
-            "title": "İspanya vs Ukrayna",
-            "home": "İspanya",
-            "away": "Ukrayna",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823849",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/obs41m1574507346.png",
-            "away_logo": "https://macdata.net/img/k36g2e1591982718.png",
-            "time": "22:30",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Real Madrid vs Getafe",
-            "home": "Real Madrid",
-            "away": "Getafe",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823851",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/vwvwrw1473502969.png",
-            "away_logo": "https://macdata.net/img/2l9ie91549394595.png",
-            "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Manisa FK vs Çorum FK",
             "home": "Manisa FK",
             "away": "Çorum FK",
@@ -61,21 +31,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Litvanya vs İzlanda",
-            "home": "Litvanya",
-            "away": "İzlanda",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823844",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/tsgevw1616072670.png",
-            "away_logo": "https://macdata.net/img/y70lqn1593635741.png",
-            "time": "19:30",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Al Ahli vs Tractor Sazi",
             "home": "Al Ahli",
             "away": "Tractor Sazi",
@@ -88,36 +43,6 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "19:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "İspanya vs Ukrayna",
-            "home": "İspanya",
-            "away": "Ukrayna",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823849",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:30",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Real Madrid vs Getafe",
-            "home": "Real Madrid",
-            "away": "Getafe",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823851",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "23:00",
             "sport": "Futbol"
         }
     ]
