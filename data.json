@@ -16,21 +16,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Hamburg vs Bayer Leverkusen",
-            "home": "Hamburg",
-            "away": "Bayer Leverkusen",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823988",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/tvtppt1473453296.png",
-            "away_logo": "https://macdata.net/img/2681.png",
-            "time": "22:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Beyoğlu Y.Çarşı vs Kocaelispor",
             "home": "Beyoğlu Y.Çarşı",
             "away": "Kocaelispor",
@@ -104,21 +89,6 @@
             "away_logo": "https://macdata.net/img/bk4qjs1546440351.png",
             "time": "22:30",
             "sport": "Futbol"
-        },
-        {
-            "title": "Alexey Akimov vs Evgeniy Tsybisov",
-            "home": "Alexey Akimov",
-            "away": "Evgeniy Tsybisov",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/823980",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "20:40",
-            "sport": "Tenis"
         }
     ]
 }
