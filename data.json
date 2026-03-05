@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "Eyüpspor vs Konyaspor",
-            "home": "Eyüpspor",
-            "away": "Konyaspor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823993",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/7fb0ub1626445710.png",
-            "away_logo": "https://macdata.net/img/rxwptr1448203413.png",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Fenerbahçe Beko vs AS Monaco",
             "home": "Fenerbahçe Beko",
             "away": "AS Monaco",
