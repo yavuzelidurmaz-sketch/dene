@@ -59,36 +59,6 @@
             "away_logo": "https://macdata.net/img/uwuypp1425832890.png",
             "time": "22:45",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Tottenham vs Crystal Palace",
-            "home": "Tottenham",
-            "away": "Crystal Palace",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823994",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Real Madrid vs Virtus Bologna",
-            "home": "Real Madrid",
-            "away": "Virtus Bologna",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/823998",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:45",
-            "sport": "Basketbol"
         }
     ]
 }
