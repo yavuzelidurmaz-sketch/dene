@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "Napoli vs Torino",
-            "home": "Napoli",
-            "away": "Torino",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824004",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/yqtpsq1448806624.png",
-            "away_logo": "https://macdata.net/img/xxprty1448806802.png",
-            "time": "22:45",
-            "sport": "Futbol"
-        },
-        {
             "title": "Wolverhampton vs Liverpool",
             "home": "Wolverhampton",
             "away": "Liverpool",
@@ -29,6 +14,21 @@
             "away_logo": "https://macdata.net/img/uvxuqq1448813372.png",
             "time": "23:00",
             "sport": "Futbol"
+        },
+        {
+            "title": "Final Spor vs Kipaş İstiklal Spor Kulübü",
+            "home": "Final Spor",
+            "away": "Kipaş İstiklal Spor Kulübü",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824016",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "17:00",
+            "sport": "Basketbol"
         },
         {
             "title": "Sakaryaspor vs Adana Demirspor",
@@ -61,25 +61,10 @@
             "sport": "Futbol"
         },
         {
-            "title": "Schalke 04 vs Arminia Bielefeld",
-            "home": "Schalke 04",
-            "away": "Arminia Bielefeld",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824009",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/qqutyp1473453400.png",
-            "away_logo": "https://macdata.net/img/xrrwpx1447591964.png",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Elversberg vs Magdeburg",
-            "home": "Elversberg",
-            "away": "Magdeburg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824010",
+            "title": "ÇİMSA ÇBK Mersin  vs Beşiktaş Boa ",
+            "home": "ÇİMSA ÇBK Mersin ",
+            "away": "Beşiktaş Boa ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824015",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -87,8 +72,8 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "20:30",
-            "sport": "Futbol"
+            "time": "15:00",
+            "sport": "Basketbol"
         },
         {
             "title": "Beşiktaş Gain vs Yukatel Merkezefendi Bld.",
@@ -136,34 +121,19 @@
             "sport": "Basketbol"
         },
         {
-            "title": "Famalicao vs Arouca",
-            "home": "Famalicao",
-            "away": "Arouca",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824007",
+            "title": "GS Çağdaş F.  vs Nesibe Aydın ",
+            "home": "GS Çağdaş F. ",
+            "away": "Nesibe Aydın ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824014",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
                 "Referer": "https://sttc2.kakirikodes.shop/"
             },
-            "home_logo": "https://macdata.net/img/a3f4er1563653256.png",
+            "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Napoli vs Torino",
-            "home": "Napoli",
-            "away": "Torino",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824004",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:45",
-            "sport": "Futbol"
+            "time": "13:00",
+            "sport": "Basketbol"
         },
         {
             "title": "Wolverhampton vs Liverpool",
@@ -179,6 +149,21 @@
             "away_logo": "",
             "time": "23:00",
             "sport": "Futbol"
+        },
+        {
+            "title": "Final Spor vs Kipaş İstiklal Spor Kulübü",
+            "home": "Final Spor",
+            "away": "Kipaş İstiklal Spor Kulübü",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824016",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "17:00",
+            "sport": "Basketbol"
         },
         {
             "title": "Sakaryaspor vs Adana Demirspor",
@@ -211,10 +196,10 @@
             "sport": "Futbol"
         },
         {
-            "title": "Schalke 04 vs Arminia Bielefeld",
-            "home": "Schalke 04",
-            "away": "Arminia Bielefeld",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824009",
+            "title": "ÇİMSA ÇBK Mersin  vs Beşiktaş Boa ",
+            "home": "ÇİMSA ÇBK Mersin ",
+            "away": "Beşiktaş Boa ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824015",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -222,23 +207,8 @@
             },
             "home_logo": "",
             "away_logo": "",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Elversberg vs Magdeburg",
-            "home": "Elversberg",
-            "away": "Magdeburg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824010",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:30",
-            "sport": "Futbol"
+            "time": "15:00",
+            "sport": "Basketbol"
         },
         {
             "title": "Beşiktaş Gain vs Yukatel Merkezefendi Bld.",
@@ -284,21 +254,6 @@
             "away_logo": "",
             "time": "20:30",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Famalicao vs Arouca",
-            "home": "Famalicao",
-            "away": "Arouca",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824007",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "23:15",
-            "sport": "Futbol"
         }
     ]
 }
