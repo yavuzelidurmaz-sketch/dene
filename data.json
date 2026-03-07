@@ -31,6 +31,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Final Spor vs Kipaş İstiklal Spor Kulübü",
+            "home": "Final Spor",
+            "away": "Kipaş İstiklal Spor Kulübü",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824016",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "17:00",
+            "sport": "Basketbol"
+        },
+        {
             "title": "Celta Vigo vs Real Madrid",
             "home": "Celta Vigo",
             "away": "Real Madrid",
@@ -44,6 +59,21 @@
             "away_logo": "https://macdata.net/img/vwvwrw1473502969.png",
             "time": "23:00",
             "sport": "Futbol"
+        },
+        {
+            "title": "ÇİMSA ÇBK Mersin  vs Beşiktaş Boa ",
+            "home": "ÇİMSA ÇBK Mersin ",
+            "away": "Beşiktaş Boa ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824015",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "15:00",
+            "sport": "Basketbol"
         },
         {
             "title": "Schalke 04 vs Arminia Bielefeld",
@@ -134,6 +164,21 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "23:15",
             "sport": "Futbol"
+        },
+        {
+            "title": "GS Çağdaş F.  vs Nesibe Aydın ",
+            "home": "GS Çağdaş F. ",
+            "away": "Nesibe Aydın ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824014",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "13:00",
+            "sport": "Basketbol"
         }
     ]
 }
