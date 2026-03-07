@@ -61,21 +61,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Çorum FK vs Hatayspor",
-            "home": "Çorum FK",
-            "away": "Hatayspor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824023",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/ry2b941601668593.png",
-            "time": "16:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Bandırmaspor vs İstanbulspor",
             "home": "Bandırmaspor",
             "away": "İstanbulspor",
@@ -166,36 +151,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Nantes vs Angers",
-            "home": "Nantes",
-            "away": "Angers",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824030",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/8r0dab1598797469.png",
-            "away_logo": "https://macdata.net/img/jgmk4p1598796830.png",
-            "time": "19:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Amedspor vs Serik Bld.",
-            "home": "Amedspor",
-            "away": "Serik Bld.",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824034",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/247437.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Atalanta vs Udinese",
             "home": "Atalanta",
             "away": "Udinese",
@@ -238,21 +193,6 @@
             "home_logo": "https://macdata.net/img/8kfxbf1622397782.png",
             "away_logo": "https://macdata.net/img/2673.png",
             "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Auxerre vs Strasbourg",
-            "home": "Auxerre",
-            "away": "Strasbourg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824038",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/wsxpps1473505490.png",
-            "away_logo": "https://macdata.net/img/yuxtyy1464540071.png",
-            "time": "21:00",
             "sport": "Futbol"
         },
         {
@@ -331,21 +271,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Toulouse vs Marsilya",
-            "home": "Toulouse",
-            "away": "Marsilya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824044",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/3kqxs61547893229.png",
-            "away_logo": "https://macdata.net/img/1641.png",
-            "time": "23:05",
-            "sport": "Futbol"
-        },
-        {
             "title": "Bochum vs Kaiserslautern",
             "home": "Bochum",
             "away": "Kaiserslautern",
@@ -403,21 +328,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Toulouse vs Marsilya",
-            "home": "Toulouse",
-            "away": "Marsilya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824044",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "23:05",
             "sport": "Futbol"
         }
     ]
