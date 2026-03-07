@@ -106,6 +106,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Cagliari vs Como",
+            "home": "Cagliari",
+            "away": "Como",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824026",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/wvsvxt1447534471.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "17:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Freiburg vs Bayer Leverkusen",
             "home": "Freiburg",
             "away": "Bayer Leverkusen",
@@ -177,6 +192,21 @@
             },
             "home_logo": "https://macdata.net/img/247437.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Atalanta vs Udinese",
+            "home": "Atalanta",
+            "away": "Udinese",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824035",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/lrvxg71534873930.png",
+            "away_logo": "https://macdata.net/img/vwvstr1448806811.png",
             "time": "20:00",
             "sport": "Futbol"
         },
@@ -256,6 +286,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Juventus vs Pisa",
+            "home": "Juventus",
+            "away": "Pisa",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824041",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/180451.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "22:45",
+            "sport": "Futbol"
+        },
+        {
             "title": "Athletic Bilbao vs Barcelona",
             "home": "Athletic Bilbao",
             "away": "Barcelona",
@@ -301,36 +346,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Auxerre vs Strasbourg",
-            "home": "Auxerre",
-            "away": "Strasbourg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824038",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Braga vs Sporting Lisbon",
-            "home": "Braga",
-            "away": "Sporting Lisbon",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824039",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Bochum vs Kaiserslautern",
             "home": "Bochum",
             "away": "Kaiserslautern",
@@ -343,6 +358,21 @@
             "home_logo": "",
             "away_logo": "",
             "time": "22:30",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Juventus vs Pisa",
+            "home": "Juventus",
+            "away": "Pisa",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824041",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "22:45",
             "sport": "Futbol"
         },
         {
