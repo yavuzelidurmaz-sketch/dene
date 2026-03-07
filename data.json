@@ -31,6 +31,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Beşiktaş vs Galatasaray",
+            "home": "Beşiktaş",
+            "away": "Galatasaray",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824033",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/qpswyp1448199205.png",
+            "away_logo": "https://macdata.net/img/75fphr1537381190.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Rams Başakşehir vs Göztepe",
             "home": "Rams Başakşehir",
             "away": "Göztepe",
@@ -117,21 +132,6 @@
             },
             "home_logo": "https://macdata.net/img/urwtup1473453288.png",
             "away_logo": "https://macdata.net/img/2681.png",
-            "time": "17:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Heidenheim vs Hoffenheim",
-            "home": "Heidenheim",
-            "away": "Hoffenheim",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824028",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/5885.png",
-            "away_logo": "https://macdata.net/img/qusuxu1473453358.png",
             "time": "17:30",
             "sport": "Futbol"
         },
@@ -241,21 +241,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Braga vs Sporting Lisbon",
-            "home": "Braga",
-            "away": "Sporting Lisbon",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824039",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/6300e2667bb676772a868c752e8ede36.png",
-            "away_logo": "https://macdata.net/img/svxpsx1471876338.png",
-            "time": "21:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Bochum vs Kaiserslautern",
             "home": "Bochum",
             "away": "Kaiserslautern",
@@ -331,66 +316,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Beşiktaş vs Galatasaray",
-            "home": "Beşiktaş",
-            "away": "Galatasaray",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824031",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Beşiktaş vs Galatasaray",
-            "home": "Beşiktaş",
-            "away": "Galatasaray",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824032",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Amedspor vs Serik Bld.",
-            "home": "Amedspor",
-            "away": "Serik Bld.",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824034",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Atalanta vs Udinese",
-            "home": "Atalanta",
-            "away": "Udinese",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824035",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Atletico Madrid vs Real Sociedad",
             "home": "Atletico Madrid",
             "away": "Real Sociedad",
@@ -436,10 +361,10 @@
             "sport": "Futbol"
         },
         {
-            "title": "Braga vs Sporting Lisbon",
-            "home": "Braga",
-            "away": "Sporting Lisbon",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824039",
+            "title": "Bochum vs Kaiserslautern",
+            "home": "Bochum",
+            "away": "Kaiserslautern",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824040",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -447,7 +372,67 @@
             },
             "home_logo": "",
             "away_logo": "",
-            "time": "21:00",
+            "time": "22:30",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Juventus vs Pisa",
+            "home": "Juventus",
+            "away": "Pisa",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824041",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "22:45",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Athletic Bilbao vs Barcelona",
+            "home": "Athletic Bilbao",
+            "away": "Barcelona",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824042",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "23:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Newcastle vs Manchester City",
+            "home": "Newcastle",
+            "away": "Manchester City",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824043",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "23:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Toulouse vs Marsilya",
+            "home": "Toulouse",
+            "away": "Marsilya",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824044",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "23:05",
             "sport": "Futbol"
         }
     ]
