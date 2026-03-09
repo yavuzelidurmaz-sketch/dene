@@ -61,21 +61,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Manisa BB vs Anadolu Efes",
-            "home": "Manisa BB",
-            "away": "Anadolu Efes",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824391",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/55wtm81544212863.png",
-            "time": "20:00",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Pizzabulls Cedi Osman vs Darüşşafaka",
             "home": "Pizzabulls Cedi Osman",
             "away": "Darüşşafaka",
@@ -118,21 +103,6 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/d1yhuf1626296589.png",
             "time": "22:45",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Almeria vs Leonesa",
-            "home": "Almeria",
-            "away": "Leonesa",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824394",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/yswsww1473503818.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "22:30",
             "sport": "Futbol"
         },
         {
@@ -226,21 +196,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Manisa BB vs Anadolu Efes",
-            "home": "Manisa BB",
-            "away": "Anadolu Efes",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824391",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Pizzabulls Cedi Osman vs Darüşşafaka",
             "home": "Pizzabulls Cedi Osman",
             "away": "Darüşşafaka",
@@ -283,21 +238,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "22:45",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Almeria vs Leonesa",
-            "home": "Almeria",
-            "away": "Leonesa",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824394",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:30",
             "sport": "Futbol"
         }
     ]
