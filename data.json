@@ -76,6 +76,21 @@
             "sport": "Basketbol"
         },
         {
+            "title": "Pizzabulls Cedi Osman vs Darüşşafaka",
+            "home": "Pizzabulls Cedi Osman",
+            "away": "Darüşşafaka",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824392",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/h3q5n41545862222.png",
+            "time": "20:00",
+            "sport": "Basketbol"
+        },
+        {
             "title": "West Ham vs Brentford",
             "home": "West Ham",
             "away": "Brentford",
@@ -226,6 +241,21 @@
             "sport": "Basketbol"
         },
         {
+            "title": "Pizzabulls Cedi Osman vs Darüşşafaka",
+            "home": "Pizzabulls Cedi Osman",
+            "away": "Darüşşafaka",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824392",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "20:00",
+            "sport": "Basketbol"
+        },
+        {
             "title": "West Ham vs Brentford",
             "home": "West Ham",
             "away": "Brentford",
@@ -268,21 +298,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "22:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Eyüpspor vs Kocaelispor",
-            "home": "Eyüpspor",
-            "away": "Kocaelispor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824388",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "16:00",
             "sport": "Futbol"
         }
     ]
