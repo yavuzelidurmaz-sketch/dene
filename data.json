@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "Galatasaray vs Liverpool",
-            "home": "Galatasaray",
-            "away": "Liverpool",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824402",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/75fphr1537381190.png",
-            "away_logo": "https://macdata.net/img/uvxuqq1448813372.png",
-            "time": "20:45",
-            "sport": "Futbol"
-        },
-        {
             "title": "Atalanta vs Bayern Münih",
             "home": "Atalanta",
             "away": "Bayern Münih",
@@ -74,81 +59,6 @@
             "away_logo": "https://macdata.net/img/xj60no1534872393.png",
             "time": "22:45",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Buriram vs Melbourn City",
-            "home": "Buriram",
-            "away": "Melbourn City",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824398",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "15:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Buriram vs Melbourn City",
-            "home": "Buriram",
-            "away": "Melbourn City",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824399",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "15:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Serik Bld. vs Pendikspor",
-            "home": "Serik Bld.",
-            "away": "Pendikspor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824400",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "16:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Manisa FK vs Sarıyer",
-            "home": "Manisa FK",
-            "away": "Sarıyer",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824401",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/216878.png",
-            "away_logo": "https://macdata.net/img/31711.png",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Japonya vs Rusya",
-            "home": "Japonya",
-            "away": "Rusya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/824360",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/ffsyxz1591989843.png",
-            "away_logo": "https://macdata.net/img/qtttsy1455466096.png",
-            "time": "00:20",
-            "sport": "Voleybol"
         }
     ]
 }
