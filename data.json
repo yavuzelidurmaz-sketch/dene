@@ -76,21 +76,6 @@
             "sport": "Basketbol"
         },
         {
-            "title": "Pizzabulls Cedi Osman vs Darüşşafaka",
-            "home": "Pizzabulls Cedi Osman",
-            "away": "Darüşşafaka",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824392",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/h3q5n41545862222.png",
-            "time": "20:00",
-            "sport": "Basketbol"
-        },
-        {
             "title": "West Ham vs Brentford",
             "home": "West Ham",
             "away": "Brentford",
@@ -118,6 +103,21 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/d1yhuf1626296589.png",
             "time": "22:45",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Almeria vs Leonesa",
+            "home": "Almeria",
+            "away": "Leonesa",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824394",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/yswsww1473503818.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "22:30",
             "sport": "Futbol"
         },
         {
