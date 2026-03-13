@@ -106,6 +106,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Olimpia Milano vs Maccabi Tel Aviv",
+            "home": "Olimpia Milano",
+            "away": "Maccabi Tel Aviv",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824561",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/a33c4c1a2457d39701b5827361ba165a.png",
+            "away_logo": "https://macdata.net/img/lzltmp1534869514.png",
+            "time": "22:30",
+            "sport": "Basketbol"
+        },
+        {
             "title": "Greuther Fürth vs Elversberg",
             "home": "Greuther Fürth",
             "away": "Elversberg",
