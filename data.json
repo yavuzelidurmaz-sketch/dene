@@ -16,21 +16,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Yukatel Merkezefendi Bld. vs Bahçeşehir Koleji",
-            "home": "Yukatel Merkezefendi Bld.",
-            "away": "Bahçeşehir Koleji",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824562",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/nek9eo1550416834.png",
-            "time": "20:00",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Mönchengladbach vs St. Pauli",
             "home": "Mönchengladbach",
             "away": "St. Pauli",
@@ -76,18 +61,33 @@
             "sport": "Futbol"
         },
         {
-            "title": "Avustralya  vs Kuzey Kore ",
-            "home": "Avustralya ",
-            "away": "Kuzey Kore ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824559",
+            "title": "Kızılyıldız vs Fenerbahçe Beko",
+            "home": "Kızılyıldız",
+            "away": "Fenerbahçe Beko",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824560",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
                 "Referer": "https://sttc2.kakirikodes.shop/"
             },
-            "home_logo": "https://macdata.net/img/qbo96a1591990988.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "13:00",
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/3514.png",
+            "time": "22:00",
+            "sport": "Basketbol"
+        },
+        {
+            "title": "Antalyaspor vs Gaziantep FK",
+            "home": "Antalyaspor",
+            "away": "Gaziantep FK",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824552",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/vqoral1601669436.png",
+            "away_logo": "https://macdata.net/img/54j6ik1579458093.png",
+            "time": "20:00",
             "sport": "Futbol"
         },
         {
@@ -136,21 +136,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Marsilya vs Auxerre",
-            "home": "Marsilya",
-            "away": "Auxerre",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824555",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/1641.png",
-            "away_logo": "https://macdata.net/img/wsxpps1473505490.png",
-            "time": "22:45",
-            "sport": "Futbol"
-        },
-        {
             "title": "Vitaly Latysh vs Matvey Lepeshko",
             "home": "Vitaly Latysh",
             "away": "Matvey Lepeshko",
@@ -179,21 +164,6 @@
             "away_logo": "",
             "time": "22:45",
             "sport": "Futbol"
-        },
-        {
-            "title": "Yukatel Merkezefendi Bld. vs Bahçeşehir Koleji",
-            "home": "Yukatel Merkezefendi Bld.",
-            "away": "Bahçeşehir Koleji",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824562",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Basketbol"
         },
         {
             "title": "Mönchengladbach vs St. Pauli",
@@ -241,6 +211,36 @@
             "sport": "Futbol"
         },
         {
+            "title": "Kızılyıldız vs Fenerbahçe Beko",
+            "home": "Kızılyıldız",
+            "away": "Fenerbahçe Beko",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824560",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "22:00",
+            "sport": "Basketbol"
+        },
+        {
+            "title": "Antalyaspor vs Gaziantep FK",
+            "home": "Antalyaspor",
+            "away": "Gaziantep FK",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824552",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Magdeburg vs Darmstadt 98",
             "home": "Magdeburg",
             "away": "Darmstadt 98",
@@ -283,21 +283,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Marsilya vs Auxerre",
-            "home": "Marsilya",
-            "away": "Auxerre",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824555",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:45",
             "sport": "Futbol"
         }
     ]
