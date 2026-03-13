@@ -136,21 +136,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Marsilya vs Auxerre",
-            "home": "Marsilya",
-            "away": "Auxerre",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824555",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/1641.png",
-            "away_logo": "https://macdata.net/img/wsxpps1473505490.png",
-            "time": "22:45",
-            "sport": "Futbol"
-        },
-        {
             "title": "Vitaly Latysh vs Matvey Lepeshko",
             "home": "Vitaly Latysh",
             "away": "Matvey Lepeshko",
@@ -226,21 +211,6 @@
             "sport": "Basketbol"
         },
         {
-            "title": "Magdeburg vs Darmstadt 98",
-            "home": "Magdeburg",
-            "away": "Darmstadt 98",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824557",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Olimpia Milano vs Maccabi Tel Aviv",
             "home": "Olimpia Milano",
             "away": "Maccabi Tel Aviv",
@@ -254,36 +224,6 @@
             "away_logo": "",
             "time": "22:30",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Greuther Fürth vs Elversberg",
-            "home": "Greuther Fürth",
-            "away": "Elversberg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824558",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Marsilya vs Auxerre",
-            "home": "Marsilya",
-            "away": "Auxerre",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824555",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:45",
-            "sport": "Futbol"
         }
     ]
 }
