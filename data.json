@@ -299,21 +299,6 @@
             "away_logo": "https://macdata.net/img/7t684j1520879174.png",
             "time": "23:30",
             "sport": "Futbol"
-        },
-        {
-            "title": "Arouca vs Benfica",
-            "home": "Arouca",
-            "away": "Benfica",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824591",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "23:30",
-            "sport": "Futbol"
         }
     ]
 }
