@@ -91,21 +91,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Inter vs Atalanta",
-            "home": "Inter",
-            "away": "Atalanta",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824569",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/xqyvuy1448806439.png",
-            "away_logo": "https://macdata.net/img/lrvxg71534873930.png",
-            "time": "17:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "B.Dortmund vs Augsburg",
             "home": "B.Dortmund",
             "away": "Augsburg",
@@ -163,21 +148,6 @@
             "home_logo": "https://macdata.net/img/kzifae1578852277.png",
             "away_logo": "https://macdata.net/img/2l9ie91549394595.png",
             "time": "18:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Napoli vs Lecce",
-            "home": "Napoli",
-            "away": "Lecce",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824576",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/yqtpsq1448806624.png",
-            "away_logo": "https://macdata.net/img/11947.png",
-            "time": "20:00",
             "sport": "Futbol"
         },
         {
@@ -241,21 +211,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Udinese vs Juventus",
-            "home": "Udinese",
-            "away": "Juventus",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824586",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/vwvstr1448806811.png",
-            "away_logo": "https://macdata.net/img/180451.png",
-            "time": "22:45",
-            "sport": "Futbol"
-        },
-        {
             "title": "Real Madrid vs Elche",
             "home": "Real Madrid",
             "away": "Elche",
@@ -316,21 +271,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Burnley vs Bournemouth",
-            "home": "Burnley",
-            "away": "Bournemouth",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824572",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "18:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Atletico Madrid vs Getafe",
             "home": "Atletico Madrid",
             "away": "Getafe",
@@ -343,21 +283,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "18:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Napoli vs Lecce",
-            "home": "Napoli",
-            "away": "Lecce",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824576",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
             "sport": "Futbol"
         },
         {
@@ -421,21 +346,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Udinese vs Juventus",
-            "home": "Udinese",
-            "away": "Juventus",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824586",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:45",
-            "sport": "Futbol"
-        },
-        {
             "title": "Real Madrid vs Elche",
             "home": "Real Madrid",
             "away": "Elche",
@@ -448,6 +358,36 @@
             "home_logo": "",
             "away_logo": "",
             "time": "23:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Ajax vs Sparta Rotterdam",
+            "home": "Ajax",
+            "away": "Sparta Rotterdam",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824589",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "23:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Arouca vs Benfica",
+            "home": "Arouca",
+            "away": "Benfica",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824591",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "23:30",
             "sport": "Futbol"
         }
     ]
