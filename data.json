@@ -46,21 +46,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Deportivo Alaves vs Villarreal",
-            "home": "Deportivo Alaves",
-            "away": "Villarreal",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824553",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/prle2v1596049676.png",
-            "away_logo": "https://macdata.net/img/vrypqy1473503073.png",
-            "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Kızılyıldız vs Fenerbahçe Beko",
             "home": "Kızılyıldız",
             "away": "Fenerbahçe Beko",
@@ -119,21 +104,6 @@
             "away_logo": "https://macdata.net/img/lzltmp1534869514.png",
             "time": "22:30",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Greuther Fürth vs Elversberg",
-            "home": "Greuther Fürth",
-            "away": "Elversberg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/824558",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/2551.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "20:30",
-            "sport": "Futbol"
         }
     ]
 }
