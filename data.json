@@ -121,21 +121,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Mainz 05 vs Sigma Olomouc",
-            "home": "Mainz 05",
-            "away": "Sigma Olomouc",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/833419",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/2556.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "20:45",
-            "sport": "Futbol"
-        },
-        {
             "title": "Rakow Czestochowa vs Fiorentina",
             "home": "Rakow Czestochowa",
             "away": "Fiorentina",
@@ -449,6 +434,21 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "20:24",
             "sport": "Hockey"
+        },
+        {
+            "title": "Shani Shignapur Sports vs Screaming Eagles",
+            "home": "Shani Shignapur Sports",
+            "away": "Screaming Eagles",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833661",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "20:25",
+            "sport": "Kriket"
         }
     ]
 }
