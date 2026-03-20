@@ -76,6 +76,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "AEK Larnaca vs Crystal Palace",
+            "home": "AEK Larnaca",
+            "away": "Crystal Palace",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/833417",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/150a2b1544814418.png",
+            "away_logo": "https://macdata.net/img/rytxyw1448813222.png",
+            "time": "20:45",
+            "sport": "Futbol"
+        },
+        {
             "title": "Lyon vs Celta Vigo",
             "home": "Lyon",
             "away": "Celta Vigo",
@@ -434,21 +449,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "20:24",
             "sport": "Hockey"
-        },
-        {
-            "title": "Shani Shignapur Sports vs Screaming Eagles",
-            "home": "Shani Shignapur Sports",
-            "away": "Screaming Eagles",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833661",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "20:25",
-            "sport": "Kriket"
         }
     ]
 }
