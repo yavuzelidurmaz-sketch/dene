@@ -16,21 +16,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Valencia Basket vs Barcelona",
-            "home": "Valencia Basket",
-            "away": "Barcelona",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/833430",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/9qyc231536398868.png",
-            "away_logo": "https://macdata.net/img/xqwpup1473502878.png",
-            "time": "20:00",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Beşiktaş vs Kasımpaşa",
             "home": "Beşiktaş",
             "away": "Kasımpaşa",
@@ -449,6 +434,21 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "20:15",
             "sport": "Esport"
+        },
+        {
+            "title": "ABD vs Slovenya",
+            "home": "ABD",
+            "away": "Slovenya",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833658",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/4724.png",
+            "away_logo": "https://macdata.net/img/s7k1x51552909864.png",
+            "time": "20:20",
+            "sport": "Voleybol"
         }
     ]
 }
