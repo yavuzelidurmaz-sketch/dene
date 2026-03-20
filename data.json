@@ -151,21 +151,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Cagliari vs Napoli",
-            "home": "Cagliari",
-            "away": "Napoli",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/833799",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/wvsvxt1447534471.png",
-            "away_logo": "https://macdata.net/img/yqtpsq1448806624.png",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "RB Leipzig vs Hoffenheim",
             "home": "RB Leipzig",
             "away": "Hoffenheim",
@@ -178,21 +163,6 @@
             "home_logo": "https://macdata.net/img/zjgapo1594244951.png",
             "away_logo": "https://macdata.net/img/qusuxu1473453358.png",
             "time": "22:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Genoa vs Udinese",
-            "home": "Genoa",
-            "away": "Udinese",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/833800",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rqqvwv1448806429.png",
-            "away_logo": "https://macdata.net/img/vwvstr1448806811.png",
-            "time": "22:45",
             "sport": "Futbol"
         },
         {
@@ -449,6 +419,36 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "20:24",
             "sport": "Hockey"
+        },
+        {
+            "title": "Shani Shignapur Sports vs Screaming Eagles",
+            "home": "Shani Shignapur Sports",
+            "away": "Screaming Eagles",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833661",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "20:25",
+            "sport": "Kriket"
+        },
+        {
+            "title": "Hapoel Ashdod  vs Maccabi Arazim ",
+            "home": "Hapoel Ashdod ",
+            "away": "Maccabi Arazim ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833657",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "20:30",
+            "sport": "Hentbol"
         }
     ]
 }
