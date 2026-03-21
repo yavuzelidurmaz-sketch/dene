@@ -46,21 +46,6 @@
             "sport": "Voleybol"
         },
         {
-            "title": "CA Warriors Pune vs Elite Pune",
-            "home": "CA Warriors Pune",
-            "away": "Elite Pune",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833866",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "11:22",
-            "sport": "Kriket"
-        },
-        {
             "title": "FPA Maxvolt XI SSS vs SinQ Rangers SSS",
             "home": "FPA Maxvolt XI SSS",
             "away": "SinQ Rangers SSS",
@@ -73,21 +58,6 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "11:33",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Thunderwolves vs Akluj Ancers",
-            "home": "Thunderwolves",
-            "away": "Akluj Ancers",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833870",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "11:55",
             "sport": "Kriket"
         },
         {
@@ -104,66 +74,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "12:00",
             "sport": "Esport"
-        },
-        {
-            "title": "Dynamo II vs FC Písek",
-            "home": "Dynamo II",
-            "away": "FC Písek",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833813",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "12:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Zlin II vs FK Fotbal Třinec",
-            "home": "Zlin II",
-            "away": "FK Fotbal Třinec",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833816",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "12:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Hlinsko vs Kosmonosy",
-            "home": "Hlinsko",
-            "away": "Kosmonosy",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833818",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "12:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Viagem Usti nad Labem II vs FK Ostrov",
-            "home": "Viagem Usti nad Labem II",
-            "away": "FK Ostrov",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833825",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "12:30",
-            "sport": "Futbol"
         },
         {
             "title": "WST vs UU Gamers",
@@ -346,21 +256,6 @@
             "sport": "Voleybol"
         },
         {
-            "title": "Nemo Stars vs Elyon",
-            "home": "Nemo Stars",
-            "away": "Elyon",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833848",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "13:00",
-            "sport": "Voleybol"
-        },
-        {
             "title": "Astini+5 vs Spirit Academy",
             "home": "Astini+5",
             "away": "Spirit Academy",
@@ -436,10 +331,55 @@
             "sport": "Esport"
         },
         {
-            "title": "J Warriors vs Eleven Kings",
-            "home": "J Warriors",
-            "away": "Eleven Kings",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833872",
+            "title": "Los Angeles Lakers  vs Oklahoma City Thunder ",
+            "home": "Los Angeles Lakers ",
+            "away": "Oklahoma City Thunder ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833842",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/44ubym1511102073.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "13:20",
+            "sport": "Basketbol"
+        },
+        {
+            "title": "Oklahoma City Thunder  vs Los Angeles Clippers ",
+            "home": "Oklahoma City Thunder ",
+            "away": "Los Angeles Clippers ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833843",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/jv7tf21545916958.png",
+            "time": "13:20",
+            "sport": "Basketbol"
+        },
+        {
+            "title": "Corvinul Hunedoara vs CSA Steaua",
+            "home": "Corvinul Hunedoara",
+            "away": "CSA Steaua",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833809",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/654728f403d6aeedd60db9e02be4f744.PNG",
+            "time": "13:30",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Levski Sofia II vs Botev 1921 Ihtiman",
+            "home": "Levski Sofia II",
+            "away": "Botev 1921 Ihtiman",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833828",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -447,8 +387,68 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "13:05",
-            "sport": "Kriket"
+            "time": "13:30",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Sudeva Delhi vs Vatika",
+            "home": "Sudeva Delhi",
+            "away": "Vatika",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833829",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/5qz88s1603285417.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "13:30",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Sporting Clube de Goa vs Chapora Yuvak Sangh SC",
+            "home": "Sporting Clube de Goa",
+            "away": "Chapora Yuvak Sangh SC",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833830",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/3242.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "13:30",
+            "sport": "Futbol"
+        },
+        {
+            "title": "APR  vs RRA ",
+            "home": "APR ",
+            "away": "RRA ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833847",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "13:30",
+            "sport": "Voleybol"
+        },
+        {
+            "title": "Rusya  vs ABD ",
+            "home": "Rusya ",
+            "away": "ABD ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/833920",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/qtttsy1455466096.png",
+            "away_logo": "https://macdata.net/img/4724.png",
+            "time": "13:30",
+            "sport": "Voleybol"
         }
     ]
 }
