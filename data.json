@@ -346,40 +346,10 @@
             "sport": "Futbol"
         },
         {
-            "title": "ABD vs Brezilya",
-            "home": "ABD",
-            "away": "Brezilya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/837250",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/4724.png",
-            "away_logo": "https://macdata.net/img/jgfos01591988326.png",
-            "time": "19:20",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "Slovakya vs İtalya",
-            "home": "Slovakya",
-            "away": "İtalya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/837251",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/1kcgjw1510958148.png",
-            "away_logo": "https://macdata.net/img/derswu1594930517.png",
-            "time": "19:30",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "Goblins vs Stariy bog Team",
-            "home": "Goblins",
-            "away": "Stariy bog Team",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/837011",
+            "title": "Ohio State Buckeyes  vs Wisconsin Badgers ",
+            "home": "Ohio State Buckeyes ",
+            "away": "Wisconsin Badgers ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/837297",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -387,68 +357,8 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "20:00",
-            "sport": "Esport"
-        },
-        {
-            "title": "Nemiga Gaming vs MANA",
-            "home": "Nemiga Gaming",
-            "away": "MANA",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/837094",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/729583.png",
-            "away_logo": "https://macdata.net/img/k3w1qm1579343999.png",
-            "time": "21:00",
-            "sport": "Esport"
-        },
-        {
-            "title": "Team Dragon Knights vs HAVU Gaming",
-            "home": "Team Dragon Knights",
-            "away": "HAVU Gaming",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/837096",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/770885.png",
-            "time": "21:00",
-            "sport": "Esport"
-        },
-        {
-            "title": "GnG Amazigh vs MIR",
-            "home": "GnG Amazigh",
-            "away": "MIR",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/837097",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "21:00",
-            "sport": "Esport"
-        },
-        {
-            "title": "Japonya vs Arjantin",
-            "home": "Japonya",
-            "away": "Arjantin",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/837247",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/ffsyxz1591989843.png",
-            "away_logo": "https://macdata.net/img/rrxutp1455461072.png",
-            "time": "21:05",
-            "sport": "Voleybol"
+            "time": "23:00",
+            "sport": "Hockey"
         }
     ]
 }
