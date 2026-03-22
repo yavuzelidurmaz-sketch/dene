@@ -61,21 +61,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Valencia Basket vs Granada",
-            "home": "Valencia Basket",
-            "away": "Granada",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/835950",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/9qyc231536398868.png",
-            "away_logo": "https://macdata.net/img/vvprwu1473502932.png",
-            "time": "19:00",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Athletic Bilbao vs Real Betis",
             "home": "Athletic Bilbao",
             "away": "Real Betis",
@@ -134,21 +119,6 @@
             "away_logo": "https://macdata.net/img/1y4frb1601669542.png",
             "time": "19:00",
             "sport": "Futbol"
-        },
-        {
-            "title": "Barcelona vs Real Madrid",
-            "home": "Barcelona",
-            "away": "Real Madrid",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/835959",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/xqwpup1473502878.png",
-            "away_logo": "https://macdata.net/img/vwvwrw1473502969.png",
-            "time": "21:00",
-            "sport": "Basketbol"
         },
         {
             "title": "Bologna vs Lazio",
@@ -211,21 +181,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Fortuna Düsseldorf vs Hertha Berlin",
-            "home": "Fortuna Düsseldorf",
-            "away": "Hertha Berlin",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/835915",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rsruww1473454140.png",
-            "away_logo": "https://macdata.net/img/2528.png",
-            "time": "15:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Dundee United vs Celtic",
             "home": "Dundee United",
             "away": "Celtic",
@@ -254,21 +209,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "16:00",
             "sport": "Futbol"
-        },
-        {
-            "title": "Lleida vs Joventut Badalona",
-            "home": "Lleida",
-            "away": "Joventut Badalona",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/835910",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/73765b2c6ca95ffdcb4fa4ab3dc02a98.png",
-            "away_logo": "https://macdata.net/img/vuqqry1425410580.png",
-            "time": "14:00",
-            "sport": "Basketbol"
         },
         {
             "title": "Atalanta vs Verona",
@@ -436,10 +376,10 @@
             "sport": "Futbol"
         },
         {
-            "title": "Fancy United Esports vs TrinitY",
-            "home": "Fancy United Esports",
-            "away": "TrinitY",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/836880",
+            "title": "GenOne vs MINLATE",
+            "home": "GenOne",
+            "away": "MINLATE",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/836790",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -447,7 +387,67 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "16:00",
+            "time": "18:15",
+            "sport": "Esport"
+        },
+        {
+            "title": "Numidia Limburg vs Sliedrecht",
+            "home": "Numidia Limburg",
+            "away": "Sliedrecht",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/836828",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "18:15",
+            "sport": "Voleybol"
+        },
+        {
+            "title": "Maryland Terrapins  vs North Carolina Tar Heels ",
+            "home": "Maryland Terrapins ",
+            "away": "North Carolina Tar Heels ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/836898",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/a2360c7ce7bf15f830b7c0d6848bff5a.png",
+            "away_logo": "https://macdata.net/img/bo1lhk1584718020.png",
+            "time": "18:45",
+            "sport": "Basketbol"
+        },
+        {
+            "title": "Hospitalet vs Manresa",
+            "home": "Hospitalet",
+            "away": "Manresa",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/836938",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "18:55",
+            "sport": "Voleybol"
+        },
+        {
+            "title": "S2G Esports vs Mandatory",
+            "home": "S2G Esports",
+            "away": "Mandatory",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/836878",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "19:00",
             "sport": "Esport"
         }
     ]
