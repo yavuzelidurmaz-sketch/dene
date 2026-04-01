@@ -91,21 +91,6 @@
             "sport": "Voleybol"
         },
         {
-            "title": "Sarcophagus Reborn vs Xyresic Force",
-            "home": "Sarcophagus Reborn",
-            "away": "Xyresic Force",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/859830",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "22:57",
-            "sport": "Esport"
-        },
-        {
             "title": "Team Sanzi vs Team Havoc",
             "home": "Team Sanzi",
             "away": "Team Havoc",
@@ -149,21 +134,6 @@
             "away_logo": "https://macdata.net/img/5602051.png",
             "time": "23:00",
             "sport": "Esport"
-        },
-        {
-            "title": "England  vs New Zealand ",
-            "home": "England ",
-            "away": "New Zealand ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/859827",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/bjaudn1616964139.png",
-            "away_logo": "https://macdata.net/img/8fjlxh1573988839.png",
-            "time": "23:05",
-            "sport": "Kriket"
         },
         {
             "title": "KA Akureyri  vs Volsungur ",
@@ -316,40 +286,10 @@
             "sport": "Esport"
         },
         {
-            "title": "Malaysia  vs Mexico ",
-            "home": "Malaysia ",
-            "away": "Mexico ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/859881",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/opqzci1597866541.png",
-            "away_logo": "https://macdata.net/img/3qmb8m1597946814.png",
-            "time": "00:00",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Titans Chennai vs Hustlers Chennai",
             "home": "Titans Chennai",
             "away": "Hustlers Chennai",
             "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/859892",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "00:00",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Stunners Indoor vs Fortner Boys",
-            "home": "Stunners Indoor",
-            "away": "Fortner Boys",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/859893",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -449,6 +389,66 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "00:15",
             "sport": "Esport"
+        },
+        {
+            "title": "IPBL Scorpions vs IPBL Huskies",
+            "home": "IPBL Scorpions",
+            "away": "IPBL Huskies",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/859931",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "00:15",
+            "sport": "Basketbol"
+        },
+        {
+            "title": "Wild Dragon vs Darkness Gaming",
+            "home": "Wild Dragon",
+            "away": "Darkness Gaming",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/859934",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "00:19",
+            "sport": "Esport"
+        },
+        {
+            "title": "MINERALOGY vs PSY",
+            "home": "MINERALOGY",
+            "away": "PSY",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/859930",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/824318b03582e6bb3007d0071141806e.png",
+            "time": "00:20",
+            "sport": "Futbol"
+        },
+        {
+            "title": "LANDSCAPE vs FOSSIL",
+            "home": "LANDSCAPE",
+            "away": "FOSSIL",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/859929",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "00:20",
+            "sport": "Futbol"
         }
     ]
 }
