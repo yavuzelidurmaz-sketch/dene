@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "PVF Vietnam vs Ha Noi II",
-            "home": "PVF Vietnam",
-            "away": "Ha Noi II",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/861014",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "13:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Tatyana Krupennikova vs Elena Progonova",
             "home": "Tatyana Krupennikova",
             "away": "Elena Progonova",
@@ -29,36 +14,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "13:16",
             "sport": "Tenis"
-        },
-        {
-            "title": "Alto Zambeze vs Sporting do Imbondeiro",
-            "home": "Alto Zambeze",
-            "away": "Sporting do Imbondeiro",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/861075",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "14:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Novosibirsk vs St. Petersburg",
-            "home": "Novosibirsk",
-            "away": "St. Petersburg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/861077",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/33e4e83bf6e71948004e5f2f327cb2e8.png",
-            "away_logo": "https://macdata.net/img/929fb35b1d5b238d02b28f0c2d457f4b.png",
-            "time": "14:00",
-            "sport": "Basketbol"
         },
         {
             "title": "Holbaek B&I vs Nykøbing FC",
@@ -118,81 +73,6 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "14:00",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Denver Nuggets  vs Dallas Mavericks ",
-            "home": "Denver Nuggets ",
-            "away": "Dallas Mavericks ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/861136",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/8o8j5k1546016274.png",
-            "away_logo": "https://macdata.net/img/yqrxrs1420568796.png",
-            "time": "14:00",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Maykop vs Belgorod",
-            "home": "Maykop",
-            "away": "Belgorod",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/861126",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "14:05",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "ASVEL Lyon-Villeurbanne  vs Fenerbahçe ",
-            "home": "ASVEL Lyon-Villeurbanne ",
-            "away": "Fenerbahçe ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/861135",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/3536.png",
-            "away_logo": "https://macdata.net/img/twxxvs1448199691.png",
-            "time": "14:05",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "IPBL Ravens vs IPBL Piranhas",
-            "home": "IPBL Ravens",
-            "away": "IPBL Piranhas",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/861128",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "14:15",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "IPBL Anacondas  vs IPBL Cobras ",
-            "home": "IPBL Anacondas ",
-            "away": "IPBL Cobras ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/861129",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "14:15",
             "sport": "Basketbol"
         }
     ]
