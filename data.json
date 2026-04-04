@@ -76,21 +76,6 @@
             "sport": "Kriket"
         },
         {
-            "title": "Geek Fam ID vs Bigetron by Vitality",
-            "home": "Geek Fam ID",
-            "away": "Bigetron by Vitality",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/863325",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "09:00",
-            "sport": "Esport"
-        },
-        {
             "title": "BD Bien Phong vs Be Tong 7 THA",
             "home": "BD Bien Phong",
             "away": "Be Tong 7 THA",
@@ -196,21 +181,6 @@
             "sport": "Esport"
         },
         {
-            "title": "Welwitschia Mirabilis vs Bravos da Quissama",
-            "home": "Welwitschia Mirabilis",
-            "away": "Bravos da Quissama",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/863309",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "10:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "1WIN vs VP.Prodigy",
             "home": "1WIN",
             "away": "VP.Prodigy",
@@ -224,21 +194,6 @@
             "away_logo": "https://macdata.net/img/41ab0ff48940e7cc259ed720139530bf.png",
             "time": "10:00",
             "sport": "Esport"
-        },
-        {
-            "title": "New Zealand  vs England ",
-            "home": "New Zealand ",
-            "away": "England ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/863351",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/8fjlxh1573988839.png",
-            "away_logo": "https://macdata.net/img/bjaudn1616964139.png",
-            "time": "10:05",
-            "sport": "Kriket"
         },
         {
             "title": "Brezilya  vs Rusya ",
@@ -284,21 +239,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "10:15",
             "sport": "Futbol"
-        },
-        {
-            "title": "Igor Burnaikin vs Andrey Merkulov",
-            "home": "Igor Burnaikin",
-            "away": "Andrey Merkulov",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/863382",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "10:25",
-            "sport": "Tenis"
         },
         {
             "title": "Toronto United U19 vs Tornado Kaunas U19",
@@ -449,6 +389,66 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "10:53",
             "sport": "Esport"
+        },
+        {
+            "title": "T1 vs Hanwha Life Esports",
+            "home": "T1",
+            "away": "Hanwha Life Esports",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/863394",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/fc8d9cf3b341ffe9581d60a5cacb339d.png",
+            "away_logo": "https://macdata.net/img/qn6hb11554278859.png",
+            "time": "10:54",
+            "sport": "Esport"
+        },
+        {
+            "title": "Death Watch vs Xyresic Force",
+            "home": "Death Watch",
+            "away": "Xyresic Force",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/863456",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "10:57",
+            "sport": "Esport"
+        },
+        {
+            "title": "Hexstorm Crew vs Noire Ace",
+            "home": "Hexstorm Crew",
+            "away": "Noire Ace",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/863457",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "10:58",
+            "sport": "Esport"
+        },
+        {
+            "title": "UG Volei vs Batumi",
+            "home": "UG Volei",
+            "away": "Batumi",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/863401",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "11:00",
+            "sport": "Voleybol"
         }
     ]
 }
