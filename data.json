@@ -1,6 +1,21 @@
 {
     "matches": [
         {
+            "title": "BC Dubai vs Anadolu Efes",
+            "home": "BC Dubai",
+            "away": "Anadolu Efes",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/868701",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/55wtm81544212863.png",
+            "time": "21:00",
+            "sport": "Basketbol"
+        },
+        {
             "title": "Paris FC vs Monaco",
             "home": "Paris FC",
             "away": "Monaco",
@@ -59,6 +74,21 @@
             "away_logo": "https://macdata.net/img/vqoral1601669436.png",
             "time": "20:00",
             "sport": "Futbol"
+        },
+        {
+            "title": "BC Dubai vs Anadolu Efes",
+            "home": "BC Dubai",
+            "away": "Anadolu Efes",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/868701",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "21:00",
+            "sport": "Basketbol"
         },
         {
             "title": "Paris FC vs Monaco",
