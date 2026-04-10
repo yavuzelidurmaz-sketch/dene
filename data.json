@@ -76,36 +76,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "BC Dubai vs Anadolu Efes",
-            "home": "BC Dubai",
-            "away": "Anadolu Efes",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/868701",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:00",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Paris FC vs Monaco",
-            "home": "Paris FC",
-            "away": "Monaco",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/868696",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Marsilya vs Metz",
             "home": "Marsilya",
             "away": "Metz",
@@ -133,21 +103,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "22:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Beşiktaş vs Antalyaspor",
-            "home": "Beşiktaş",
-            "away": "Antalyaspor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/868692",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
             "sport": "Futbol"
         }
     ]
