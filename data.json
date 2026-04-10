@@ -16,6 +16,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Mainz 05 vs RC Strasbourg",
+            "home": "Mainz 05",
+            "away": "RC Strasbourg",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/868687",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/2556.png",
+            "away_logo": "https://macdata.net/img/1659.png",
+            "time": "22:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Porto vs Nottingham Forest",
             "home": "Porto",
             "away": "Nottingham Forest",
