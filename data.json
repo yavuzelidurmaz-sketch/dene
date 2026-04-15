@@ -59,36 +59,6 @@
             "away_logo": "https://macdata.net/img/15tpfg1558894726.png",
             "time": "16:05",
             "sport": "Voleybol"
-        },
-        {
-            "title": "Bayern Münih vs Real Madrid",
-            "home": "Bayern Münih",
-            "away": "Real Madrid",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874843",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Arsenal vs Sporting CP",
-            "home": "Arsenal",
-            "away": "Sporting CP",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874844",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:00",
-            "sport": "Futbol"
         }
     ]
 }
