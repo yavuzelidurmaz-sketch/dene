@@ -1,96 +1,6 @@
 {
     "matches": [
         {
-            "title": "Liepaja SSS  vs TTT Riga ",
-            "home": "Liepaja SSS ",
-            "away": "TTT Riga ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/874811",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "15:45",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Campo Grande U19  vs Paineiras do Morumby U19",
-            "home": "Campo Grande U19 ",
-            "away": "Paineiras do Morumby U19",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/874841",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "15:45",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "Abha vs Jeddah Club",
-            "home": "Abha",
-            "away": "Jeddah Club",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/874809",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/36608f5047fb154dfed42c2235899417.png",
-            "away_logo": "https://macdata.net/img/903223.png",
-            "time": "15:50",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Libertas Moncalieri  vs C.U.S. Cagliari ",
-            "home": "Libertas Moncalieri ",
-            "away": "C.U.S. Cagliari ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/874810",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "16:00",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "FShM Moscow vs Mianova",
-            "home": "FShM Moscow",
-            "away": "Mianova",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/874812",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "16:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Olimpicos Habana vs UD Marianao FR",
-            "home": "Olimpicos Habana",
-            "away": "UD Marianao FR",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/874813",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "16:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Rusya  vs Çin ",
             "home": "Rusya ",
             "away": "Çin ",
@@ -103,21 +13,6 @@
             "home_logo": "https://macdata.net/img/qtttsy1455466096.png",
             "away_logo": "https://macdata.net/img/15tpfg1558894726.png",
             "time": "16:05",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "Rusya vs Brezilya",
-            "home": "Rusya",
-            "away": "Brezilya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/874838",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/qtttsy1455466096.png",
-            "away_logo": "https://macdata.net/img/jgfos01591988326.png",
-            "time": "16:20",
             "sport": "Voleybol"
         }
     ]
