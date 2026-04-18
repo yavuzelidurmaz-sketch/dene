@@ -91,36 +91,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Leeds United vs Wolverhampton",
-            "home": "Leeds United",
-            "away": "Wolverhampton",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874865",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/g0eqzw1598804097.png",
-            "away_logo": "https://macdata.net/img/qwvuqy1448811552.png",
-            "time": "17:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Newcastle vs Bournemouth",
-            "home": "Newcastle",
-            "away": "Bournemouth",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874866",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rqvwxt1448813396.png",
-            "away_logo": "https://macdata.net/img/y08nak1534071116.png",
-            "time": "17:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Kocaelispor vs Göztepe",
             "home": "Kocaelispor",
             "away": "Göztepe",
@@ -196,21 +166,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Tottenham vs Brighton",
-            "home": "Tottenham",
-            "away": "Brighton",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874873",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/dfyfhl1604094109.png",
-            "away_logo": "https://macdata.net/img/ywypts1448810904.png",
-            "time": "19:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Angers vs Le Havre",
             "home": "Angers",
             "away": "Le Havre",
@@ -256,21 +211,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Chelsea vs Manchester Utd",
-            "home": "Chelsea",
-            "away": "Manchester Utd",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874879",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/yvwvtu1448813215.png",
-            "away_logo": "https://macdata.net/img/35.png",
-            "time": "22:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Lille vs Nice",
             "home": "Lille",
             "away": "Nice",
@@ -282,66 +222,6 @@
             },
             "home_logo": "https://macdata.net/img/2giize1534005340.png",
             "away_logo": "https://macdata.net/img/qwvtvt1473504800.png",
-            "time": "22:05",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Hannover 96 vs Paderborn",
-            "home": "Hannover 96",
-            "away": "Paderborn",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874877",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Roma vs Atalanta",
-            "home": "Roma",
-            "away": "Atalanta",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874878",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:45",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Chelsea vs Manchester Utd",
-            "home": "Chelsea",
-            "away": "Manchester Utd",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874879",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Lille vs Nice",
-            "home": "Lille",
-            "away": "Nice",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874880",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
             "time": "22:05",
             "sport": "Futbol"
         }
