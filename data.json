@@ -316,36 +316,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Lorient vs Marsilya",
-            "home": "Lorient",
-            "away": "Marsilya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874869",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "18:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Napoli vs Lazio",
-            "home": "Napoli",
-            "away": "Lazio",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874871",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "19:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Eintracht Frankfurt vs Leipzig",
             "home": "Eintracht Frankfurt",
             "away": "Leipzig",
