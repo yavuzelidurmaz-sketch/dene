@@ -374,21 +374,6 @@
             "away_logo": "",
             "time": "14:30",
             "sport": "Futbol"
-        },
-        {
-            "title": "Cremonese vs Torino",
-            "home": "Cremonese",
-            "away": "Torino",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874881",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "13:30",
-            "sport": "Futbol"
         }
     ]
 }
