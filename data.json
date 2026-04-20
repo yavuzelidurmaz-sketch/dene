@@ -16,6 +16,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "La Coruna vs Mirandes",
+            "home": "La Coruna",
+            "away": "Mirandes",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874925",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "21:30",
+            "sport": "Futbol"
+        },
+        {
             "title": "Lecce vs Fiorentina",
             "home": "Lecce",
             "away": "Fiorentina",
@@ -61,6 +76,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Galatasaray MCT Technic vs Anadolu Efes",
+            "home": "Galatasaray MCT Technic",
+            "away": "Anadolu Efes",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874923",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/55wtm81544212863.png",
+            "time": "19:00",
+            "sport": "Basketbol"
+        },
+        {
             "title": "Gaziantep FK vs Kayserispor",
             "home": "Gaziantep FK",
             "away": "Kayserispor",
@@ -73,6 +103,21 @@
             "home_logo": "",
             "away_logo": "",
             "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "La Coruna vs Mirandes",
+            "home": "La Coruna",
+            "away": "Mirandes",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874925",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "21:30",
             "sport": "Futbol"
         },
         {
@@ -104,6 +149,21 @@
             "away_logo": "",
             "time": "22:00",
             "sport": "Futbol"
+        },
+        {
+            "title": "Galatasaray MCT Technic vs Anadolu Efes",
+            "home": "Galatasaray MCT Technic",
+            "away": "Anadolu Efes",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/874923",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "",
+            "away_logo": "",
+            "time": "19:00",
+            "sport": "Basketbol"
         }
     ]
 }
