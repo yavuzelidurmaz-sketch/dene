@@ -241,6 +241,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Trabzonspor vs Galatasaray MCT Technic",
+            "home": "Trabzonspor",
+            "away": "Galatasaray MCT Technic",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/883305",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/rrsrvv1448204214.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "15:30",
+            "sport": "Basketbol"
+        },
+        {
             "title": "Genoa vs Como",
             "home": "Genoa",
             "away": "Como",
@@ -298,6 +313,21 @@
             "home_logo": "https://macdata.net/img/9q1kwt1517523094.png",
             "away_logo": "https://macdata.net/img/xqwpup1473502878.png",
             "time": "13:15",
+            "sport": "Basketbol"
+        },
+        {
+            "title": "Karşıyaka vs Esenler Erokspor",
+            "home": "Karşıyaka",
+            "away": "Esenler Erokspor",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/883298",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/dbnkyf1523093646.png",
+            "away_logo": "https://macdata.net/img/365676.png",
+            "time": "13:00",
             "sport": "Basketbol"
         },
         {
@@ -361,10 +391,10 @@
             "sport": "Futbol"
         },
         {
-            "title": "Glamorgan County vs Leicestershire",
-            "home": "Glamorgan County",
-            "away": "Leicestershire",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884125",
+            "title": "Heroic vs Monte",
+            "home": "Heroic",
+            "away": "Monte",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884258",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -372,14 +402,29 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "10:00",
-            "sport": "Kriket"
+            "time": "19:00",
+            "sport": "Esport"
         },
         {
-            "title": "Nottinghamshire County vs Warwickshire",
-            "home": "Nottinghamshire County",
-            "away": "Warwickshire",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884126",
+            "title": "Gentle Mates vs Sinners",
+            "home": "Gentle Mates",
+            "away": "Sinners",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884240",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/a61ffc8286cd2df6f6884c2e9316bde6.png",
+            "time": "19:20",
+            "sport": "Esport"
+        },
+        {
+            "title": "Kings Ghaziabad vs Royals Ghaziabad",
+            "home": "Kings Ghaziabad",
+            "away": "Royals Ghaziabad",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884357",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -387,14 +432,14 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "10:00",
+            "time": "19:30",
             "sport": "Kriket"
         },
         {
-            "title": "Surrey County vs Essex County",
-            "home": "Surrey County",
-            "away": "Essex County",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884127",
+            "title": "CYBERSHOKE Prospects vs Misa Esports",
+            "home": "CYBERSHOKE Prospects",
+            "away": "Misa Esports",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884315",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -402,53 +447,8 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "10:00",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Yorkshire County vs Sussex",
-            "home": "Yorkshire County",
-            "away": "Sussex",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884128",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "10:00",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Derbyshire vs Gloucestershire County",
-            "home": "Derbyshire",
-            "away": "Gloucestershire County",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884129",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/uki6jc1512937529.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "10:00",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Durham vs Lancashire",
-            "home": "Durham",
-            "away": "Lancashire",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/884130",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/m1ljqz1546518856.png",
-            "time": "10:00",
-            "sport": "Kriket"
+            "time": "19:45",
+            "sport": "Esport"
         }
     ]
 }
