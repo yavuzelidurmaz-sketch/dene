@@ -16,21 +16,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Milan vs Juventus",
-            "home": "Milan",
-            "away": "Juventus",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/883355",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/wvspur1448806617.png",
-            "away_logo": "https://macdata.net/img/180451.png",
-            "time": "21:45",
-            "sport": "Futbol"
-        },
-        {
             "title": "Marislya vs Nice",
             "home": "Marislya",
             "away": "Nice",
@@ -74,36 +59,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "22:30",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Torino vs Inter",
-            "home": "Torino",
-            "away": "Inter",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/883354",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/xxprty1448806802.png",
-            "away_logo": "https://macdata.net/img/xqyvuy1448806439.png",
-            "time": "19:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "B.Dortmund vs Freiburg",
-            "home": "B.Dortmund",
-            "away": "Freiburg",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/883353",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/2673.png",
-            "away_logo": "https://macdata.net/img/urwtup1473453288.png",
-            "time": "18:30",
-            "sport": "Futbol"
         },
         {
             "title": "Chelsea vs Leeds United",
@@ -271,21 +226,6 @@
             "sport": "Basketbol"
         },
         {
-            "title": "Genoa vs Como",
-            "home": "Genoa",
-            "away": "Como",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/883306",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rqqvwv1448806429.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "16:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Paderborn vs Schalke 04",
             "home": "Paderborn",
             "away": "Schalke 04",
@@ -298,21 +238,6 @@
             "home_logo": "https://macdata.net/img/kddvva1566048058.png",
             "away_logo": "https://macdata.net/img/qqutyp1473453400.png",
             "time": "14:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Fiorentina vs Sassuolo",
-            "home": "Fiorentina",
-            "away": "Sassuolo",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/883300",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/twwqss1448806409.png",
-            "away_logo": "https://macdata.net/img/xystvp1448806138.png",
-            "time": "13:30",
             "sport": "Futbol"
         },
         {
@@ -448,6 +373,81 @@
             "home_logo": "https://macdata.net/img/uki6jc1512937529.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "10:00",
+            "sport": "Kriket"
+        },
+        {
+            "title": "Durham vs Lancashire",
+            "home": "Durham",
+            "away": "Lancashire",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/883472",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/m1ljqz1546518856.png",
+            "time": "10:00",
+            "sport": "Kriket"
+        },
+        {
+            "title": "Worcestershire vs Kent",
+            "home": "Worcestershire",
+            "away": "Kent",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/883473",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "10:00",
+            "sport": "Kriket"
+        },
+        {
+            "title": "Glamorgan County vs Leicestershire",
+            "home": "Glamorgan County",
+            "away": "Leicestershire",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/883510",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "10:00",
+            "sport": "Kriket"
+        },
+        {
+            "title": "Yorkshire County vs Sussex",
+            "home": "Yorkshire County",
+            "away": "Sussex",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/883511",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "10:00",
+            "sport": "Kriket"
+        },
+        {
+            "title": "Blackhawks vs Milestone Giants",
+            "home": "Blackhawks",
+            "away": "Milestone Giants",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/883898",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "15:50",
             "sport": "Kriket"
         }
     ]
