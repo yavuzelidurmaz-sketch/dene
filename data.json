@@ -226,6 +226,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Keçiörengücü vs Manisa FK",
+            "home": "Keçiörengücü",
+            "away": "Manisa FK",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/883307",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/6366.png",
+            "away_logo": "https://macdata.net/img/216878.png",
+            "time": "16:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Rayo Vallecano vs Real Sociedad",
             "home": "Rayo Vallecano",
             "away": "Real Sociedad",
@@ -432,21 +447,6 @@
             },
             "home_logo": "https://macdata.net/img/uki6jc1512937529.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "10:00",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Durham vs Lancashire",
-            "home": "Durham",
-            "away": "Lancashire",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/883472",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/m1ljqz1546518856.png",
             "time": "10:00",
             "sport": "Kriket"
         }
