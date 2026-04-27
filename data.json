@@ -16,51 +16,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Konyaspor vs Trabzonspor",
-            "home": "Konyaspor",
-            "away": "Trabzonspor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/885639",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rxwptr1448203413.png",
-            "away_logo": "https://macdata.net/img/rrsrvv1448204214.png",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Alanyaspor vs Samsunspor",
-            "home": "Alanyaspor",
-            "away": "Samsunspor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/885636",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/9fr3071601667898.png",
-            "away_logo": "https://macdata.net/img/g0iuzl1499278699.png",
-            "time": "17:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Cagliari vs Atalanta",
-            "home": "Cagliari",
-            "away": "Atalanta",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/885638",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/wvsvxt1447534471.png",
-            "away_logo": "https://macdata.net/img/lrvxg71534873930.png",
-            "time": "19:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Manchester Utd vs Brentford",
             "home": "Manchester Utd",
             "away": "Brentford",
@@ -73,6 +28,21 @@
             "home_logo": "https://macdata.net/img/35.png",
             "away_logo": "https://macdata.net/img/grv1aw1546453779.png",
             "time": "22:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Cadiz vs Las Palmas",
+            "home": "Cadiz",
+            "away": "Las Palmas",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/885642",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/wwqswt1474397580.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "20:30",
             "sport": "Futbol"
         },
         {
@@ -104,6 +74,21 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "22:30",
             "sport": "Basketbol"
+        },
+        {
+            "title": "Lazio vs Udinese",
+            "home": "Lazio",
+            "away": "Udinese",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/885675",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/rwqyvs1448806608.png",
+            "away_logo": "https://macdata.net/img/vwvstr1448806811.png",
+            "time": "21:45",
+            "sport": "Futbol"
         },
         {
             "title": "Merkezefendi Bld. vs Mersin Spor",
@@ -149,36 +134,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "17:08",
             "sport": "Kriket"
-        },
-        {
-            "title": "Manchester Utd vs Brentford",
-            "home": "Manchester Utd",
-            "away": "Brentford",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/885678",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Espanyol vs Levante",
-            "home": "Espanyol",
-            "away": "Levante",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/885676",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:00",
-            "sport": "Futbol"
         }
     ]
 }
