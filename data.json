@@ -16,21 +16,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Valencia Basket vs Panathinaikos",
-            "home": "Valencia Basket",
-            "away": "Panathinaikos",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886293",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/9qyc231536398868.png",
-            "away_logo": "https://macdata.net/img/vtpwwt1448208397.png",
-            "time": "21:45",
-            "sport": "Futbol"
-        },
-        {
             "title": "Fenerbahçe Beko vs Zalgiris Kaunas",
             "home": "Fenerbahçe Beko",
             "away": "Zalgiris Kaunas",
@@ -76,6 +61,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "52 Orduspor vs Fatsa Bld.",
+            "home": "52 Orduspor",
+            "away": "Fatsa Bld.",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886288",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Kdz Ereğli Bld. vs Bozokspor",
             "home": "Kdz Ereğli Bld.",
             "away": "Bozokspor",
@@ -104,36 +104,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "17:08",
             "sport": "Kriket"
-        },
-        {
-            "title": "PSG vs Bayern Münih",
-            "home": "PSG",
-            "away": "Bayern Münih",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886292",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Valencia Basket vs Panathinaikos",
-            "home": "Valencia Basket",
-            "away": "Panathinaikos",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886293",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:45",
-            "sport": "Futbol"
         }
     ]
 }
