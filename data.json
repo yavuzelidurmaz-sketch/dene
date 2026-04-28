@@ -134,51 +134,6 @@
             "away_logo": "",
             "time": "21:45",
             "sport": "Futbol"
-        },
-        {
-            "title": "Fenerbahçe Beko vs Zalgiris Kaunas",
-            "home": "Fenerbahçe Beko",
-            "away": "Zalgiris Kaunas",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886291",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:45",
-            "sport": "Futbol"
-        },
-        {
-            "title": "JL Bourg vs Beşiktaş GAİN",
-            "home": "JL Bourg",
-            "away": "Beşiktaş GAİN",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886290",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Eskişehirspor vs Balıkesirspor",
-            "home": "Eskişehirspor",
-            "away": "Balıkesirspor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886289",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Futbol"
         }
     ]
 }
