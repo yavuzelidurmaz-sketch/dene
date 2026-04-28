@@ -61,10 +61,25 @@
             "sport": "Futbol"
         },
         {
-            "title": "52 Orduspor vs Fatsa Bld.",
-            "home": "52 Orduspor",
-            "away": "Fatsa Bld.",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886288",
+            "title": "Eskişehirspor vs Balıkesirspor",
+            "home": "Eskişehirspor",
+            "away": "Balıkesirspor",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886289",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/qyxxwv1448199514.png",
+            "away_logo": "https://macdata.net/img/37687.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Kdz Ereğli Bld. vs Bozokspor",
+            "home": "Kdz Ereğli Bld.",
+            "away": "Bozokspor",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886287",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -72,7 +87,7 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "20:00",
+            "time": "15:00",
             "sport": "Futbol"
         },
         {
@@ -151,10 +166,10 @@
             "sport": "Futbol"
         },
         {
-            "title": "52 Orduspor vs Fatsa Bld.",
-            "home": "52 Orduspor",
-            "away": "Fatsa Bld.",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886288",
+            "title": "Eskişehirspor vs Balıkesirspor",
+            "home": "Eskişehirspor",
+            "away": "Balıkesirspor",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/886289",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
