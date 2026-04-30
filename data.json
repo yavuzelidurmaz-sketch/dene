@@ -1,34 +1,3 @@
 {
-    "matches": [
-        {
-            "title": "Al Nassr vs Al Ahli",
-            "home": "Al Nassr",
-            "away": "Al Ahli",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/887788",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/dnuilv1511552000.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "21:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Kuesto Kalcho vs Iskra Altud",
-            "home": "Kuesto Kalcho",
-            "away": "Iskra Altud",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/887738",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "16:15",
-            "sport": "Futbol"
-        }
-    ]
+    "matches": []
 }
