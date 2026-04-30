@@ -1,36 +1,6 @@
 {
     "matches": [
         {
-            "title": "Sporting CP vs Tondela",
-            "home": "Sporting CP",
-            "away": "Tondela",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/887790",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/svxpsx1471876338.png",
-            "away_logo": "https://macdata.net/img/yvyptv1450642524.png",
-            "time": "22:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Atletico Madrid vs Arsenal",
-            "home": "Atletico Madrid",
-            "away": "Arsenal",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/887789",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/kzifae1578852277.png",
-            "away_logo": "https://macdata.net/img/c6f48976ba43a337e0bb40c4a0b5c7e4.png",
-            "time": "22:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Al Nassr vs Al Ahli",
             "home": "Al Nassr",
             "away": "Al Ahli",
