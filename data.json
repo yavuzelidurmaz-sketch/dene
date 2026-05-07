@@ -1,36 +1,6 @@
 {
     "matches": [
         {
-            "title": "Sanskruti Saloon Baroda vs Mazaa Maverics",
-            "home": "Sanskruti Saloon Baroda",
-            "away": "Mazaa Maverics",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/898203",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "18:00",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Screaming Eagles vs Chitkul Association",
-            "home": "Screaming Eagles",
-            "away": "Chitkul Association",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/898202",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "18:30",
-            "sport": "Kriket"
-        },
-        {
             "title": "L1ga vs MOUZ",
             "home": "L1ga",
             "away": "MOUZ",
@@ -44,36 +14,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "18:45",
             "sport": "Esport"
-        },
-        {
-            "title": "Turma do Pagode vs Bestia Academy",
-            "home": "Turma do Pagode",
-            "away": "Bestia Academy",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/898243",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "18:45",
-            "sport": "Esport"
-        },
-        {
-            "title": "Spartak VKP Myjava vs Slavia SPU Nitra",
-            "home": "Spartak VKP Myjava",
-            "away": "Slavia SPU Nitra",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/898237",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "19:00",
-            "sport": "Voleybol"
         }
     ]
 }
