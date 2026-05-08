@@ -44,21 +44,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "18:45",
             "sport": "Esport"
-        },
-        {
-            "title": "Torino vs Sassuolo",
-            "home": "Torino",
-            "away": "Sassuolo",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/898261",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:45",
-            "sport": "Futbol"
         }
     ]
 }
