@@ -1,6 +1,36 @@
 {
     "matches": [
         {
+            "title": "Galatasaray vs Antalyaspor",
+            "home": "Galatasaray",
+            "away": "Antalyaspor",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/898281",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/75fphr1537381190.png",
+            "away_logo": "https://macdata.net/img/vqoral1601669436.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Beşiktaş vs Trabzonspor",
+            "home": "Beşiktaş",
+            "away": "Trabzonspor",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/898283",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/qpswyp1448199205.png",
+            "away_logo": "https://macdata.net/img/rrsrvv1448204214.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Hoffenheim vs Werder Bremen",
             "home": "Hoffenheim",
             "away": "Werder Bremen",
@@ -46,6 +76,36 @@
             "sport": "Futbol"
         },
         {
+            "title": "Gençlerbirliği vs Kasımpaşa",
+            "home": "Gençlerbirliği",
+            "away": "Kasımpaşa",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/898280",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/wtxxur1448201599.png",
+            "away_logo": "https://macdata.net/img/6063.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Alanyaspor vs Kayserispor",
+            "home": "Alanyaspor",
+            "away": "Kayserispor",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/898286",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/9fr3071601667898.png",
+            "away_logo": "https://macdata.net/img/bvskgi1601668985.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Real Sociedad vs Real Betis",
             "home": "Real Sociedad",
             "away": "Real Betis",
@@ -59,186 +119,6 @@
             "away_logo": "https://macdata.net/img/rrxvww1473502887.png",
             "time": "22:00",
             "sport": "Futbol"
-        },
-        {
-            "title": "ABD vs Kanada",
-            "home": "ABD",
-            "away": "Kanada",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899192",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/4724.png",
-            "away_logo": "https://macdata.net/img/2t631f1595154867.png",
-            "time": "19:50",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "Arjantin vs İspanya",
-            "home": "Arjantin",
-            "away": "İspanya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899243",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rrxutp1455461072.png",
-            "away_logo": "https://macdata.net/img/obs41m1574507346.png",
-            "time": "20:20",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "PlayTime vs PARIVISION",
-            "home": "PlayTime",
-            "away": "PARIVISION",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899009",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "21:00",
-            "sport": "Esport"
-        },
-        {
-            "title": "Two Move vs Enj0y",
-            "home": "Two Move",
-            "away": "Enj0y",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899086",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "21:30",
-            "sport": "Esport"
-        },
-        {
-            "title": "Alcons Busters vs Akluj Ancers",
-            "home": "Alcons Busters",
-            "away": "Akluj Ancers",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899088",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "21:42",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Larkana vs Omara",
-            "home": "Larkana",
-            "away": "Omara",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899089",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "21:42",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Isurus vs Fake do Biru",
-            "home": "Isurus",
-            "away": "Fake do Biru",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899159",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/797be0f600effcfc8fe32d2369d0d3c4.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "22:00",
-            "sport": "Esport"
-        },
-        {
-            "title": "Imperial Esports vs UNO miLLe",
-            "home": "Imperial Esports",
-            "away": "UNO miLLe",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899160",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "22:00",
-            "sport": "Esport"
-        },
-        {
-            "title": "Nacionales de La Guaira vs Universitarias de Miranda",
-            "home": "Nacionales de La Guaira",
-            "away": "Universitarias de Miranda",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899190",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "22:15",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "Delfines Del Este vs Salcedo FC",
-            "home": "Delfines Del Este",
-            "away": "Salcedo FC",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899213",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/z5nbjw1615824141.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "22:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Mumbai Indians  vs Delhi Capitals ",
-            "home": "Mumbai Indians ",
-            "away": "Delhi Capitals ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899182",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "22:35",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Shopify Rebellion vs Sentinels",
-            "home": "Shopify Rebellion",
-            "away": "Sentinels",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899195",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/2e45e323f48f530050996b16f1ee99f2.png",
-            "time": "23:00",
-            "sport": "Esport"
         },
         {
             "title": "Caracas vs Guacharas de Monagas",
@@ -256,141 +136,6 @@
             "sport": "Voleybol"
         },
         {
-            "title": "Prestige Academy vs HAFO",
-            "home": "Prestige Academy",
-            "away": "HAFO",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899226",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:00",
-            "sport": "Esport"
-        },
-        {
-            "title": "Almeida Garrett  vs S.L. Benfica ",
-            "home": "Almeida Garrett ",
-            "away": "S.L. Benfica ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899241",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/9202.png",
-            "time": "23:00",
-            "sport": "Hentbol"
-        },
-        {
-            "title": "Pakistan  vs New Zealand ",
-            "home": "Pakistan ",
-            "away": "New Zealand ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899227",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/4x1akh1597935271.png",
-            "away_logo": "https://macdata.net/img/8fjlxh1573988839.png",
-            "time": "23:05",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Paris  vs Zalgiris ",
-            "home": "Paris ",
-            "away": "Zalgiris ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899239",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rwqrrq1473504808.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:05",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Project Achilles vs Freedom Fighters",
-            "home": "Project Achilles",
-            "away": "Freedom Fighters",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899228",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:10",
-            "sport": "Esport"
-        },
-        {
-            "title": "Bentin Tacna Heroica vs Alianza Universidad",
-            "home": "Bentin Tacna Heroica",
-            "away": "Alianza Universidad",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899234",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/28949d655711fd4589d2f2810df4d2f1.png",
-            "time": "23:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Carlos Mannucci vs Unión Comercio",
-            "home": "Carlos Mannucci",
-            "away": "Unión Comercio",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899235",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/117aa5e448d96d1598ae84124c489a66.png",
-            "away_logo": "https://macdata.net/img/7cmis61583096805.png",
-            "time": "23:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "CEB Puerto Montt vs Puerto Montt II",
-            "home": "CEB Puerto Montt",
-            "away": "Puerto Montt II",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899259",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:15",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Dallas Mavericks  vs Golden State Warriors ",
-            "home": "Dallas Mavericks ",
-            "away": "Golden State Warriors ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899240",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/yqrxrs1420568796.png",
-            "away_logo": "https://macdata.net/img/irobi61565197527.png",
-            "time": "23:20",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Brezilya vs İtalya",
             "home": "Brezilya",
             "away": "İtalya",
@@ -404,51 +149,6 @@
             "away_logo": "https://macdata.net/img/derswu1594930517.png",
             "time": "23:20",
             "sport": "Voleybol"
-        },
-        {
-            "title": "Strikers vs Night Avengers",
-            "home": "Strikers",
-            "away": "Night Avengers",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899244",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:30",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Japonya  vs İtalya ",
-            "home": "Japonya ",
-            "away": "İtalya ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899269",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/ffsyxz1591989843.png",
-            "away_logo": "https://macdata.net/img/derswu1594930517.png",
-            "time": "23:30",
-            "sport": "Voleybol"
-        },
-        {
-            "title": "OpTic Texas vs FaZe Vegas",
-            "home": "OpTic Texas",
-            "away": "FaZe Vegas",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899271",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:30",
-            "sport": "Esport"
         }
     ]
 }
