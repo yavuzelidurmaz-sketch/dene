@@ -16,6 +16,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Beşiktaş vs Trabzonspor",
+            "home": "Beşiktaş",
+            "away": "Trabzonspor",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/898283",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/qpswyp1448199205.png",
+            "away_logo": "https://macdata.net/img/rrsrvv1448204214.png",
+            "time": "20:00",
+            "sport": "Futbol"
+        },
+        {
             "title": "Stuttgart vs Bayer Leverkusen",
             "home": "Stuttgart",
             "away": "Bayer Leverkusen",
@@ -89,21 +104,6 @@
             "away_logo": "https://macdata.net/img/rrxvww1473502887.png",
             "time": "22:00",
             "sport": "Futbol"
-        },
-        {
-            "title": "Edward Gaming vs XLG Esports",
-            "home": "Edward Gaming",
-            "away": "XLG Esports",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/899968",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/ia07o31549465479.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "12:00",
-            "sport": "Esport"
         },
         {
             "title": "Leicestershire  vs Gloucestershire ",
