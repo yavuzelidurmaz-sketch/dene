@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "Red Star vs Rodez",
-            "home": "Red Star",
-            "away": "Rodez",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/903035",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/cb09f9600882b4a8d4dc9442af65ab25.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "21:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Brest vs Strasbourg",
             "home": "Brest",
             "away": "Strasbourg",
@@ -59,21 +44,6 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "17:00",
             "sport": "Esport"
-        },
-        {
-            "title": "Lens vs PSG",
-            "home": "Lens",
-            "away": "PSG",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/903668",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:00",
-            "sport": "Futbol"
         }
     ]
 }
