@@ -29,21 +29,6 @@
             "away_logo": "https://macdata.net/img/utuqys1420503958.png",
             "time": "22:30",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Gran Canaria vs Tenerife",
-            "home": "Gran Canaria",
-            "away": "Tenerife",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/903675",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:30",
-            "sport": "Basketbol"
         }
     ]
 }
