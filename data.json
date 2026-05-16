@@ -91,21 +91,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Gaziantep Fk vs Rams Başakşehir",
-            "home": "Gaziantep Fk",
-            "away": "Rams Başakşehir",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/903688",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Estoril vs Benfica",
             "home": "Estoril",
             "away": "Benfica",
@@ -118,21 +103,6 @@
             "home_logo": "",
             "away_logo": "",
             "time": "22:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Samsunspor vs Göztepe",
-            "home": "Samsunspor",
-            "away": "Göztepe",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/903690",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
             "sport": "Futbol"
         }
     ]
