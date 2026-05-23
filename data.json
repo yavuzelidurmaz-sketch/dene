@@ -1,34 +1,3 @@
 {
-    "matches": [
-        {
-            "title": "Trabzonspor vs Konyaspor",
-            "home": "Trabzonspor",
-            "away": "Konyaspor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/907362",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rrsrvv1448204214.png",
-            "away_logo": "https://macdata.net/img/rxwptr1448203413.png",
-            "time": "20:45",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Lens vs Nice",
-            "home": "Lens",
-            "away": "Nice",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/907364",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/3pxoum1598797195.png",
-            "away_logo": "https://macdata.net/img/qwvtvt1473504800.png",
-            "time": "22:00",
-            "sport": "Futbol"
-        }
-    ]
+    "matches": []
 }
