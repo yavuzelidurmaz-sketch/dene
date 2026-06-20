@@ -59,36 +59,6 @@
             "away_logo": "https://macdata.net/img/13301.png",
             "time": "03:30",
             "sport": "Futbol"
-        },
-        {
-            "title": "Türkiye vs Paraguay",
-            "home": "Türkiye",
-            "away": "Paraguay",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/930697",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "06:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Brezilya vs Haiti",
-            "home": "Brezilya",
-            "away": "Haiti",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/930696",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "03:30",
-            "sport": "Futbol"
         }
     ]
 }
