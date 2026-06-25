@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "Khatima Warriors vs Jaspur Dabang",
-            "home": "Khatima Warriors",
-            "away": "Jaspur Dabang",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/931471",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "06:55",
-            "sport": "Kriket"
-        },
-        {
             "title": "Sks Bca vs Draconian",
             "home": "Sks Bca",
             "away": "Draconian",
@@ -28,21 +13,6 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "07:13",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Red Raiders vs Bhigwan Riders",
-            "home": "Red Raiders",
-            "away": "Bhigwan Riders",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/931536",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "07:44",
             "sport": "Kriket"
         }
     ]
