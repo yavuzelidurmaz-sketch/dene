@@ -44,21 +44,6 @@
             "away_logo": "https://macdata.net/img/5h6jyx1590266016.png",
             "time": "22:00",
             "sport": "Futbol"
-        },
-        {
-            "title": "Mısır vs İran",
-            "home": "Mısır",
-            "away": "İran",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/931550",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "06:00",
-            "sport": "Futbol"
         }
     ]
 }
