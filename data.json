@@ -1,34 +1,3 @@
 {
-    "matches": [
-        {
-            "title": "Fransa vs İsveç",
-            "home": "Fransa",
-            "away": "İsveç",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/931581",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/5h6jyx1590266016.png",
-            "away_logo": "https://macdata.net/img/h5adzg1591981772.png",
-            "time": "00:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Meksika vs Ekvador",
-            "home": "Meksika",
-            "away": "Ekvador",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/931582",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/3qmb8m1597946814.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "04:00",
-            "sport": "Futbol"
-        }
-    ]
+    "matches": []
 }
