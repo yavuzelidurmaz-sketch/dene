@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "Arjantin vs Mısır",
-            "home": "Arjantin",
-            "away": "Mısır",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/931603",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/rrxutp1455461072.png",
-            "away_logo": "https://macdata.net/img/zudd531526726741.png",
-            "time": "19:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "İsviçre vs Kolombiya",
             "home": "İsviçre",
             "away": "Kolombiya",
@@ -27,21 +12,6 @@
             },
             "home_logo": "https://macdata.net/img/qwwupx1455466251.png",
             "away_logo": "https://macdata.net/img/syxsss1455465283.png",
-            "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "İsviçre vs Kolombiya",
-            "home": "İsviçre",
-            "away": "Kolombiya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/931604",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
             "time": "23:00",
             "sport": "Futbol"
         }
