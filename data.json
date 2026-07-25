@@ -16,21 +16,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Avustralya vs Arjantin",
-            "home": "Avustralya",
-            "away": "Arjantin",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954160",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/qbo96a1591990988.png",
-            "away_logo": "https://macdata.net/img/rrxutp1455461072.png",
-            "time": "04:30",
-            "sport": "Voleybol"
-        },
-        {
             "title": "Ukrayna vs Çin",
             "home": "Ukrayna",
             "away": "Çin",
@@ -43,6 +28,21 @@
             "home_logo": "https://macdata.net/img/k36g2e1591982718.png",
             "away_logo": "https://macdata.net/img/15tpfg1558894726.png",
             "time": "05:00",
+            "sport": "Voleybol"
+        },
+        {
+            "title": "İspanya vs Japonya",
+            "home": "İspanya",
+            "away": "Japonya",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954265",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/obs41m1574507346.png",
+            "away_logo": "https://macdata.net/img/ffsyxz1591989843.png",
+            "time": "05:50",
             "sport": "Voleybol"
         },
         {
@@ -76,51 +76,6 @@
             "sport": "Tenis"
         },
         {
-            "title": "Phoenix FC vs United FC",
-            "home": "Phoenix FC",
-            "away": "United FC",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954108",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "06:50",
-            "sport": "Futbol"
-        },
-        {
-            "title": "New Zealand  vs Australia ",
-            "home": "New Zealand ",
-            "away": "Australia ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954143",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/8fjlxh1573988839.png",
-            "away_logo": "https://macdata.net/img/qbo96a1591990988.png",
-            "time": "07:05",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Türkiye Pro  vs ABD Pro ",
-            "home": "Türkiye Pro ",
-            "away": "ABD Pro ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954175",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "07:10",
-            "sport": "Voleybol"
-        },
-        {
             "title": "İtalya vs ABD",
             "home": "İtalya",
             "away": "ABD",
@@ -136,36 +91,6 @@
             "sport": "Voleybol"
         },
         {
-            "title": "Hawks Chennai vs Titans Chennai",
-            "home": "Hawks Chennai",
-            "away": "Titans Chennai",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954162",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "07:30",
-            "sport": "Kriket"
-        },
-        {
-            "title": "Baskonia  vs Anadolu Efes ",
-            "home": "Baskonia ",
-            "away": "Anadolu Efes ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954174",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/9q1kwt1517523094.png",
-            "away_logo": "https://macdata.net/img/55wtm81544212863.png",
-            "time": "07:35",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Japonya  vs Türkiye ",
             "home": "Japonya ",
             "away": "Türkiye ",
@@ -179,21 +104,6 @@
             "away_logo": "https://macdata.net/img/70c4oo1591982459.png",
             "time": "07:35",
             "sport": "Voleybol"
-        },
-        {
-            "title": "Mumbai Indians  vs Kolkata Knight Riders ",
-            "home": "Mumbai Indians ",
-            "away": "Kolkata Knight Riders ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954179",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "07:35",
-            "sport": "Kriket"
         },
         {
             "title": "Pir Mahal Strikers vs Quetta Riders",
@@ -226,51 +136,6 @@
             "sport": "Hockey"
         },
         {
-            "title": "Shanghai Fives vs Kunming Monks",
-            "home": "Shanghai Fives",
-            "away": "Kunming Monks",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954190",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "07:45",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Fransa  vs Finland ",
-            "home": "Fransa ",
-            "away": "Finland ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954214",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/5h6jyx1590266016.png",
-            "away_logo": "https://macdata.net/img/e4zy491552943080.png",
-            "time": "07:45",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Rusya  vs Brezil ",
-            "home": "Rusya ",
-            "away": "Brezil ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954215",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/qtttsy1455466096.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "07:45",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Svetlana Matkova vs Olga Khaldeeva",
             "home": "Svetlana Matkova",
             "away": "Olga Khaldeeva",
@@ -286,25 +151,10 @@
             "sport": "Tenis"
         },
         {
-            "title": "Tomokazu Harimoto  vs Patrick Franziska ",
-            "home": "Tomokazu Harimoto ",
-            "away": "Patrick Franziska ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954184",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "07:50",
-            "sport": "Masatenisi"
-        },
-        {
-            "title": "Valery Khanko vs Svatoslav Vasilenya",
-            "home": "Valery Khanko",
-            "away": "Svatoslav Vasilenya",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954203",
+            "title": "Ultra Hell vs Noire Ace",
+            "home": "Ultra Hell",
+            "away": "Noire Ace",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954250",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -313,22 +163,7 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "07:55",
-            "sport": "Masatenisi"
-        },
-        {
-            "title": "Stunners Indoor vs Top Guns Indoor",
-            "home": "Stunners Indoor",
-            "away": "Top Guns Indoor",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954196",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "08:00",
-            "sport": "Kriket"
+            "sport": "Esport"
         },
         {
             "title": "Herois do Huambo vs Bravos da Quissama",
@@ -361,10 +196,10 @@
             "sport": "Basketbol"
         },
         {
-            "title": "OMEGA vs AimAssasins",
-            "home": "OMEGA",
-            "away": "AimAssasins",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954220",
+            "title": "Agra Royals  vs Star Eleven ",
+            "home": "Agra Royals ",
+            "away": "Star Eleven ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954222",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -372,14 +207,14 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "08:00",
-            "sport": "Esport"
+            "time": "08:10",
+            "sport": "Kriket"
         },
         {
-            "title": "Novaq vs Team Orda",
-            "home": "Novaq",
-            "away": "Team Orda",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954234",
+            "title": "Patna Pacers vs Kohlapur Kings",
+            "home": "Patna Pacers",
+            "away": "Kohlapur Kings",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954223",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -387,29 +222,164 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "08:00",
-            "sport": "Esport"
+            "time": "08:10",
+            "sport": "Kriket"
         },
         {
-            "title": "Omsk vs Syktyvkar",
-            "home": "Omsk",
-            "away": "Syktyvkar",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954187",
+            "title": "Türkiye  vs İtalya ",
+            "home": "Türkiye ",
+            "away": "İtalya ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954218",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
                 "Referer": "https://sttc2.kakirikodes.shop/"
             },
-            "home_logo": "https://macdata.net/img/9eac64587e37abafc5ad9f5232364b61.png",
+            "home_logo": "https://macdata.net/img/70c4oo1591982459.png",
+            "away_logo": "https://macdata.net/img/derswu1594930517.png",
+            "time": "08:15",
+            "sport": "Voleybol"
+        },
+        {
+            "title": "Stormriders vs Peacekeepers Team",
+            "home": "Stormriders",
+            "away": "Peacekeepers Team",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954251",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "08:00",
+            "time": "08:15",
+            "sport": "Esport"
+        },
+        {
+            "title": "Polonya Pro  vs Türkiye Pro ",
+            "home": "Polonya Pro ",
+            "away": "Türkiye Pro ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954264",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:15",
+            "sport": "Voleybol"
+        },
+        {
+            "title": "Subway Sixers vs Challengers XI BLR",
+            "home": "Subway Sixers",
+            "away": "Challengers XI BLR",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954267",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:15",
+            "sport": "Kriket"
+        },
+        {
+            "title": "MMM Perth Scorchers vs South Australian Red Backs",
+            "home": "MMM Perth Scorchers",
+            "away": "South Australian Red Backs",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954243",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:16",
+            "sport": "Kriket"
+        },
+        {
+            "title": "Farah Fighters vs Satrap Sports",
+            "home": "Farah Fighters",
+            "away": "Satrap Sports",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954244",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:25",
+            "sport": "Kriket"
+        },
+        {
+            "title": "Carrots vs Fubar Chaos",
+            "home": "Carrots",
+            "away": "Fubar Chaos",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954249",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:25",
+            "sport": "Esport"
+        },
+        {
+            "title": "Team Malice vs Mau Esports",
+            "home": "Team Malice",
+            "away": "Mau Esports",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954247",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:27",
+            "sport": "Esport"
+        },
+        {
+            "title": "Yolo Esports vs Team Ferno",
+            "home": "Yolo Esports",
+            "away": "Team Ferno",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954248",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:29",
+            "sport": "Esport"
+        },
+        {
+            "title": "IPBL Elephants vs IPBL Gorillas",
+            "home": "IPBL Elephants",
+            "away": "IPBL Gorillas",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954239",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:30",
             "sport": "Basketbol"
         },
         {
-            "title": "Evgenii Khotian vs Iaroslav Borkovskii",
-            "home": "Evgenii Khotian",
-            "away": "Iaroslav Borkovskii",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954231",
+            "title": "Riftwalkers vs Wild Bats",
+            "home": "Riftwalkers",
+            "away": "Wild Bats",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954271",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
@@ -417,38 +387,68 @@
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "08:00",
+            "time": "08:32",
+            "sport": "Esport"
+        },
+        {
+            "title": "Aleksey Radionov vs Evgenii Khotian",
+            "home": "Aleksey Radionov",
+            "away": "Evgenii Khotian",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954275",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:33",
             "sport": "Masatenisi"
         },
         {
-            "title": "Cheboksary  vs Tambov ",
-            "home": "Cheboksary ",
-            "away": "Tambov ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954188",
+            "title": "Hapoel Tel Aviv  vs KK Partizan ",
+            "home": "Hapoel Tel Aviv ",
+            "away": "KK Partizan ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954263",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/7lwa0u1522257633.png",
+            "away_logo": "https://macdata.net/img/j3fpvj1521150793.png",
+            "time": "08:35",
+            "sport": "Basketbol"
+        },
+        {
+            "title": "Aleksandr Smirnov vs Alexey Golosov",
+            "home": "Aleksandr Smirnov",
+            "away": "Alexey Golosov",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954288",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/2258c37e90d97b32c6819d4b75449a88.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "08:39",
+            "sport": "Tenis"
+        },
+        {
+            "title": "Robert Gardos  vs Fan Zhendong ",
+            "home": "Robert Gardos ",
+            "away": "Fan Zhendong ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954279",
             "stream_url": null,
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
                 "Referer": "https://sttc2.kakirikodes.shop/"
             },
             "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/ba3708c6589454fd0c792a4796404147.png",
-            "time": "08:05",
-            "sport": "Basketbol"
-        },
-        {
-            "title": "Wizards vs Galaxy Warriors",
-            "home": "Wizards",
-            "away": "Galaxy Warriors",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/954210",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/af325351967220b24166d95478897ac5.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "08:05",
-            "sport": "Hockey"
+            "time": "08:40",
+            "sport": "Masatenisi"
         }
     ]
 }
