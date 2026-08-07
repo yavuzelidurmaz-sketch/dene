@@ -76,21 +76,6 @@
             "sport": "Hockey"
         },
         {
-            "title": "JD vs Edward Gaming",
-            "home": "JD",
-            "away": "Edward Gaming",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/983344",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/n7s4id1575724832.png",
-            "away_logo": "https://macdata.net/img/ia07o31549465479.png",
-            "time": "10:00",
-            "sport": "Esport"
-        },
-        {
             "title": "Mumbai Indians  vs Kolkata Knight Riders ",
             "home": "Mumbai Indians ",
             "away": "Kolkata Knight Riders ",
@@ -271,21 +256,6 @@
             "sport": "Kriket"
         },
         {
-            "title": "Hapoel Tel Aviv  vs Real Madrid Baloncesto ",
-            "home": "Hapoel Tel Aviv ",
-            "away": "Real Madrid Baloncesto ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/983382",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/7lwa0u1522257633.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "11:05",
-            "sport": "Basketbol"
-        },
-        {
             "title": "Halo Fiesta vs Team Orcas",
             "home": "Halo Fiesta",
             "away": "Team Orcas",
@@ -391,21 +361,6 @@
             "sport": "Masatenisi"
         },
         {
-            "title": "Artem Muravyev vs Dmitriy Makarov ",
-            "home": "Artem Muravyev",
-            "away": "Dmitriy Makarov ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/983430",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "11:20",
-            "sport": "Masatenisi"
-        },
-        {
             "title": "Moscow Stars  vs Petersburg Lions ",
             "home": "Moscow Stars ",
             "away": "Petersburg Lions ",
@@ -449,6 +404,51 @@
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "11:30",
             "sport": "Kriket"
+        },
+        {
+            "title": "Utah Mammoth  vs Anaheim Ducks ",
+            "home": "Utah Mammoth ",
+            "away": "Anaheim Ducks ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/983414",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "11:30",
+            "sport": "Hockey"
+        },
+        {
+            "title": "Dark Tamplars vs Azure Dragons",
+            "home": "Dark Tamplars",
+            "away": "Azure Dragons",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/983426",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "11:30",
+            "sport": "Esport"
+        },
+        {
+            "title": "Dubai  vs Anadolu Efes ",
+            "home": "Dubai ",
+            "away": "Anadolu Efes ",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/983413",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/no-logo.png",
+            "away_logo": "https://macdata.net/img/55wtm81544212863.png",
+            "time": "11:35",
+            "sport": "Basketbol"
         }
     ]
 }
