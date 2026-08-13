@@ -1,21 +1,6 @@
 {
     "matches": [
         {
-            "title": "Beşiktaş vs H. Kralove",
-            "home": "Beşiktaş",
-            "away": "H. Kralove",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/997864",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/qpswyp1448199205.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Raptors FC vs Thunderbirds FC",
             "home": "Raptors FC",
             "away": "Thunderbirds FC",
@@ -208,21 +193,6 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/no-logo.png",
             "time": "12:34",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Beşiktaş vs H. Kralove",
-            "home": "Beşiktaş",
-            "away": "H. Kralove",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/997864",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "20:00",
             "sport": "Futbol"
         }
     ]
