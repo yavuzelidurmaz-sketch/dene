@@ -76,6 +76,21 @@
             "sport": "Futbol"
         },
         {
+            "title": "Feyenoord vs GA Eagles",
+            "home": "Feyenoord",
+            "away": "GA Eagles",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/997881",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/uturtx1473534803.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "15:30",
+            "sport": "Futbol"
+        },
+        {
             "title": "Muğlaspor vs Bandırmaspor",
             "home": "Muğlaspor",
             "away": "Bandırmaspor",
@@ -88,6 +103,21 @@
             "home_logo": "https://macdata.net/img/no-logo.png",
             "away_logo": "https://macdata.net/img/e4ynam1580904361.png",
             "time": "21:30",
+            "sport": "Futbol"
+        },
+        {
+            "title": "Chapecoense vs Bahia",
+            "home": "Chapecoense",
+            "away": "Bahia",
+            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/997884",
+            "stream_url": null,
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Referer": "https://sttc2.kakirikodes.shop/"
+            },
+            "home_logo": "https://macdata.net/img/q99s5t1618954202.png",
+            "away_logo": "https://macdata.net/img/no-logo.png",
+            "time": "17:00",
             "sport": "Futbol"
         },
         {
