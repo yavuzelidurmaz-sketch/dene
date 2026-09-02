@@ -1,66 +1,6 @@
 {
     "matches": [
         {
-            "title": "Arborg vs UMF Álftanes",
-            "home": "Arborg",
-            "away": "UMF Álftanes",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/1021354",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/62643.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "22:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Vladimir Tsirkin vs Ivan Dorofeev",
-            "home": "Vladimir Tsirkin",
-            "away": "Ivan Dorofeev",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/1021374",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/2342183.png",
-            "away_logo": "https://macdata.net/img/34a8523ff1aeb68222921b08053993f7.png",
-            "time": "22:20",
-            "sport": "Tenis"
-        },
-        {
-            "title": "Eastern Eagles vs Delaware Valley Aggies",
-            "home": "Eastern Eagles",
-            "away": "Delaware Valley Aggies",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/1021461",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "SUNY Morrisville Mustangs vs Keuka Wolves",
-            "home": "SUNY Morrisville Mustangs",
-            "away": "Keuka Wolves",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/matchpro/1021462",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/no-logo.png",
-            "time": "23:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Vitaliy Vasin vs Gleb Kim",
             "home": "Vitaliy Vasin",
             "away": "Gleb Kim",
