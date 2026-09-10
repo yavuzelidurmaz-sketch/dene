@@ -74,36 +74,6 @@
             "away_logo": "https://macdata.net/img/obs41m1574507346.png",
             "time": "21:45",
             "sport": "Basketbol"
-        },
-        {
-            "title": "Estrela vs Sporting Braga",
-            "home": "Estrela",
-            "away": "Sporting Braga",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/1029339",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:15",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Avustralya  vs İspanya ",
-            "home": "Avustralya ",
-            "away": "İspanya ",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/1029343",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "21:45",
-            "sport": "Basketbol"
         }
     ]
 }
