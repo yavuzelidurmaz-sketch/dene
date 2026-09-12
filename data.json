@@ -224,36 +224,6 @@
             "away_logo": "https://macdata.net/img/c6f48976ba43a337e0bb40c4a0b5c7e4.png",
             "time": "22:00",
             "sport": "Futbol"
-        },
-        {
-            "title": "Real Madrid vs Rayo Vallecano",
-            "home": "Real Madrid",
-            "away": "Rayo Vallecano",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/1029366",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Sunderland vs Arsenal",
-            "home": "Sunderland",
-            "away": "Arsenal",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/1029367",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:00",
-            "sport": "Futbol"
         }
     ]
 }
