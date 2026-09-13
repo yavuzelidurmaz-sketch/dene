@@ -31,21 +31,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Chealsea vs Hull City",
-            "home": "Chealsea",
-            "away": "Hull City",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/1029354",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/no-logo.png",
-            "away_logo": "https://macdata.net/img/fbqqda1601726113.png",
-            "time": "17:00",
-            "sport": "Futbol"
-        },
-        {
             "title": "Liverpool vs Fulham",
             "home": "Liverpool",
             "away": "Fulham",
@@ -76,21 +61,6 @@
             "sport": "Futbol"
         },
         {
-            "title": "Tottenham vs Everton",
-            "home": "Tottenham",
-            "away": "Everton",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/1029361",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/dfyfhl1604094109.png",
-            "away_logo": "https://macdata.net/img/48.png",
-            "time": "19:30",
-            "sport": "Futbol"
-        },
-        {
             "title": "Ümraniyespor vs Antalyaspor",
             "home": "Ümraniyespor",
             "away": "Antalyaspor",
@@ -118,21 +88,6 @@
             "home_logo": "https://macdata.net/img/rxwptr1448203413.png",
             "away_logo": "https://macdata.net/img/rrsrvv1448204214.png",
             "time": "20:00",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Sunderland vs Arsenal",
-            "home": "Sunderland",
-            "away": "Arsenal",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/1029367",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "https://macdata.net/img/tprtus1448813498.png",
-            "away_logo": "https://macdata.net/img/c6f48976ba43a337e0bb40c4a0b5c7e4.png",
-            "time": "22:00",
             "sport": "Futbol"
         }
     ]
