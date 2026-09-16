@@ -89,36 +89,6 @@
             "away_logo": "https://macdata.net/img/1gs1c31549394822.png",
             "time": "22:30",
             "sport": "Futbol"
-        },
-        {
-            "title": "Barcelona vs Racing Santander",
-            "home": "Barcelona",
-            "away": "Racing Santander",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/1029402",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:30",
-            "sport": "Futbol"
-        },
-        {
-            "title": "Levante vs Athletic Bilbao",
-            "home": "Levante",
-            "away": "Athletic Bilbao",
-            "iframe_url": "https://sttc2.kakirikodes.shop/watch/match/1029403",
-            "stream_url": null,
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                "Referer": "https://sttc2.kakirikodes.shop/"
-            },
-            "home_logo": "",
-            "away_logo": "",
-            "time": "22:30",
-            "sport": "Futbol"
         }
     ]
 }
